@@ -182,22 +182,6 @@
     update();
   }
 
-  function wireScrollProgress() {
-    var bar = document.querySelector("[data-progress-bar]");
-    if (!bar) return;
-
-    function update() {
-      var doc = document.documentElement;
-      var max = doc.scrollHeight - doc.clientHeight;
-      var pct = max > 0 ? (window.scrollY / max) * 100 : 0;
-      bar.style.width = Math.min(100, Math.max(0, pct)) + "%";
-    }
-
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update, { passive: true });
-  }
-
   function wireTyping() {
     if (!FLAGS.typing || prefersReducedMotion()) return;
     var el = document.querySelector("[data-typing]");
@@ -281,40 +265,9 @@
     return Number.isFinite(n) ? n : 0;
   }
 
-  function renderCartPreview() {
-    var preview = document.querySelector("[data-cart-preview]");
-    var list = document.querySelector("[data-cart-items]");
-    if (!preview || !list) return;
-
-    var items = readCart();
-    if (!items.length) {
-      list.innerHTML = '<p class="cart-preview__empty">Your cart is empty.</p>';
-      return;
-    }
-
-    var html = "";
-    for (var i = 0; i < items.length; i += 1) {
-      var it = items[i];
-      html +=
-        '<div class="cart-preview__item" style="display:flex;justify-content:space-between;gap:10px;margin:10px 0;">' +
-        "<div>" +
-        "<div style=\"font-weight:900;\">" +
-        String(it.name || "Item") +
-        "</div>" +
-        "<div style=\"color:var(--color-text-light);font-weight:800;font-size:12px;\">Qty " +
-        String(it.qty || 1) +
-        "</div>" +
-        "</div>" +
-        "<div style=\"font-weight:900;color:var(--color-primary-dark);\">$—</div>" +
-        "</div>";
-    }
-    list.innerHTML = html;
-  }
-
   function setCartFromItems(items) {
     writeCart(items);
     setCartCount(computeCartCount(items));
-    renderCartPreview();
   }
 
   function addToCart(name, qty) {
@@ -342,130 +295,10 @@
           (wrap && wrap.getAttribute("data-product-name")) ||
           (wrap && wrap.querySelector(".product__title") && wrap.querySelector(".product__title").textContent) ||
           "Product";
-        var qtyInput = wrap && wrap.querySelector(".qty__input");
-        var qty = qtyInput ? Math.max(1, Number(qtyInput.value || 1)) : 1;
+        var qty = 1;
         addToCart(name, qty);
         track("add_to_cart", { name: name, qty: qty });
         window.alert("Added to cart (placeholder). Shopify integration will replace this behavior.");
-      });
-    }
-  }
-
-  function wireQty() {
-    var roots = document.querySelectorAll(".qty");
-    if (!roots.length) return;
-    for (var i = 0; i < roots.length; i += 1) {
-      (function (root) {
-        var input = root.querySelector(".qty__input");
-        var minus = root.querySelector("[data-qty-minus]");
-        var plus = root.querySelector("[data-qty-plus]");
-        if (!input || !minus || !plus) return;
-
-        function clamp() {
-          var v = Math.max(1, Number(input.value || 1));
-          input.value = String(v);
-          return v;
-        }
-        input.addEventListener("change", clamp);
-        minus.addEventListener("click", function () {
-          input.value = String(Math.max(1, clamp() - 1));
-        });
-        plus.addEventListener("click", function () {
-          input.value = String(clamp() + 1);
-        });
-      })(roots[i]);
-    }
-  }
-
-  function wireCartPreview() {
-    var toggle = document.querySelector("[data-cart-toggle]");
-    var preview = document.querySelector("[data-cart-preview]");
-    if (!toggle || !preview) return;
-
-    function setOpen(isOpen) {
-      if (isOpen) preview.classList.add("is-open");
-      else preview.classList.remove("is-open");
-    }
-
-    toggle.addEventListener("click", function (e) {
-      // Let real navigation happen on products page (#cart) if modifier keys held.
-      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-      e.preventDefault();
-      renderCartPreview();
-      var isOpen = preview.classList.contains("is-open");
-      setOpen(!isOpen);
-      track("cart_preview_toggle", { open: !isOpen });
-    });
-
-    document.addEventListener("click", function (e) {
-      var t = e.target;
-      if (!t) return;
-      if (preview.contains(t) || toggle.contains(t)) return;
-      setOpen(false);
-    });
-
-    // Initial render/count
-    setCartFromItems(readCart());
-  }
-
-  function wireQuickView() {
-    var modal = document.querySelector("[data-modal]");
-    var content = document.querySelector("[data-modal-content]");
-    if (!modal || !content) return;
-
-    var triggers = document.querySelectorAll("[data-quick-view]");
-    if (!triggers.length) return;
-
-    var PRODUCTS = {
-      kit: {
-        title: "Resonate Probiotic Water Kit",
-        desc: "Starter kit built around a simple daily protocol. Replace with full product details.",
-        img: "./images/product-kit.svg"
-      },
-      refill: {
-        title: "Monthly Wellness Refill",
-        desc: "Refill option designed to keep the routine consistent. Replace with final details.",
-        img: "./images/product-refill.svg"
-      }
-    };
-
-    function open(key) {
-      var p = PRODUCTS[key];
-      if (!p) return;
-      content.innerHTML =
-        '<div style="display:grid;gap:14px;grid-template-columns:1fr;">' +
-        '<img src="' +
-        p.img +
-        '" alt="' +
-        p.title +
-        '" style="width:100%;border-radius:18px;border:1px solid rgba(31,95,63,0.14);" loading="lazy" decoding="async" />' +
-        "<div>" +
-        "<h3 style=\"margin:0;font-size:22px;\">" +
-        p.title +
-        "</h3>" +
-        "<p style=\"margin:10px 0 0;color:var(--color-text-light);font-weight:700;\">" +
-        p.desc +
-        "</p>" +
-        "<p style=\"margin:10px 0 0;font-weight:900;\">$— <span style=\"margin-left:10px;font-size:12px;color:var(--color-primary-dark);background:rgba(124,179,66,0.14);padding:4px 10px;border-radius:999px;\">In Stock</span></p>" +
-        "</div>" +
-        "</div>";
-      modal.hidden = false;
-      track("quick_view_open", { product: key });
-    }
-
-    function close() {
-      modal.hidden = true;
-    }
-
-    var closers = modal.querySelectorAll("[data-modal-close]");
-    for (var i = 0; i < closers.length; i += 1) closers[i].addEventListener("click", close);
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && !modal.hidden) close();
-    });
-
-    for (var j = 0; j < triggers.length; j += 1) {
-      triggers[j].addEventListener("click", function () {
-        open(this.getAttribute("data-quick-view"));
       });
     }
   }
@@ -541,55 +374,6 @@
 
     goTo(0);
     start();
-  }
-
-  function wireBanner() {
-    var banner = document.querySelector("[data-banner]");
-    if (!banner) return;
-    var close = document.querySelector("[data-banner-close]");
-    var out = document.querySelector("[data-countdown]");
-    if (window.localStorage && window.localStorage.getItem("rlw_banner_dismissed") === "1") {
-      banner.style.display = "none";
-      return;
-    }
-    if (close) {
-      close.addEventListener("click", function () {
-        banner.style.display = "none";
-        try {
-          window.localStorage.setItem("rlw_banner_dismissed", "1");
-        } catch (e) {}
-        track("banner_dismiss");
-      });
-    }
-
-    // 48h countdown from first view
-    var endMs = 0;
-    try {
-      var stored = window.localStorage.getItem("rlw_offer_end_ms");
-      if (stored) endMs = Number(stored);
-      if (!endMs || !Number.isFinite(endMs)) {
-        endMs = Date.now() + 48 * 60 * 60 * 1000;
-        window.localStorage.setItem("rlw_offer_end_ms", String(endMs));
-      }
-    } catch (e) {
-      endMs = Date.now() + 48 * 60 * 60 * 1000;
-    }
-
-    function fmt(ms) {
-      var s = Math.max(0, Math.floor(ms / 1000));
-      var h = String(Math.floor(s / 3600)).padStart(2, "0");
-      var m = String(Math.floor((s % 3600) / 60)).padStart(2, "0");
-      var ss = String(s % 60).padStart(2, "0");
-      return h + ":" + m + ":" + ss;
-    }
-
-    function tick() {
-      if (!out) return;
-      var left = endMs - Date.now();
-      out.textContent = fmt(left);
-    }
-    tick();
-    window.setInterval(tick, 1000);
   }
 
   function wireQuiz() {
@@ -754,18 +538,13 @@
     wireMobileNav();
     wireHeaderShrink();
     wireActiveNav();
-    wireScrollProgress();
     wireScrollTop();
     wireReveal();
     wireHeroParallax();
     wireTyping();
     wireMediaSkeletons();
-    wireQty();
-    wireCartPreview();
     wireAddToCartPlaceholders();
-    wireQuickView();
     wireCarousel();
-    wireBanner();
     wireQuiz();
     wireImpact();
     wireLeadCapture();
