@@ -25,10 +25,23 @@ npx serve .
 
 ## Project structure
 - `index.html`: Homepage
+- `products.html`: Products (Shopify-ready placeholders)
 - `css/styles.css`: Global styles
 - `js/main.js`: Core JavaScript
 - `images/`: Product and brand imagery
 - `assets/`: Icons, fonts, and other resources
+
+## Shopify integration (planned)
+This site includes placeholders for Shopify Buy Button integration:
+- `data-product-id="PRODUCT_ID"` placeholders in product sections
+- `data-add-to-cart` buttons (currently update the cart count locally for demo)
+- cart icon and count in the header
+
+When ready:
+- Add Shopify Buy SDK: `https://shopify.github.io/js-buy-sdk/`
+- Replace `PRODUCT_ID` values with real Shopify product IDs
+- Configure Shopify domain + Storefront API access token
+- Implement real cart state and checkout redirect
 
 ## Deployment
 This repository is structured for **GitHub Pages**:
