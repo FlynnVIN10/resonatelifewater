@@ -710,6 +710,14 @@ section[id] {
   color: var(--color-accent-600);
 }
 
+.product__badge--best {
+  left: auto;
+  right: 14px;
+  background: rgba(245, 158, 11, 0.18);
+  border-color: rgba(245, 158, 11, 0.30);
+  color: #7c2d12;
+}
+
 .product__badge--assist {
   background: rgba(153, 246, 228, 0.20);
   border-color: rgba(13, 148, 136, 0.14);
@@ -720,32 +728,93 @@ section[id] {
   margin: 0;
 }
 
-.product__price {
+.product--featured {
+  box-shadow: 0 22px 70px rgba(13, 148, 136, 0.14);
+  border-color: rgba(245, 158, 11, 0.22);
+}
+
+.product--plan {
+  display: flex;
+  flex-direction: column;
+}
+
+.product--plan .shopify-buy-button {
+  margin-top: 14px;
+}
+
+.product__detail {
   margin: 10px 0 0;
+  color: var(--color-text-light);
+  font-weight: 750;
+}
+
+.pricing {
+  margin-top: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  background:
+    radial-gradient(600px 240px at 30% 0%, rgba(45, 212, 191, 0.18), transparent 60%),
+    radial-gradient(600px 260px at 70% 30%, rgba(56, 189, 248, 0.14), transparent 60%),
+    rgba(255, 255, 255, 0.72);
+  padding: 12px 12px;
+}
+
+.pricing__label {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.30);
+  color: #7c2d12;
+  font-size: 11px;
   font-weight: 1000;
-  font-size: 22px;
-  letter-spacing: -0.02em;
-  color: var(--color-neutral-900);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 }
 
-.product__text {
+.pricing__original {
   margin: 10px 0 0;
-  color: var(--color-text-light);
-  font-weight: 650;
+  color: rgba(41, 37, 36, 0.55);
+  font-weight: 900;
+  text-decoration: line-through;
 }
 
-.product__benefits {
-  margin: var(--space-3) 0;
-  padding-left: 18px;
-  color: var(--color-text-light);
-  font-weight: 650;
+.pricing__current {
+  margin: 6px 0 0;
+  font-weight: 1100;
+  font-size: 34px;
+  letter-spacing: -0.02em;
+  color: var(--color-primary-700);
 }
 
-.product__subscribe {
-  margin: 12px 0 0;
+.pricing__note {
+  margin: 4px 0 0;
   color: rgba(13, 148, 136, 0.95);
   font-weight: 900;
   font-size: 13px;
+}
+
+.guarantee {
+  margin: var(--space-4) 0 0;
+  color: var(--color-primary-800);
+  font-weight: 1000;
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 .products__hint {

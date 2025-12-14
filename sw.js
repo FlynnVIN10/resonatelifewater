@@ -11,6 +11,7 @@ var CORE_ASSETS = [
   "./images/hero-waterfall.jpg",
   "./images/delivery-illustration.svg",
   "./images/product-kit.svg",
+  "./images/product-full.svg",
   "./images/product-refill.svg",
   "./images/lifestyle.svg"
 ];
