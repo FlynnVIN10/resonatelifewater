@@ -1,0 +1,19 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+core
+
+# Python (should not be in this repo)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
