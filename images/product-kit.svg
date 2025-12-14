@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="Resonate Probiotic Water Kit">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7cb342"/>
+      <stop offset="1" stop-color="#1f5f3f"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2fbf6"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <circle cx="720" cy="140" r="120" fill="#e2f4ea"/>
+
+  <g transform="translate(250 110)">
+    <rect x="0" y="40" width="260" height="360" rx="42" fill="#ffffff" stroke="#cfeedd" stroke-width="8"/>
+    <rect x="40" y="0" width="180" height="70" rx="24" fill="url(#g)"/>
+    <rect x="45" y="120" width="170" height="26" rx="13" fill="#e6f6ee"/>
+    <rect x="45" y="168" width="150" height="18" rx="9" fill="#d3efdf"/>
+    <rect x="45" y="204" width="130" height="18" rx="9" fill="#d3efdf"/>
+    <rect x="45" y="240" width="160" height="18" rx="9" fill="#d3efdf"/>
+    <path d="M130 96c-24 34-32 54-32 78 0 22 14 38 32 38s32-16 32-38c0-24-8-44-32-78Z" fill="#2d8659" opacity="0.9"/>
+  </g>
+
+  <text x="70" y="90" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="28" font-weight="900" fill="#1f5f3f">Probiotic Water Kit</text>
+  <text x="70" y="124" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="16" font-weight="600" fill="#2d8659">Placeholder product image (replace with photography)</text>
+</svg>

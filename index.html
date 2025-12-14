@@ -22,6 +22,18 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <div class="top-banner" role="region" aria-label="Promotion" data-banner>
+      <div class="container top-banner__inner">
+        <p class="top-banner__text">
+          Limited-time offer: free shipping over <strong>$75</strong>. Ends in
+          <strong><span data-countdown>00:00:00</span></strong>
+        </p>
+        <button class="top-banner__close" type="button" aria-label="Dismiss offer" data-banner-close>
+          ×
+        </button>
+      </div>
+    </div>
+
     <header class="site-header" role="banner">
       <div class="container site-header__inner">
         <a class="brand" href="./" aria-label="Resonate Life Water home">
@@ -35,17 +47,17 @@
         </button>
 
         <nav class="nav" aria-label="Primary" data-nav>
-          <a class="nav__link" href="#products">Products</a>
-          <a class="nav__link" href="#contact">Contact</a>
-          <a class="nav__link" href="#sponsor">Sponsor</a>
-          <a class="nav__link" href="#study">Study</a>
+          <a class="nav__link" href="#products" data-nav-link="products">Products</a>
+          <a class="nav__link" href="#contact" data-nav-link="contact">Contact</a>
+          <a class="nav__link" href="#sponsor" data-nav-link="sponsor">Sponsor</a>
+          <a class="nav__link" href="#study" data-nav-link="study">Study</a>
         </nav>
 
         <div class="header-actions">
           <a class="header-actions__link" href="#" aria-label="Log in">Log In</a>
 
           <div class="cart-icon">
-            <a href="./products.html#cart" id="shopify-cart-link" aria-label="Cart">
+            <a href="./products.html#cart" id="shopify-cart-link" aria-label="Cart" data-cart-toggle>
               <svg
                 class="cart-icon__svg"
                 width="22"
@@ -72,6 +84,23 @@
               </svg>
               <span class="cart-count" data-cart-count aria-label="Items in cart">0</span>
             </a>
+
+            <div class="cart-preview" role="dialog" aria-label="Cart preview" aria-modal="false" data-cart-preview>
+              <p class="cart-preview__title">Cart</p>
+              <div class="cart-preview__items" data-cart-items>
+                <p class="cart-preview__empty">Your cart is empty.</p>
+              </div>
+              <div class="cart-preview__footer">
+                <div class="cart-preview__row">
+                  <span>Promo code</span>
+                  <input class="cart-preview__input" aria-label="Promo code" placeholder="SAVE10" />
+                </div>
+                <a class="btn btn--primary btn--shop cart-preview__checkout" href="./products.html#cart"
+                  >Checkout</a
+                >
+                <p class="cart-preview__note">Checkout is a placeholder until Shopify is connected.</p>
+              </div>
+            </div>
           </div>
 
           <a class="btn btn--primary btn--shop" href="./products.html">Shop Now</a>
@@ -92,7 +121,11 @@
         <div class="container hero__grid">
           <div class="hero__content">
             <p class="eyebrow">Inspired by nature’s purest probiotics</p>
-            <h1 class="hero__title">The delivery method changes everything.</h1>
+            <h1 class="hero__title">
+              <span class="typing" data-typing data-text="The delivery method changes everything."
+                >The delivery method changes everything.</span
+              >
+            </h1>
             <p class="hero__subtitle">
               Resonate Life Water is a probiotic water delivery system designed to support wellness
               with nature-inspired ingredients and an eco-friendly approach.
@@ -110,7 +143,13 @@
         </div>
       </section>
 
-      <section id="delivery" class="section" aria-label="The Delivery Method Changes Everything">
+      <section
+        id="delivery"
+        class="section"
+        aria-label="The Delivery Method Changes Everything"
+        data-section="delivery"
+        data-reveal
+      >
         <div class="container">
           <div class="split">
             <div class="split__content">
@@ -128,12 +167,27 @@
               </ul>
               <a class="btn btn--secondary" href="#protocol">View the protocol</a>
             </div>
-            <div class="split__media" aria-hidden="true"></div>
+            <figure class="split__media media" aria-label="Lifestyle image">
+              <div class="media__skeleton" aria-hidden="true"></div>
+              <img
+                class="media__img"
+                src="./images/lifestyle.svg"
+                alt="Nature-inspired wellness lifestyle"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
           </div>
         </div>
       </section>
 
-      <section id="nature" class="section section--alt" aria-label="Connect with Nature">
+      <section
+        id="nature"
+        class="section section--alt"
+        aria-label="Connect with Nature"
+        data-section="nature"
+        data-reveal
+      >
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">Connect with nature</h2>
@@ -160,7 +214,7 @@
         </div>
       </section>
 
-      <section id="products" class="section" aria-label="Products">
+      <section id="products" class="section" aria-label="Products" data-section="products" data-reveal>
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">Products</h2>
@@ -172,33 +226,79 @@
 
           <div class="products">
             <article class="product">
+              <div class="product__media media">
+                <div class="media__skeleton" aria-hidden="true"></div>
+                <img
+                  class="media__img"
+                  src="./images/product-kit.svg"
+                  alt="Resonate Probiotic Water Kit"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <h3 class="product__title">Resonate Probiotic Water Kit</h3>
               <p class="product__text">
                 A starter kit built around a simple daily protocol—clean, consistent, and easy to
                 integrate.
               </p>
+              <p class="product__price"><strong>$—</strong> <span class="product__badge">In Stock</span></p>
               <ul class="list">
                 <li>Daily-use protocol</li>
                 <li>Designed for convenience</li>
                 <li>Nature-forward focus</li>
               </ul>
-              <div class="shopify-buy-button" data-product-id="PRODUCT_ID">
-                <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
+              <div class="product__actions">
+                <div class="qty" aria-label="Quantity selector">
+                  <button class="qty__btn" type="button" data-qty-minus aria-label="Decrease quantity">
+                    −
+                  </button>
+                  <input class="qty__input" type="number" min="1" value="1" inputmode="numeric" aria-label="Quantity" />
+                  <button class="qty__btn" type="button" data-qty-plus aria-label="Increase quantity">
+                    +
+                  </button>
+                </div>
+                <div class="shopify-buy-button" data-product-id="PRODUCT_ID" data-product-name="Resonate Probiotic Water Kit">
+                  <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
+                </div>
+                <button class="btn btn--secondary" type="button" data-quick-view="kit">Quick View</button>
               </div>
             </article>
 
             <article class="product">
+              <div class="product__media media">
+                <div class="media__skeleton" aria-hidden="true"></div>
+                <img
+                  class="media__img"
+                  src="./images/product-refill.svg"
+                  alt="Monthly Wellness Refill"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <h3 class="product__title">Monthly Wellness Refill</h3>
               <p class="product__text">
                 Stay consistent with a refill option that keeps the routine simple month to month.
               </p>
+              <p class="product__price"><strong>$—</strong> <span class="product__badge product__badge--low">Low Stock</span></p>
               <ul class="list">
                 <li>Easy replenishment</li>
                 <li>Supports routine</li>
                 <li>Clean, straightforward</li>
               </ul>
-              <div class="shopify-buy-button" data-product-id="PRODUCT_ID">
-                <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
+              <div class="product__actions">
+                <div class="qty" aria-label="Quantity selector">
+                  <button class="qty__btn" type="button" data-qty-minus aria-label="Decrease quantity">
+                    −
+                  </button>
+                  <input class="qty__input" type="number" min="1" value="1" inputmode="numeric" aria-label="Quantity" />
+                  <button class="qty__btn" type="button" data-qty-plus aria-label="Increase quantity">
+                    +
+                  </button>
+                </div>
+                <div class="shopify-buy-button" data-product-id="PRODUCT_ID" data-product-name="Monthly Wellness Refill">
+                  <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
+                </div>
+                <button class="btn btn--secondary" type="button" data-quick-view="refill">Quick View</button>
               </div>
             </article>
 
@@ -218,7 +318,7 @@
         </div>
       </section>
 
-      <section id="benefits" class="section section--alt" aria-label="Value propositions">
+      <section id="benefits" class="section section--alt" aria-label="Value propositions" data-section="benefits" data-reveal>
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">Why Resonate</h2>
@@ -245,7 +345,13 @@
         </div>
       </section>
 
-      <section id="protocol" class="section protocol" aria-label="Resonate Life Water Treatment Protocol">
+      <section
+        id="protocol"
+        class="section protocol"
+        aria-label="Resonate Life Water Treatment Protocol"
+        data-section="protocol"
+        data-reveal
+      >
         <div class="container protocol__inner">
           <header class="section__header">
             <h2 class="section__title">Resonate Life Water Treatment Protocol</h2>
@@ -273,7 +379,72 @@
         </div>
       </section>
 
-      <section id="study" class="section" aria-label="Study">
+      <section id="testimonials" class="section section--alt" aria-label="Testimonials" data-section="testimonials" data-reveal>
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Real results, real routines</h2>
+            <p class="section__subtitle">Placeholder reviews—swap with verified testimonials.</p>
+          </header>
+
+          <div class="carousel" aria-label="Testimonials carousel" data-carousel>
+            <div class="carousel__viewport" data-carousel-viewport>
+              <article class="testimonial carousel__slide" data-carousel-slide>
+                <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="testimonial__text">
+                  “The protocol is so easy. It became my morning ritual within a week.”
+                </p>
+                <div class="testimonial__person">
+                  <img class="testimonial__avatar" src="./images/avatar-a.svg" alt="" loading="lazy" decoding="async" />
+                  <div>
+                    <p class="testimonial__name">Avery M.</p>
+                    <p class="testimonial__meta">Verified customer</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonial carousel__slide" data-carousel-slide>
+                <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="testimonial__text">
+                  “I love the nature-forward ingredients. It feels premium and clean.”
+                </p>
+                <div class="testimonial__person">
+                  <img class="testimonial__avatar" src="./images/avatar-j.svg" alt="" loading="lazy" decoding="async" />
+                  <div>
+                    <p class="testimonial__name">Jordan K.</p>
+                    <p class="testimonial__meta">Verified customer</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonial carousel__slide" data-carousel-slide>
+                <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="testimonial__text">
+                  “Simple, consistent, and it fits our family routine. Highly recommend.”
+                </p>
+                <div class="testimonial__person">
+                  <img class="testimonial__avatar" src="./images/avatar-s.svg" alt="" loading="lazy" decoding="async" />
+                  <div>
+                    <p class="testimonial__name">Sam R.</p>
+                    <p class="testimonial__meta">Verified customer</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel__controls">
+              <button class="btn btn--secondary" type="button" data-carousel-prev aria-label="Previous testimonial">
+                Prev
+              </button>
+              <div class="carousel__dots" aria-label="Carousel pagination" data-carousel-dots></div>
+              <button class="btn btn--secondary" type="button" data-carousel-next aria-label="Next testimonial">
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="study" class="section" aria-label="Study" data-section="study" data-reveal>
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">Study</h2>
@@ -299,7 +470,100 @@
         </div>
       </section>
 
-      <section id="sponsor" class="section section--alt" aria-label="Sponsor">
+      <section id="quiz" class="section" aria-label="Find your perfect water" data-section="quiz" data-reveal>
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Find your perfect water</h2>
+            <p class="section__subtitle">
+              A quick 60-second quiz to recommend a routine (placeholder logic, high-conversion UX).
+            </p>
+          </header>
+
+          <form class="quiz" aria-label="Water quiz" data-quiz>
+            <fieldset class="quiz__group">
+              <legend class="quiz__legend">What’s your primary goal?</legend>
+              <label class="quiz__option">
+                <input type="radio" name="goal" value="energy" required /> Energy & daily vitality
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="goal" value="gut" required /> Gut health support
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="goal" value="balance" required /> Overall balance
+              </label>
+            </fieldset>
+
+            <fieldset class="quiz__group">
+              <legend class="quiz__legend">How consistent is your routine today?</legend>
+              <label class="quiz__option"><input type="radio" name="routine" value="new" required /> New habit</label>
+              <label class="quiz__option"><input type="radio" name="routine" value="some" required /> Somewhat consistent</label>
+              <label class="quiz__option"><input type="radio" name="routine" value="solid" required /> Very consistent</label>
+            </fieldset>
+
+            <fieldset class="quiz__group">
+              <legend class="quiz__legend">Preferred format</legend>
+              <label class="quiz__option"><input type="radio" name="format" value="kit" required /> Starter kit</label>
+              <label class="quiz__option"><input type="radio" name="format" value="refill" required /> Monthly refill</label>
+            </fieldset>
+
+            <div class="quiz__actions">
+              <button class="btn btn--primary btn--shop" type="submit">Get recommendation</button>
+              <p class="quiz__note">Optional: enter email to save your results.</p>
+              <label class="field">
+                <span class="field__label">Email (optional)</span>
+                <input class="field__input" name="email" type="email" autocomplete="email" />
+              </label>
+            </div>
+
+            <div class="quiz__result" aria-live="polite" data-quiz-result hidden></div>
+          </form>
+        </div>
+      </section>
+
+      <section
+        id="impact"
+        class="section section--alt"
+        aria-label="Sustainability tracker"
+        data-section="impact"
+        data-reveal
+      >
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Sustainability tracker</h2>
+            <p class="section__subtitle">
+              Live impact visuals (placeholder numbers). Tie this to real metrics later.
+            </p>
+          </header>
+
+          <div class="impact">
+            <div class="impact__card">
+              <p class="impact__number"><span data-bottles-saved>12,480</span></p>
+              <p class="impact__label">Plastic bottles saved</p>
+            </div>
+            <div class="impact__card">
+              <p class="impact__number"><span data-co2-saved>3.2</span> tons</p>
+              <p class="impact__label">Estimated CO₂ reduced</p>
+            </div>
+            <div class="impact__card">
+              <p class="impact__number"><span data-trees-equiv>148</span></p>
+              <p class="impact__label">Trees equivalent</p>
+            </div>
+          </div>
+
+          <div class="impact__controls">
+            <label class="field">
+              <span class="field__label">Households using Resonate</span>
+              <input class="field__input" type="number" min="1" value="250" inputmode="numeric" data-impact-households />
+            </label>
+            <label class="field">
+              <span class="field__label">Bottles avoided per household / month</span>
+              <input class="field__input" type="number" min="1" value="24" inputmode="numeric" data-impact-rate />
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section id="sponsor" class="section section--alt" aria-label="Sponsor" data-section="sponsor" data-reveal>
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">Sponsor</h2>
@@ -311,7 +575,7 @@
         </div>
       </section>
 
-      <section id="contact" class="section section--alt" aria-label="Contact">
+      <section id="contact" class="section section--alt" aria-label="Contact" data-section="contact" data-reveal>
         <div class="container contact">
           <div class="contact__content">
             <h2 class="section__title">Contact</h2>
@@ -364,6 +628,13 @@
     <footer class="site-footer" role="contentinfo">
       <div class="container site-footer__inner">
         <p class="site-footer__brand">© <span id="year"></span> Resonate Life Water</p>
+        <form class="footer-signup" aria-label="Newsletter signup" data-footer-signup>
+          <label class="footer-signup__label">
+            <span class="footer-signup__text">Newsletter</span>
+            <input class="footer-signup__input" type="email" name="email" placeholder="Email address" autocomplete="email" />
+          </label>
+          <button class="btn btn--primary" type="submit">Sign up</button>
+        </form>
         <nav class="footer-nav" aria-label="Social links">
           <a class="footer-nav__link" href="#" rel="noopener noreferrer">Facebook</a>
           <a class="footer-nav__link" href="#" rel="noopener noreferrer">Instagram</a>
@@ -371,6 +642,37 @@
         </nav>
       </div>
     </footer>
+
+    <button class="scroll-top" type="button" aria-label="Scroll to top" data-scroll-top hidden>↑</button>
+
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Quick view" data-modal hidden>
+      <div class="modal__backdrop" data-modal-close aria-hidden="true"></div>
+      <div class="modal__panel" role="document">
+        <button class="modal__close" type="button" aria-label="Close" data-modal-close>×</button>
+        <div class="modal__content" data-modal-content></div>
+      </div>
+    </div>
+
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Email signup" data-lead-modal hidden>
+      <div class="modal__backdrop" data-lead-close aria-hidden="true"></div>
+      <div class="modal__panel" role="document">
+        <button class="modal__close" type="button" aria-label="Close" data-lead-close>×</button>
+        <h2 class="section__title">Get 10% off your first order</h2>
+        <p class="section__subtitle">Join the list for product updates, protocol tips, and wellness education.</p>
+        <form class="lead-form" aria-label="Lead capture" data-lead-form>
+          <label class="field">
+            <span class="field__label">Email</span>
+            <input class="field__input" type="email" name="email" autocomplete="email" required />
+          </label>
+          <label class="field">
+            <span class="field__label">SMS (optional)</span>
+            <input class="field__input" type="tel" name="phone" autocomplete="tel" placeholder="(555) 123-4567" />
+          </label>
+          <button class="btn btn--primary btn--shop" type="submit">Send my code</button>
+          <p class="form__note">This is a placeholder flow until ESP/SMS tools are connected.</p>
+        </form>
+      </div>
+    </div>
 
     <script src="./js/main.js" defer></script>
   </body>

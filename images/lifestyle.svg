@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="Nature wellness scene">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9f7ef"/>
+      <stop offset="1" stop-color="#f6fff9"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7cb342"/>
+      <stop offset="1" stop-color="#1f5f3f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#bg)"/>
+
+  <circle cx="710" cy="130" r="90" fill="#d8f1e2"/>
+  <circle cx="760" cy="170" r="55" fill="#cbead7"/>
+
+  <path d="M120 470c120-180 230-240 360-220 120 20 190 90 300 210v60H120v-50Z" fill="#dff4e7"/>
+  <path d="M140 500c90-120 180-170 300-165 120 5 220 70 340 165v40H140v-40Z" fill="#cfeedd" opacity="0.85"/>
+
+  <g transform="translate(120 140)">
+    <path d="M180 290c70-30 120-80 150-150 18-43 16-86 6-130-60 5-115 28-155 70-50 52-70 126-48 210Z" fill="url(#leaf)"/>
+    <path d="M245 75c-42 52-80 104-100 160" fill="none" stroke="#ffffff" stroke-opacity="0.65" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(560 240)">
+    <rect x="0" y="0" width="220" height="300" rx="28" fill="#ffffff" opacity="0.9"/>
+    <rect x="28" y="28" width="164" height="164" rx="24" fill="#eef9f2"/>
+    <path d="M110 64c-24 34-32 54-32 78 0 22 14 38 32 38s32-16 32-38c0-24-8-44-32-78Z" fill="#2d8659" opacity="0.9"/>
+    <rect x="48" y="214" width="124" height="18" rx="9" fill="#d9f0e3"/>
+    <rect x="62" y="244" width="96" height="12" rx="6" fill="#c7e8d5"/>
+  </g>
+
+  <text x="70" y="90" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="28" font-weight="800" fill="#1f5f3f">Nature-inspired wellness</text>
+  <text x="70" y="124" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="16" font-weight="600" fill="#2d8659">Placeholder lifestyle imagery (replace with photography)</text>
+</svg>
