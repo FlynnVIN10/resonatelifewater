@@ -1,39 +1,52 @@
-# Resonate Life Water Public Website
+# Resonate Life Water
 
-Professional public-facing website for **Resonate Life Water**.
+**Clean Water for Life & Wellness**
 
-## Overview
-This site is a fast, accessible, mobile-first static website designed to:
-- Showcase Resonate Life Water products and benefits
-- Communicate the brand story, mission, and trust signals
-- Provide clear calls to action and contact information
+🌊 Visit our website: [flynnvin10.github.io/resonatelifewater](https://flynnvin10.github.io/resonatelifewater/)
 
-## Tech stack
-- **HTML5** (semantic markup)
-- **CSS3** (responsive layout with Flexbox/Grid)
-- **Vanilla JavaScript** (small enhancements only)
+---
 
-## Local development
-Open `index.html` directly in a browser, or serve the folder locally.
+## About Resonate Life Water
 
-Example (Python not required):
+Resonate Life Water is committed to delivering health-focused water solutions that support families and communities in accessing clean, great-tasting water for life and wellness.
 
-```bash
-# If you have node installed
-npx serve .
-```
+### Our Mission
 
-## Project structure
-- `index.html`: Homepage
-- `css/styles.css`: Global styles
-- `js/main.js`: Core JavaScript
-- `images/`: Product and brand imagery
-- `assets/`: Icons, fonts, and other resources
+To help families and communities access clean, great-tasting water that supports health and peace of mind.
 
-## Deployment
-This repository is structured for **GitHub Pages**:
-- `index.html` is in the repository root
-- Assets use **relative paths**
+### Our Values
 
-## License
-MIT — see `LICENSE`.
+**🌿 Wellness-first**: Designed to support everyday hydration with clean water you can trust.
+
+**⚡ Quality-driven**: Built with reliable components and a focus on performance and durability.
+
+**🤝 Service-minded**: Clear guidance, straightforward next steps, and support from start to finish.
+
+---
+
+## What We Offer
+
+- **Premium Water Filtration Systems**: Modern filtration technology for your home
+- **Health-Focused Solutions**: Water that supports your family's wellness goals  
+- **Trusted Quality**: Reliable, durable products built to last
+- **Expert Support**: Guidance and assistance every step of the way
+
+---
+
+## Get In Touch
+
+📧 **Contact**: [Contact form on website](https://flynnvin10.github.io/resonatelifewater/#contact)
+
+🌐 **Website**: [flynnvin10.github.io/resonatelifewater](https://flynnvin10.github.io/resonatelifewater/)
+
+---
+
+## Repository Information
+
+This repository hosts the source code for the Resonate Life Water public website.
+
+**Live Site**: [flynnvin10.github.io/resonatelifewater](https://flynnvin10.github.io/resonatelifewater/)
+
+**Technology**: Static website built with HTML5, CSS3, and JavaScript
+
+**License**: MIT — see `LICENSE`
