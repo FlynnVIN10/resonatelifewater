@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Products | Resonate Life Water</title>
+    <meta
+      name="description"
+      content="Shop Resonate Life Water products. Shopify integration placeholders are included for buy buttons and cart." 
+    />
+    <meta name="theme-color" content="#2d8659" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a class="brand" href="./" aria-label="Resonate Life Water home">
+          <img src="./images/logo.svg" alt="Resonate Life Water" class="brand__logo" />
+        </a>
+
+        <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+          <span class="menu-btn__bar" aria-hidden="true"></span>
+          <span class="menu-btn__bar" aria-hidden="true"></span>
+          <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav" aria-label="Primary" data-nav>
+          <a class="nav__link" href="./#products">Products</a>
+          <a class="nav__link" href="./#contact">Contact</a>
+          <a class="nav__link" href="./#sponsor">Sponsor</a>
+          <a class="nav__link" href="./#study">Study</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="header-actions__link" href="#" aria-label="Log in">Log In</a>
+
+          <div class="cart-icon">
+            <a href="#cart" id="shopify-cart-link" aria-label="Cart">
+              <svg
+                class="cart-icon__svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6.5 6.5h15l-1.5 8.5H8L6.5 6.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.5 6.5 5.8 3.8H3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="9" cy="19.5" r="1.5" fill="currentColor" />
+                <circle cx="18" cy="19.5" r="1.5" fill="currentColor" />
+              </svg>
+              <span class="cart-count" data-cart-count aria-label="Items in cart">0</span>
+            </a>
+          </div>
+
+          <a class="btn btn--primary btn--shop" href="./products.html">Shop Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <!-- SHOPIFY INTEGRATION NOTES:
+           - Replace PRODUCT_ID with actual Shopify product IDs
+           - Add Shopify Buy SDK: https://shopify.github.io/js-buy-sdk/
+           - Configure Shopify domain and API keys
+           - Enable cart functionality
+           - Set up checkout redirect to Shopify
+      -->
+
+      <section class="section" aria-label="Products">
+        <div class="container">
+          <header class="section__header">
+            <h1 class="section__title">Products</h1>
+            <p class="section__subtitle">
+              This page is Shopify-ready: buttons and cart UI are placeholders to be wired to the
+              Shopify Buy SDK.
+            </p>
+          </header>
+
+          <div class="products">
+            <article class="product">
+              <h2 class="product__title">Resonate Probiotic Water Kit</h2>
+              <p class="product__text">Starter kit for the daily protocol.</p>
+              <p class="product__text"><strong>Price:</strong> $— (placeholder)</p>
+              <div class="shopify-buy-button" data-product-id="PRODUCT_ID">
+                <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product">
+              <h2 class="product__title">Monthly Wellness Refill</h2>
+              <p class="product__text">Refills designed to keep your routine consistent.</p>
+              <p class="product__text"><strong>Price:</strong> $— (placeholder)</p>
+              <div class="shopify-buy-button" data-product-id="PRODUCT_ID">
+                <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product">
+              <h2 class="product__title">Protocol Support</h2>
+              <p class="product__text">Guidance and support (non-ecommerce placeholder).</p>
+              <a class="btn btn--secondary" href="./#contact">Contact us</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cart" class="section section--alt" aria-label="Cart">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Cart (placeholder)</h2>
+            <p class="section__subtitle">
+              Cart count updates locally for demo only. Shopify integration will replace this section.
+            </p>
+          </header>
+
+          <p>
+            Items in cart: <strong><span data-cart-count>0</span></strong>
+          </p>
+
+          <a class="btn btn--primary btn--shop" href="#">Checkout (placeholder)</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container site-footer__inner">
+        <p class="site-footer__brand">© <span id="year"></span> Resonate Life Water</p>
+        <nav class="footer-nav" aria-label="Social links">
+          <a class="footer-nav__link" href="#" rel="noopener noreferrer">Facebook</a>
+          <a class="footer-nav__link" href="#" rel="noopener noreferrer">Instagram</a>
+          <a class="footer-nav__link" href="#" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

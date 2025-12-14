@@ -1,52 +1,49 @@
-# Resonate Life Water
+# Resonate Life Water Public Website
 
-**Clean Water for Life & Wellness**
+Source code for the **Resonate Life Water** public-facing website.
 
-🌊 Visit our website: [flynnvin10.github.io/resonatelifewater](https://flynnvin10.github.io/resonatelifewater/)
+## Live site
+`https://flynnvin10.github.io/resonatelifewater/`
 
----
-
-## About Resonate Life Water
-
+## About
 Resonate Life Water is committed to delivering health-focused water solutions that support families and communities in accessing clean, great-tasting water for life and wellness.
 
-### Our Mission
-
+## Mission
 To help families and communities access clean, great-tasting water that supports health and peace of mind.
 
-### Our Values
+## Values
+- **Wellness-first**: Designed to support everyday hydration with clean water you can trust.
+- **Quality-driven**: Built with reliable components and a focus on performance and durability.
+- **Service-minded**: Clear guidance, straightforward next steps, and support from start to finish.
 
-**🌿 Wellness-first**: Designed to support everyday hydration with clean water you can trust.
+## Tech stack
+- **HTML5**
+- **CSS3**
+- **Vanilla JavaScript**
 
-**⚡ Quality-driven**: Built with reliable components and a focus on performance and durability.
+## Project structure
+- `index.html`: Homepage
+- `products.html`: Products (Shopify-ready placeholders)
+- `css/styles.css`: Global styles
+- `js/main.js`: Core JavaScript
+- `images/`: Product and brand imagery
+- `assets/`: Icons, fonts, and other resources
 
-**🤝 Service-minded**: Clear guidance, straightforward next steps, and support from start to finish.
+## Shopify integration (planned)
+This site includes placeholders for Shopify Buy Button integration:
+- `data-product-id="PRODUCT_ID"` placeholders in product sections
+- `data-add-to-cart` buttons (currently update the cart count locally for demo)
+- Cart icon and count in the header
 
----
+When ready:
+- Add Shopify Buy SDK: `https://shopify.github.io/js-buy-sdk/`
+- Replace `PRODUCT_ID` values with real Shopify product IDs
+- Configure Shopify domain + Storefront API access token
+- Implement real cart state and checkout redirect
 
-## What We Offer
+## Deployment (GitHub Pages)
+- `index.html` is in the repository root
+- All assets use **relative paths**
 
-- **Premium Water Filtration Systems**: Modern filtration technology for your home
-- **Health-Focused Solutions**: Water that supports your family's wellness goals  
-- **Trusted Quality**: Reliable, durable products built to last
-- **Expert Support**: Guidance and assistance every step of the way
-
----
-
-## Get In Touch
-
-📧 **Contact**: [Contact form on website](https://flynnvin10.github.io/resonatelifewater/#contact)
-
-🌐 **Website**: [flynnvin10.github.io/resonatelifewater](https://flynnvin10.github.io/resonatelifewater/)
-
----
-
-## Repository Information
-
-This repository hosts the source code for the Resonate Life Water public website.
-
-**Live Site**: [flynnvin10.github.io/resonatelifewater](https://flynnvin10.github.io/resonatelifewater/)
-
-**Technology**: Static website built with HTML5, CSS3, and JavaScript
-
-**License**: MIT — see `LICENSE`
+## License
+MIT — see `LICENSE`.
