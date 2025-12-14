@@ -9,6 +9,7 @@ var CORE_ASSETS = [
   "./js/main.js",
   "./images/logo.svg",
   "./images/hero-waterfall.jpg",
+  "./images/delivery-illustration.svg",
   "./images/product-kit.svg",
   "./images/product-refill.svg",
   "./images/lifestyle.svg",

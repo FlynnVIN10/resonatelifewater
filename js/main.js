@@ -182,6 +182,22 @@
     update();
   }
 
+  function wireScrollProgress() {
+    var bar = document.querySelector("[data-progress-bar]");
+    if (!bar) return;
+
+    function update() {
+      var doc = document.documentElement;
+      var max = doc.scrollHeight - doc.clientHeight;
+      var pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+      bar.style.width = Math.min(100, Math.max(0, pct)) + "%";
+    }
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+  }
+
   function wireTyping() {
     if (!FLAGS.typing || prefersReducedMotion()) return;
     var el = document.querySelector("[data-typing]");
@@ -738,6 +754,7 @@
     wireMobileNav();
     wireHeaderShrink();
     wireActiveNav();
+    wireScrollProgress();
     wireScrollTop();
     wireReveal();
     wireHeroParallax();
