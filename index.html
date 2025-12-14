@@ -38,7 +38,6 @@
           <a class="nav__link" href="#products" data-nav-link="products">Products</a>
           <a class="nav__link" href="#contact" data-nav-link="contact">Contact</a>
           <a class="nav__link" href="#sponsor" data-nav-link="sponsor">Sponsor</a>
-          <a class="nav__link" href="#study" data-nav-link="study">Study</a>
         </nav>
 
         <div class="header-actions">
@@ -192,13 +191,13 @@
           <header class="section__header">
             <h2 class="section__title">Products</h2>
             <p class="section__subtitle">
-              Probiotic water delivery designed for daily use. (Placeholder names/prices—replace with
-              final catalog.)
+              Choose a premium daily routine—built for consistency, simplicity, and a clean biotech feel.
             </p>
           </header>
 
           <div class="products">
-            <article class="product">
+            <article class="product product--popular">
+              <div class="product__badge" aria-label="Popular">Popular</div>
               <div class="product__media media">
                 <div class="media__skeleton" aria-hidden="true"></div>
                 <img
@@ -210,21 +209,23 @@
                 />
               </div>
               <h3 class="product__title">Resonate Probiotic Water Kit</h3>
+              <p class="product__price">$49.99</p>
               <p class="product__text">
-                A starter kit built around a simple daily protocol—clean, consistent, and easy to
-                integrate.
+                Complete starter kit with everything you need to start your daily probiotic water routine.
               </p>
-              <ul class="list">
-                <li>Daily-use protocol</li>
-                <li>Designed for convenience</li>
-                <li>Nature-forward focus</li>
+              <ul class="product__benefits">
+                <li>30-day supply</li>
+                <li>Daily protocol guide</li>
+                <li>Premium bottle included</li>
               </ul>
               <div class="shopify-buy-button" data-product-id="PRODUCT_ID" data-product-name="Resonate Probiotic Water Kit">
                 <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
               </div>
+              <p class="product__subscribe">Save 15% with subscription (coming soon)</p>
             </article>
 
-            <article class="product">
+            <article class="product product--new">
+              <div class="product__badge product__badge--new" aria-label="New">New</div>
               <div class="product__media media">
                 <div class="media__skeleton" aria-hidden="true"></div>
                 <img
@@ -236,25 +237,29 @@
                 />
               </div>
               <h3 class="product__title">Monthly Wellness Refill</h3>
+              <p class="product__price">$34.99</p>
               <p class="product__text">
-                Stay consistent with a refill option that keeps the routine simple month to month.
+                Keep your routine consistent with a monthly refill designed for effortless adherence.
               </p>
-              <ul class="list">
-                <li>Easy replenishment</li>
-                <li>Supports routine</li>
-                <li>Clean, straightforward</li>
+              <ul class="product__benefits">
+                <li>30-day refill supply</li>
+                <li>Auto-renew option (coming soon)</li>
+                <li>Priority support</li>
               </ul>
               <div class="shopify-buy-button" data-product-id="PRODUCT_ID" data-product-name="Monthly Wellness Refill">
                 <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
               </div>
+              <p class="product__subscribe">Subscribe &amp; save (coming soon)</p>
             </article>
 
-            <article class="product">
+            <article class="product product--wide">
+              <div class="product__badge product__badge--assist" aria-label="Support">Support</div>
               <h3 class="product__title">Consultation & Protocol Support</h3>
+              <p class="product__price">Free</p>
               <p class="product__text">
-                Get help choosing the right approach and understanding the protocol for your goals.
+                Get help choosing the right routine and understanding the protocol for your goals.
               </p>
-              <ul class="list">
+              <ul class="product__benefits">
                 <li>Personalized guidance</li>
                 <li>Clear next steps</li>
                 <li>Support-focused</li>
@@ -262,6 +267,10 @@
               <a class="btn btn--secondary" href="#contact">Contact us</a>
             </article>
           </div>
+
+          <p class="products__hint">
+            Not sure what to choose? <a href="#quiz">Take the 60-second quiz</a>.
+          </p>
         </div>
       </section>
 
@@ -323,97 +332,6 @@
           </ol>
 
           <a class="btn btn--ghost" href="#contact">Questions? Contact us</a>
-        </div>
-      </section>
-
-      <section id="testimonials" class="section section--alt" aria-label="Testimonials" data-section="testimonials" data-reveal>
-        <div class="container">
-          <header class="section__header">
-            <h2 class="section__title">Real results, real routines</h2>
-            <p class="section__subtitle">Placeholder reviews—swap with verified testimonials.</p>
-          </header>
-
-          <div class="carousel" aria-label="Testimonials carousel" data-carousel>
-            <div class="carousel__viewport" data-carousel-viewport>
-              <article class="testimonial carousel__slide" data-carousel-slide>
-                <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
-                <p class="testimonial__text">
-                  “The protocol is so easy. It became my morning ritual within a week.”
-                </p>
-                <div class="testimonial__person">
-                  <img class="testimonial__avatar" src="./images/avatar-a.svg" alt="" loading="lazy" decoding="async" />
-                  <div>
-                    <p class="testimonial__name">Avery M.</p>
-                    <p class="testimonial__meta">Verified customer</p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="testimonial carousel__slide" data-carousel-slide>
-                <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
-                <p class="testimonial__text">
-                  “I love the nature-forward ingredients. It feels premium and clean.”
-                </p>
-                <div class="testimonial__person">
-                  <img class="testimonial__avatar" src="./images/avatar-j.svg" alt="" loading="lazy" decoding="async" />
-                  <div>
-                    <p class="testimonial__name">Jordan K.</p>
-                    <p class="testimonial__meta">Verified customer</p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="testimonial carousel__slide" data-carousel-slide>
-                <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
-                <p class="testimonial__text">
-                  “Simple, consistent, and it fits our family routine. Highly recommend.”
-                </p>
-                <div class="testimonial__person">
-                  <img class="testimonial__avatar" src="./images/avatar-s.svg" alt="" loading="lazy" decoding="async" />
-                  <div>
-                    <p class="testimonial__name">Sam R.</p>
-                    <p class="testimonial__meta">Verified customer</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="carousel__controls">
-              <button class="btn btn--secondary" type="button" data-carousel-prev aria-label="Previous testimonial">
-                Prev
-              </button>
-              <div class="carousel__dots" aria-label="Carousel pagination" data-carousel-dots></div>
-              <button class="btn btn--secondary" type="button" data-carousel-next aria-label="Next testimonial">
-                Next
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="study" class="section" aria-label="Study" data-section="study" data-reveal>
-        <div class="container">
-          <header class="section__header">
-            <h2 class="section__title">Study</h2>
-            <p class="section__subtitle">
-              Placeholder for research and science content. Add citations, summaries, and links here.
-            </p>
-          </header>
-
-          <div class="cards">
-            <article class="card">
-              <h3 class="card__title">Research overview</h3>
-              <p class="card__text">Summaries of relevant probiotic and wellness research.</p>
-            </article>
-            <article class="card">
-              <h3 class="card__title">Frequently asked questions</h3>
-              <p class="card__text">Clear explanations of how the protocol works.</p>
-            </article>
-            <article class="card">
-              <h3 class="card__title">Transparency</h3>
-              <p class="card__text">Ingredient sourcing and quality process (placeholder).</p>
-            </article>
-          </div>
         </div>
       </section>
 

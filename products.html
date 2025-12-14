@@ -37,7 +37,6 @@
           <a class="nav__link" href="./#products">Products</a>
           <a class="nav__link" href="./#contact">Contact</a>
           <a class="nav__link" href="./#sponsor">Sponsor</a>
-          <a class="nav__link" href="./#study">Study</a>
         </nav>
 
         <div class="header-actions">
@@ -98,7 +97,8 @@
           </header>
 
           <div class="products">
-            <article class="product">
+            <article class="product product--popular">
+              <div class="product__badge" aria-label="Popular">Popular</div>
               <div class="product__media media">
                 <div class="media__skeleton" aria-hidden="true"></div>
                 <img
@@ -110,14 +110,16 @@
                 />
               </div>
               <h2 class="product__title">Resonate Probiotic Water Kit</h2>
-              <p class="product__text">Starter kit for the daily protocol.</p>
-              <p class="product__text"><strong>Price:</strong> $— (placeholder)</p>
+              <p class="product__price">$49.99</p>
+              <p class="product__text">Complete starter kit for your daily probiotic water routine.</p>
               <div class="shopify-buy-button" data-product-id="PRODUCT_ID" data-product-name="Resonate Probiotic Water Kit">
                 <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
               </div>
+              <p class="product__subscribe">Save 15% with subscription (coming soon)</p>
             </article>
 
-            <article class="product">
+            <article class="product product--new">
+              <div class="product__badge product__badge--new" aria-label="New">New</div>
               <div class="product__media media">
                 <div class="media__skeleton" aria-hidden="true"></div>
                 <img
@@ -129,14 +131,16 @@
                 />
               </div>
               <h2 class="product__title">Monthly Wellness Refill</h2>
-              <p class="product__text">Refills designed to keep your routine consistent.</p>
-              <p class="product__text"><strong>Price:</strong> $— (placeholder)</p>
+              <p class="product__price">$34.99</p>
+              <p class="product__text">Monthly refill designed to keep your routine consistent.</p>
               <div class="shopify-buy-button" data-product-id="PRODUCT_ID" data-product-name="Monthly Wellness Refill">
                 <button class="btn btn--primary" type="button" data-add-to-cart>Add to Cart</button>
               </div>
+              <p class="product__subscribe">Subscribe &amp; save (coming soon)</p>
             </article>
 
-            <article class="product">
+            <article class="product product--wide">
+              <div class="product__badge product__badge--assist" aria-label="Support">Support</div>
               <h2 class="product__title">Protocol Support</h2>
               <p class="product__text">Guidance and support (non-ecommerce placeholder).</p>
               <a class="btn btn--secondary" href="./#contact">Contact us</a>

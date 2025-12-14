@@ -303,79 +303,6 @@
     }
   }
 
-  function wireCarousel() {
-    var root = document.querySelector("[data-carousel]");
-    if (!root) return;
-    var viewport = root.querySelector("[data-carousel-viewport]");
-    var slides = root.querySelectorAll("[data-carousel-slide]");
-    var dotsWrap = root.querySelector("[data-carousel-dots]");
-    var prev = root.querySelector("[data-carousel-prev]");
-    var next = root.querySelector("[data-carousel-next]");
-    if (!viewport || !slides.length || !dotsWrap || !prev || !next) return;
-
-    var index = 0;
-    var timer = null;
-
-    function goTo(i) {
-      index = (i + slides.length) % slides.length;
-      viewport.scrollTo({
-        left: viewport.clientWidth * index,
-        behavior: prefersReducedMotion() ? "auto" : "smooth"
-      });
-      var dots = dotsWrap.querySelectorAll(".carousel__dot");
-      for (var d = 0; d < dots.length; d += 1) {
-        if (d === index) dots[d].classList.add("is-active");
-        else dots[d].classList.remove("is-active");
-      }
-    }
-
-    function start() {
-      if (prefersReducedMotion()) return;
-      stop();
-      timer = window.setInterval(function () {
-        goTo(index + 1);
-      }, 6500);
-    }
-
-    function stop() {
-      if (timer) window.clearInterval(timer);
-      timer = null;
-    }
-
-    // Dots
-    var html = "";
-    for (var i = 0; i < slides.length; i += 1) {
-      html += '<button class="carousel__dot" type="button" aria-label="Go to slide ' + (i + 1) + '"></button>';
-    }
-    dotsWrap.innerHTML = html;
-    var dotsBtns = dotsWrap.querySelectorAll(".carousel__dot");
-    for (var j = 0; j < dotsBtns.length; j += 1) {
-      (function (idx) {
-        dotsBtns[idx].addEventListener("click", function () {
-          goTo(idx);
-          track("testimonial_nav", { index: idx });
-        });
-      })(j);
-    }
-
-    prev.addEventListener("click", function () {
-      goTo(index - 1);
-      track("testimonial_prev");
-    });
-    next.addEventListener("click", function () {
-      goTo(index + 1);
-      track("testimonial_next");
-    });
-
-    viewport.addEventListener("mouseenter", stop);
-    viewport.addEventListener("mouseleave", start);
-    root.addEventListener("focusin", stop);
-    root.addEventListener("focusout", start);
-
-    goTo(0);
-    start();
-  }
-
   function wireQuiz() {
     var form = document.querySelector("[data-quiz]");
     var result = document.querySelector("[data-quiz-result]");
@@ -544,7 +471,6 @@
     wireTyping();
     wireMediaSkeletons();
     wireAddToCartPlaceholders();
-    wireCarousel();
     wireQuiz();
     wireImpact();
     wireLeadCapture();

@@ -12,10 +12,7 @@ var CORE_ASSETS = [
   "./images/delivery-illustration.svg",
   "./images/product-kit.svg",
   "./images/product-refill.svg",
-  "./images/lifestyle.svg",
-  "./images/avatar-a.svg",
-  "./images/avatar-j.svg",
-  "./images/avatar-s.svg"
+  "./images/lifestyle.svg"
 ];
 
 self.addEventListener("install", function (event) {
