@@ -1,22 +1,22 @@
-/* Resonate Life Water - global styles (green/teal premium palette) */
+/* OMGEN WATER - global styles (water-focused blue palette) */
 
 :root {
-  /* Primary - Teal/Green (depth scale) */
-  --color-primary-50: #f0fdfa;
-  --color-primary-100: #ccfbf1;
-  --color-primary-200: #99f6e4;
-  --color-primary-300: #5eead4;
-  --color-primary-400: #2dd4bf;
-  --color-primary-500: #14b8a6; /* Main brand */
-  --color-primary-600: #0d9488;
-  --color-primary-700: #0f766e;
-  --color-primary-800: #115e59;
-  --color-primary-900: #134e4a;
+  /* Primary - Water Blue (depth scale) */
+  --color-primary-50: #e6f3ff;
+  --color-primary-100: #b3d9ff;
+  --color-primary-200: #80bfff;
+  --color-primary-300: #4da5ff;
+  --color-primary-400: #1a8bff;
+  --color-primary-500: #007BFF; /* Main brand - water blue */
+  --color-primary-600: #0066cc;
+  --color-primary-700: #0052a3;
+  --color-primary-800: #003d7a;
+  --color-primary-900: #002952;
 
-  /* Accent - Blue */
-  --color-accent-400: #38bdf8;
-  --color-accent-500: #0ea5e9;
-  --color-accent-600: #0284c7;
+  /* Accent - Aqua/Turquoise (water theme) */
+  --color-accent-400: #00A3E0;
+  --color-accent-500: #0088b8;
+  --color-accent-600: #006d90;
 
   /* Neutrals with warmth */
   --color-neutral-50: #fafaf9;
@@ -25,14 +25,14 @@
   --color-neutral-900: #1c1917;
 
   /* Semantic */
-  --color-success: #10b981;
+  --color-success: #28A745; /* Eco-friendly green */
   --color-warning: #f59e0b;
   --color-error: #ef4444;
 
-  /* Mapped brand vars (keep existing usage working) */
-  --color-primary: var(--color-primary-600);
+  /* Mapped brand vars (water-focused) */
+  --color-primary: var(--color-primary-500); /* #007BFF */
   --color-primary-dark: var(--color-primary-700);
-  --color-secondary: var(--color-primary-500);
+  --color-secondary: var(--color-accent-400); /* #00A3E0 */
   --color-accent: var(--color-primary-400);
 
   --color-bg: #ffffff;
@@ -40,7 +40,7 @@
   --color-surface-2: var(--color-neutral-100);
   --color-text: #333333;
   --color-text-light: #666666;
-  --color-border: rgba(15, 118, 110, 0.18);
+  --color-border: rgba(0, 123, 255, 0.18); /* Water blue border */
 
   --radius-lg: 18px;
   --radius-md: 12px;
@@ -88,8 +88,8 @@ body {
   line-height: 1.5;
   color: var(--color-text);
   background:
-    radial-gradient(900px 500px at 15% 0%, rgba(45, 212, 191, 0.10), transparent 55%),
-    radial-gradient(900px 500px at 85% 10%, rgba(56, 189, 248, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 15% 0%, rgba(0, 123, 255, 0.10), transparent 55%),
+    radial-gradient(900px 500px at 85% 10%, rgba(0, 163, 224, 0.10), transparent 60%),
     var(--color-bg);
 }
 
@@ -115,7 +115,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid rgba(45, 212, 191, 0.45);
+  outline: 3px solid rgba(0, 123, 255, 0.45);
   outline-offset: 2px;
 }
 
@@ -333,10 +333,10 @@ textarea:focus-visible {
 }
 
 .btn--primary {
-  border-color: rgba(15, 118, 110, 0.18);
+  border-color: rgba(0, 123, 255, 0.18);
   background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
   color: #fff;
-  box-shadow: 0 16px 34px rgba(15, 118, 110, 0.20);
+  box-shadow: 0 16px 34px rgba(0, 123, 255, 0.20);
 }
 
 .btn::after {
@@ -361,8 +361,8 @@ textarea:focus-visible {
 }
 
 .btn--secondary {
-  background: rgba(45, 134, 89, 0.08);
-  border-color: rgba(45, 134, 89, 0.22);
+  background: rgba(0, 123, 255, 0.08);
+  border-color: rgba(0, 123, 255, 0.22);
   color: var(--color-primary-dark);
 }
 
@@ -381,7 +381,7 @@ textarea:focus-visible {
 
 .btn--primary:hover {
   filter: brightness(1.03);
-  box-shadow: 0 18px 40px rgba(15, 118, 110, 0.22);
+  box-shadow: 0 18px 40px rgba(0, 123, 255, 0.22);
 }
 
 /* Main */
@@ -416,8 +416,8 @@ textarea:focus-visible {
   position: absolute;
   inset: -40%;
   background:
-    radial-gradient(closest-side at 30% 40%, rgba(56, 189, 248, 0.35), transparent 60%),
-    radial-gradient(closest-side at 70% 60%, rgba(45, 212, 191, 0.30), transparent 60%),
+    radial-gradient(closest-side at 30% 40%, rgba(0, 163, 224, 0.35), transparent 60%),
+    radial-gradient(closest-side at 70% 60%, rgba(0, 123, 255, 0.30), transparent 60%),
     linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.10));
   mix-blend-mode: soft-light;
   animation: heroGlow 10s ease-in-out infinite alternate;
@@ -453,7 +453,7 @@ textarea:focus-visible {
   z-index: -1;
   width: 240px;
   height: 240px;
-  background: radial-gradient(circle at 30% 30%, rgba(56, 189, 248, 0.55), rgba(45, 212, 191, 0.05));
+  background: radial-gradient(circle at 30% 30%, rgba(0, 163, 224, 0.55), rgba(0, 123, 255, 0.05));
   mix-blend-mode: soft-light;
   opacity: 0.65;
   pointer-events: none;
@@ -502,7 +502,7 @@ textarea:focus-visible {
 }
 
 .hero__title .typing {
-  background: linear-gradient(135deg, #ffffff 0%, rgba(56, 189, 248, 0.95) 40%, rgba(45, 212, 191, 0.95) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, rgba(0, 163, 224, 0.95) 40%, rgba(0, 123, 255, 0.95) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -574,9 +574,9 @@ textarea:focus-visible {
 }
 
 .section--alt {
-  background: linear-gradient(180deg, rgba(45, 134, 89, 0.06), transparent 60%);
-  border-top: 1px solid rgba(31, 95, 63, 0.10);
-  border-bottom: 1px solid rgba(31, 95, 63, 0.10);
+  background: linear-gradient(180deg, rgba(0, 123, 255, 0.06), transparent 60%);
+  border-top: 1px solid rgba(0, 123, 255, 0.10);
+  border-bottom: 1px solid rgba(0, 123, 255, 0.10);
 }
 
 .section__header {
@@ -643,10 +643,10 @@ section[id] {
   min-height: 260px;
   max-width: 420px;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(15, 118, 110, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background:
-    radial-gradient(800px 500px at 20% 20%, rgba(45, 212, 191, 0.18), transparent 60%),
-    radial-gradient(800px 500px at 80% 30%, rgba(56, 189, 248, 0.14), transparent 60%),
+    radial-gradient(800px 500px at 20% 20%, rgba(0, 123, 255, 0.18), transparent 60%),
+    radial-gradient(800px 500px at 80% 30%, rgba(0, 163, 224, 0.14), transparent 60%),
     linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.45));
   box-shadow: var(--shadow);
 }
@@ -660,7 +660,7 @@ section[id] {
 
 .card {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(31, 95, 63, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background: rgba(255, 255, 255, 0.85);
   padding: var(--space-4);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
@@ -684,7 +684,7 @@ section[id] {
 
 .product {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(15, 118, 110, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background: rgba(255, 255, 255, 0.62);
   backdrop-filter: blur(12px);
   padding: var(--space-4);
@@ -727,7 +727,7 @@ section[id] {
 }
 
 .product__badge--assist {
-  background: rgba(153, 246, 228, 0.20);
+  background: rgba(0, 163, 224, 0.20);
   border-color: rgba(13, 148, 136, 0.14);
   color: var(--color-primary-800);
 }
@@ -759,10 +759,10 @@ section[id] {
 .pricing {
   margin-top: 14px;
   border-radius: 16px;
-  border: 1px solid rgba(15, 118, 110, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background:
-    radial-gradient(600px 240px at 30% 0%, rgba(45, 212, 191, 0.18), transparent 60%),
-    radial-gradient(600px 260px at 70% 30%, rgba(56, 189, 248, 0.14), transparent 60%),
+    radial-gradient(600px 240px at 30% 0%, rgba(0, 123, 255, 0.18), transparent 60%),
+    radial-gradient(600px 260px at 70% 30%, rgba(0, 163, 224, 0.14), transparent 60%),
     rgba(255, 255, 255, 0.72);
   padding: 12px 12px;
 }
@@ -883,7 +883,7 @@ section[id] {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(31, 95, 63, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background: #fff;
 }
 
@@ -951,7 +951,7 @@ img {
 /* Quiz */
 .quiz {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(31, 95, 63, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background: rgba(255, 255, 255, 0.88);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
   padding: var(--space-5);
@@ -975,7 +975,7 @@ img {
   align-items: start;
   padding: 10px 12px;
   border-radius: 12px;
-  border: 1px solid rgba(31, 95, 63, 0.12);
+  border: 1px solid rgba(0, 123, 255, 0.12);
   background: #fff;
   margin-bottom: 10px;
 }
@@ -994,8 +994,8 @@ img {
 .quiz__result {
   margin-top: 12px;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(31, 95, 63, 0.14);
-  background: rgba(45, 134, 89, 0.06);
+  border: 1px solid rgba(0, 123, 255, 0.14);
+  background: rgba(0, 123, 255, 0.06);
   padding: 12px;
   font-weight: 800;
 }
@@ -1009,7 +1009,7 @@ img {
 
 .impact__card {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(31, 95, 63, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background: rgba(255, 255, 255, 0.88);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
   padding: var(--space-4);
@@ -1054,7 +1054,7 @@ img {
   width: min(720px, calc(100vw - 32px));
   margin: 10vh auto 0;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(31, 95, 63, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background: rgba(255, 255, 255, 0.98);
   box-shadow: var(--shadow);
   padding: var(--space-5);
@@ -1067,7 +1067,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 14px;
-  border: 1px solid rgba(31, 95, 63, 0.18);
+  border: 1px solid rgba(0, 123, 255, 0.18);
   background: #fff;
   cursor: pointer;
   font-size: 20px;
@@ -1083,7 +1083,7 @@ img {
   width: 52px;
   height: 52px;
   border-radius: 999px;
-  border: 1px solid rgba(31, 95, 63, 0.18);
+  border: 1px solid rgba(0, 123, 255, 0.18);
   background: rgba(255, 255, 255, 0.92);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
   cursor: pointer;
@@ -1114,7 +1114,7 @@ img {
 .footer-signup__input {
   height: 44px;
   border-radius: 14px;
-  border: 1px solid rgba(31, 95, 63, 0.18);
+  border: 1px solid rgba(0, 123, 255, 0.18);
   padding: 0 12px;
 }
 
@@ -1146,7 +1146,7 @@ img {
 
 .value-prop {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(31, 95, 63, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background: rgba(255, 255, 255, 0.88);
   padding: var(--space-4);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
@@ -1156,7 +1156,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 14px;
-  background: rgba(124, 179, 66, 0.16);
+  background: rgba(0, 123, 255, 0.16);
   color: var(--color-primary-dark);
   display: grid;
   place-items: center;
@@ -1213,12 +1213,12 @@ img {
 
 /* Protocol */
 .protocol {
-  background: linear-gradient(135deg, rgba(31, 95, 63, 0.10), rgba(124, 179, 66, 0.10));
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.10), rgba(40, 167, 69, 0.10));
 }
 
 .protocol__inner {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(31, 95, 63, 0.12);
+  border: 1px solid rgba(0, 123, 255, 0.12);
   background: rgba(255, 255, 255, 0.88);
   padding: var(--space-5);
   box-shadow: var(--shadow);
@@ -1269,7 +1269,7 @@ img {
 
 .form {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(31, 95, 63, 0.14);
+  border: 1px solid rgba(0, 123, 255, 0.14);
   background: rgba(255, 255, 255, 0.88);
   padding: var(--space-4);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
@@ -1291,7 +1291,7 @@ img {
   width: 100%;
   padding: 12px 12px;
   border-radius: 12px;
-  border: 1px solid rgba(31, 95, 63, 0.18);
+  border: 1px solid rgba(0, 123, 255, 0.18);
   background: #ffffff;
   color: var(--color-text);
 }
@@ -1308,7 +1308,7 @@ img {
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid rgba(31, 95, 63, 0.10);
+  border-top: 1px solid rgba(0, 123, 255, 0.10);
   padding: var(--space-4) 0;
 }
 

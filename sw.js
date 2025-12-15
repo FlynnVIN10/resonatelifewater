@@ -1,4 +1,4 @@
-/* Resonate Life Water - simple offline-first service worker */
+/* OMGEN WATER - simple offline-first service worker */
 
 var CACHE = "rlw-cache-v1";
 var CORE_ASSETS = [

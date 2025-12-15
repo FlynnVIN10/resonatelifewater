@@ -311,17 +311,31 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var fd = new FormData(form);
-      var goal = String(fd.get("goal") || "");
-      var format = String(fd.get("format") || "");
-      var rec = format === "refill" ? "Monthly Wellness Refill" : "Resonate Probiotic Water Kit";
+      var homeSize = String(fd.get("homeSize") || "");
+      var bathrooms = String(fd.get("bathrooms") || "");
+      var concern = String(fd.get("concern") || "");
+      var budget = String(fd.get("budget") || "");
+      
+      // Recommendation logic
+      var rec = "";
+      if (budget === "under600") {
+        rec = "OMGEN Under-Sink Purification System";
+      } else if (budget === "2500plus" || (homeSize === "large" && bathrooms === "3plus")) {
+        rec = "OMGEN Whole House Filtration System";
+      } else if (homeSize === "small" && bathrooms === "1") {
+        rec = "OMGEN Under-Sink Purification System";
+      } else {
+        rec = "Both systems recommended: OMGEN Whole House + Under-Sink for maximum filtration";
+      }
+      
       var message =
         "Recommendation: " +
         rec +
-        (goal ? " — focused on " + goal + "." : ".") +
-        " (Replace with real recommendation logic.)";
+        " — Based on your home size (" + homeSize + "), " + bathrooms + " bathroom(s), and " + concern + " concerns. " +
+        "(Replace with real recommendation logic.)";
       result.textContent = message;
       result.hidden = false;
-      track("quiz_complete", { goal: goal, format: format, rec: rec });
+      track("quiz_complete", { homeSize: homeSize, bathrooms: bathrooms, concern: concern, budget: budget, rec: rec });
     });
   }
 
