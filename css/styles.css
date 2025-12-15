@@ -393,14 +393,22 @@ textarea:focus-visible {
   color: #ffffff;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.44)),
-    url("../images/hero-waterfall.jpg");
+    url("../images/hero/main-hero.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   min-height: 600px;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
+}
+
+/* Fallback for missing hero image */
+.hero:not([style*="background-image"]) {
+  background-image:
+    linear-gradient(rgba(0, 123, 255, 0.85), rgba(0, 0, 0, 0.65)),
+    linear-gradient(135deg, #007BFF 0%, #0056b3 100%);
 }
 
 .hero::before {
@@ -886,11 +894,35 @@ section[id] {
   opacity: 0;
   transform: scale(1.01);
   transition: opacity 260ms ease, transform 500ms ease;
+  object-fit: cover;
+  object-position: center;
 }
 
 .media.is-loaded .media__img {
   opacity: 1;
   transform: scale(1);
+}
+
+/* Fallback placeholder for missing images */
+.media__img[src=""],
+.media__img:not([src]) {
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+  min-height: 200px;
+}
+
+/* Responsive image sizing */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Brand logo specific styling */
+.brand__logo {
+  height: 50px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .media__skeleton {
@@ -1132,6 +1164,43 @@ section[id] {
   margin-bottom: 10px;
 }
 
+/* Icon image styling for value props */
+.value-prop__icon-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+/* Fade in icon images when loaded */
+.value-prop__icon-img[loading="lazy"] {
+  animation: iconFadeIn 600ms ease forwards;
+  animation-delay: 100ms;
+}
+
+@keyframes iconFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fallback for missing icon images */
+.value-prop__icon-img[src=""],
+.value-prop__icon-img:not([src]) {
+  display: none;
+}
+
+/* Show emoji fallback if icon image missing */
+.value-prop:has(.value-prop__icon-img[src=""]) .value-prop__icon,
+.value-prop:has(.value-prop__icon-img:not([src])) .value-prop__icon {
+  display: grid;
+}
+
 .value-prop__title {
   margin: 0;
   font-size: 18px;
@@ -1262,6 +1331,24 @@ section[id] {
   color: var(--color-primary-dark);
 }
 
+/* Image optimization and responsive rules */
+@media (max-width: 767px) {
+  .hero {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .media__img {
+    min-height: 200px;
+  }
+
+  .brand__logo {
+    max-width: 180px;
+    height: 42px;
+  }
+}
+
 @media (min-width: 768px) {
   .menu-btn {
     display: none;
@@ -1329,5 +1416,28 @@ section[id] {
   .site-footer__inner {
     flex-direction: row;
     align-items: center;
+  }
+
+  /* Enhanced image display on larger screens */
+  .media__img {
+    min-height: 300px;
+  }
+
+  .hero {
+    min-height: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .value-props {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero {
+    min-height: 800px;
+  }
+
+  .media__img {
+    min-height: 400px;
   }
 }
