@@ -1,10 +1,11 @@
 # AI Image Generation Guide
-## OMGEN WATER Website Assets - Abstract Art & Aesthetic Photography
+## OMGEN WATER Website Assets - Water-Focused Visual Identity
 
 **Project:** OMGEN WATER Website Rebranding  
-**Purpose:** Generate sophisticated abstract art and aesthetic photography for modern website design  
+**Purpose:** Generate water-focused imagery that communicates purity, health, freshness, and natural water qualities  
 **Target Audience:** Project Manager (Grok) for AI image generation  
-**Style Focus:** Abstract geometric patterns, architectural photography, minimalist aesthetic imagery  
+**Style Focus:** Water purity, clarity, flow, refreshment, health - WATER as hero element  
+**Core Message:** Clean, Pure, Healthy Water - Every image must evoke WATER  
 **Last Updated:** January 2025
 
 ---
@@ -27,22 +28,22 @@
 
 ### Step 1: Choose AI Tool
 - **Recommended:** DALL-E 3 (via ChatGPT Plus), Leonardo.ai, or Midjourney
-- **Best for Abstract Art:** Midjourney (artistic quality) or DALL-E 3 (precise control)
+- **Best for Water Photography:** DALL-E 3 (precise control) or Midjourney (artistic quality)
 - **Alternative:** Grok (if available with image generation)
 
 ### Step 2: Generate Images by Category
 Follow the prompts in [AI Generation Prompts](#ai-generation-prompts) section below. Generate images in this order:
-1. Hero backgrounds (abstract geometric) - **Priority 1**
-2. Section backgrounds (water abstract art) - **Priority 2**
-3. Aesthetic photography (macro, architectural) - **Priority 3**
-4. Lifestyle imagery (artistic focus) - **Priority 4**
-5. Minimalist icons - **Priority 5**
+1. Hero backgrounds (water themes) - **Priority 1**
+2. Water photography (purity, clarity) - **Priority 2**
+3. Water abstract art (flowing, natural) - **Priority 3**
+4. Lifestyle imagery (health, wellness) - **Priority 4**
+5. Water-themed icons - **Priority 5**
 
 ### Step 3: Optimize Images
 - Compress to meet file size requirements (use TinyPNG, Squoosh, or ImageOptim)
 - Convert to appropriate format (JPG for photos/backgrounds, SVG for icons)
 - Verify dimensions match specifications
-- Ensure abstract patterns tile seamlessly if needed
+- Ensure water images maintain clarity and purity aesthetic
 
 ### Step 4: Place in Directory Structure
 - Follow the [Directory Structure](#directory-structure) section
@@ -53,88 +54,77 @@ Follow the prompts in [AI Generation Prompts](#ai-generation-prompts) section be
 - Test lazy loading
 - Verify responsive behavior
 - Check alt text is descriptive
-- Verify abstract backgrounds work with overlay text
+- Verify water backgrounds work with overlay text
 
 ---
 
 ## IMAGE CATEGORIES & REQUIREMENTS
 
-### **Category 1: Hero Backgrounds - Abstract Geometric** (3 images)
-**Purpose:** Full-width abstract background images for hero sections  
+### **Category 1: Hero Backgrounds - Water Themes** (5 images)
+**Purpose:** Full-width water-focused background images for hero sections  
 **Format:** JPG  
 **Dimensions:** 1920x1080px (16:9 aspect ratio)  
 **File Size:** <150KB (compressed)  
-**Style:** Abstract geometric patterns, architectural-inspired, modern, sophisticated
+**Style:** Water-focused, pure, clear, fresh, natural, bright, light
 
 **Files:**
-- `hero/main-hero.jpg` - Black abstract geometric pattern (angular, dimensional, architectural)
-- `hero/water-abstract-hero.jpg` - Water-themed abstract art (flowing forms, liquid dynamics)
-- `hero/architectural-hero.jpg` - Modern architectural photography with water elements
+- `hero/water-pouring-glass.jpg` - Crystal clear water pouring into glass with natural light
+- `hero/underwater-bubbles.jpg` - Underwater view with bubbles and light rays
+- `hero/water-droplets-glass.jpg` - Water droplets on glass surface (macro, artistic)
+- `hero/water-ripples-surface.jpg` - Calm water surface with gentle ripples
+- `hero/water-gradient-flow.jpg` - Abstract flowing water gradients (blue to white)
 
 ---
 
-### **Category 2: Section Backgrounds - Water Abstract Art** (3 images)
-**Purpose:** Abstract water-themed backgrounds for section dividers  
-**Format:** JPG  
-**Dimensions:** 1920x1080px (16:9) or 1200x800px (3:2)  
-**File Size:** <100KB (compressed)  
-**Style:** Abstract water flow patterns, geometric water themes, minimalist
-
-**Files:**
-- `hero/water-flow-abstract-1.jpg` - Blue/white gradient water flow patterns
-- `hero/water-flow-abstract-2.jpg` - Geometric patterns with water themes (hexagons, flowing lines)
-- `hero/water-flow-abstract-3.jpg` - Minimalist architectural elements with water
-
----
-
-### **Category 3: Aesthetic Photography** (5 images)
-**Purpose:** High-end artistic photography for content sections  
+### **Category 2: Water Photography** (5 images)
+**Purpose:** High-quality water photography showcasing purity and clarity  
 **Format:** JPG  
 **Dimensions:** 1200x800px (3:2) or 800x800px (1:1)  
 **File Size:** <100KB (compressed)  
-**Style:** Gallery-quality, artistic, minimalist, sophisticated
+**Style:** Natural, fresh, clean, healthy, pure, crystal clear
 
 **Files:**
-- `lifestyle/water-droplets-macro.jpg` - Macro photography of water droplets (artistic, high-end)
-- `lifestyle/water-flow-artistic.jpg` - Water flowing (macro, artistic, dynamic)
-- `lifestyle/natural-light-water.jpg` - Natural light through water (abstract, artistic)
-- `lifestyle/modern-interior-1.jpg` - Modern minimalist interior with natural light
-- `lifestyle/modern-interior-2.jpg` - Clean architectural spaces (contemporary homes, kitchens)
+- `lifestyle/hands-water-glass.jpg` - Hands holding glass of pure water with condensation
+- `lifestyle/water-faucet-flow.jpg` - Water flowing from modern faucet (clear, fresh)
+- `lifestyle/water-droplets-leaf.jpg` - Macro water droplets on leaf (nature, purity)
+- `lifestyle/light-through-water.jpg` - Light streaming through water creating refraction
+- `lifestyle/family-drinking-water.jpg` - Family drinking water together (health, lifestyle)
 
 ---
 
-### **Category 4: Lifestyle Imagery - Aesthetic Focus** (3 images)
-**Purpose:** Artistic lifestyle photography showing water/wellness themes  
+### **Category 3: Water Abstract Art** (5 images)
+**Purpose:** Abstract water-themed art for section backgrounds  
 **Format:** JPG  
-**Dimensions:** 1200x800px (3:2 aspect ratio)  
+**Dimensions:** 1920x1080px (16:9) or 1200x800px (3:2)  
 **File Size:** <100KB (compressed)  
-**Style:** High-end photography, artistic composition, natural lighting
+**Style:** Flowing, organic, natural, soft, water-themed, blue/white
 
 **Files:**
-- `lifestyle/hands-water-glass.jpg` - Hands holding glass of clear water (artistic, high-end)
-- `lifestyle/modern-kitchen-aesthetic.jpg` - Modern kitchen/home environment (architectural photography style)
-- `lifestyle/water-pour-artistic.jpg` - Water pouring/flowing (macro, artistic, dynamic)
+- `hero/water-waves-gradient.jpg` - Flowing blue gradient waves (water theme)
+- `hero/water-ripple-pattern.jpg` - Water ripple pattern abstract
+- `hero/underwater-light-rays.jpg` - Underwater light rays abstract
+- `hero/soft-fluid-forms.jpg` - Soft fluid forms (blue/white water colors)
+- `hero/water-splash-frozen.jpg` - Water splash frozen in time (dynamic, pure)
 
 ---
 
-### **Category 5: Minimalist Icons** (6 icons)
-**Purpose:** Simple, clean line art icons for value propositions  
+### **Category 4: Water-Themed Icons** (5 icons)
+**Purpose:** Simple, clean water-themed icons for value propositions  
 **Format:** SVG (vector)  
 **Dimensions:** 256x256px viewBox  
 **File Size:** <10KB each  
-**Style:** Minimalist line art, geometric, modern, clean
+**Style:** Minimalist, water-themed, clean, simple
 
 **Files:**
-- `icons/pure-water.svg` - Simple water drop line art
-- `icons/cost-savings.svg` - Minimalist checkmark or savings symbol
-- `icons/eco-friendly.svg` - Simple leaf or eco symbol (line art)
-- `icons/health.svg` - Minimalist heart or wellness symbol
-- `icons/installation.svg` - Simple flow or installation symbol
-- `icons/smart-tech.svg` - Geometric tech symbol (minimalist)
+- `icons/water-droplet.svg` - Water droplet icon (simple, clean)
+- `icons/water-wave-flow.svg` - Wave/flow icon (dynamic water movement)
+- `icons/water-shield-check.svg` - Checkmark/shield with water theme
+- `icons/leaf-water-droplet.svg` - Leaf with water droplet (eco, natural)
+- `icons/glass-water.svg` - Glass/cup icon (water consumption)
 
 ---
 
-### **Category 6: Brand Elements** (3 logo variations)
+### **Category 5: Brand Elements** (3 logo variations)
 **Purpose:** OMGEN WATER brand logo in multiple formats  
 **Format:** PNG (with transparency)  
 **Dimensions:** Various (see specifications)  
@@ -150,782 +140,830 @@ Follow the prompts in [AI Generation Prompts](#ai-generation-prompts) section be
 
 ## AI GENERATION PROMPTS
 
-### **HERO BACKGROUNDS - ABSTRACT GEOMETRIC**
+### **HERO BACKGROUNDS - WATER THEMES**
 
-#### **Prompt 1: Black Abstract Geometric Hero Background**
+#### **Prompt 1: Crystal Clear Water Pouring into Glass with Natural Light**
 ```
-Create a sophisticated black abstract geometric pattern suitable for a modern website hero background:
+Create a stunning, high-quality photography image of crystal clear water pouring into a glass with natural light:
 
 VISUAL ELEMENTS:
-- Angular, dimensional geometric shapes (triangles, hexagons, polygonal forms)
-- Deep black (#000000) as primary color
-- Subtle gray gradients and highlights for depth
-- Architectural-inspired angular lines and planes
-- Modern, sophisticated composition
-- Abstract geometric pattern that suggests structure and innovation
-- No literal objects or recognizable shapes
-- Clean, minimalist aesthetic
+- Crystal clear, pure water pouring into a clear glass
+- Natural, bright lighting (sunlight or soft natural light)
+- Water is perfectly transparent and clear
+- Dynamic water flow captured artistically
+- Clean, minimalist composition
+- Bright, light, airy atmosphere
+- Focus on water purity and clarity
 
 STYLE:
-- Abstract geometric art
-- Modern architectural design influence
-- High contrast (black with subtle gray/white accents)
-- Dimensional, 3D-like appearance
+- High-end product/lifestyle photography
+- Natural lighting, bright and airy
+- Clean, minimalist composition
 - Professional, gallery-quality
-- Sophisticated, premium aesthetic
-- Similar to high-end tech/architecture websites
+- Fresh, pure, healthy aesthetic
+- Water-focused, crystal clear
 
 COLOR PALETTE:
-- Primary: Deep black (#000000)
-- Accents: Subtle grays (#1a1a1a, #2d2d2d, #404040)
-- Highlights: Very subtle white/gray highlights for depth
-- No color (monochrome black/gray/white)
+- Primary: Crystal clear water (transparent, blue-tinted)
+- Secondary: White (#FFFFFF) - glass, light
+- Accents: Soft blue (#007BFF, #00A3E0) from water
+- Background: Light, bright, airy (white, light gray, soft blue)
+- Overall: Fresh, clean, refreshing, bright
 
 TECHNICAL:
 - Resolution: 1920x1080px
 - Aspect ratio: 16:9
 - Format: High-quality JPG
-- Style: Abstract geometric art, architectural-inspired
-- Seamless or tileable pattern preferred
+- Style: Professional water photography
+- Mood: Pure, refreshing, vital, life-giving
 
 BRAND ALIGNMENT:
-- Modern, sophisticated, premium
-- Architectural and structural aesthetic
-- Professional, high-end appearance
-- Works well with white/colored overlay text
-- Suggests innovation and precision
+- Immediately communicates WATER
+- Evokes purity, freshness, health, clarity
+- Clean water company identity
+- Natural, fresh, healthy aesthetic
+- Bright, light, transparent (not dark)
 ```
 
-#### **Prompt 2: Water-Themed Abstract Art Hero**
+#### **Prompt 2: Underwater View with Bubbles and Light Rays**
 ```
-Create an abstract water-themed art piece for a hero background:
+Create a beautiful underwater photography image with bubbles and light rays:
 
 VISUAL ELEMENTS:
-- Flowing, liquid forms and shapes
-- Water dynamics and movement (abstract representation)
-- Clean, minimalist composition
-- Blue and white color gradients
-- Abstract representation of water flow, waves, or liquid motion
-- No literal water or recognizable objects
-- Sophisticated, artistic interpretation of water
-- Modern, contemporary art style
+- Underwater view looking up toward surface
+- Light rays streaming through clear water
+- Oxygen bubbles rising (clean, pure, fresh)
+- Crystal clear, pure water
+- Natural, bright lighting from above
+- Clean, healthy water appearance
+- Focus on water clarity and purity
 
 STYLE:
-- Abstract art
-- Fluid dynamics inspiration
-- Minimalist, clean composition
-- Soft gradients and flowing forms
-- Gallery-quality artistic imagery
-- Modern, sophisticated aesthetic
-- High-end, premium appearance
+- Underwater photography
+- Natural lighting (sunlight through water)
+- Clean, clear water aesthetic
+- Professional, high-quality
+- Fresh, pure, healthy appearance
+- Water-focused, crystal clear
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF, #0056b3)
-- Secondary: White (#FFFFFF)
-- Accents: Light blue tones (#38bdf8, #0ea5e9)
-- Gradients: Blue to white, blue to transparent
+- Primary: Blue (#007BFF, #00A3E0, aqua, turquoise)
+- Secondary: White (#FFFFFF) - bubbles, light rays
+- Accents: Soft green (#28A745) - health, nature
+- Background: Light blue water tones
+- Overall: Fresh, clean, refreshing, bright
 
 TECHNICAL:
 - Resolution: 1920x1080px
 - Aspect ratio: 16:9
 - Format: High-quality JPG
-- Style: Abstract water art, contemporary
-- Works with overlay text
+- Style: Underwater photography
+- Mood: Pure, refreshing, clean, oxygenated
 
 BRAND ALIGNMENT:
-- Water theme (abstract)
-- Modern, artistic interpretation
-- Clean, sophisticated
-- Premium, high-end aesthetic
+- Water purity and clarity
+- Clean, filtered, pure water
+- Health and wellness
+- Natural, fresh aesthetic
+- Bright, light, transparent
 ```
 
-#### **Prompt 3: Modern Architectural Photography with Water Elements**
+#### **Prompt 3: Water Droplets on Glass Surface (Macro, Artistic)**
 ```
-Create a modern architectural photography image with subtle water elements:
+Create an artistic macro photography image of water droplets on a glass surface:
 
 VISUAL ELEMENTS:
-- Contemporary architectural space (modern building, clean lines)
-- Subtle water elements (reflection, water feature, or water in frame)
-- Natural lighting, dramatic shadows
+- Extreme close-up of water droplets on clear glass
+- Crystal clear, pure water droplets
+- Natural or soft lighting
 - Clean, minimalist composition
-- Modern architectural photography style
-- Sophisticated, high-end aesthetic
-- Professional architectural photography quality
-
-STYLE:
-- Architectural photography
-- Modern, minimalist composition
-- Natural lighting with dramatic shadows
-- Clean lines and geometric forms
-- Professional, gallery-quality
-- Sophisticated, premium aesthetic
-- High-end architectural magazine style
-
-COLOR PALETTE:
-- Primary: Neutral tones (grays, whites, blacks)
-- Accents: Blue (#007BFF) from water elements
-- Lighting: Natural, dramatic shadows
-- Background: Modern architectural elements
-
-TECHNICAL:
-- Resolution: 1920x1080px
-- Aspect ratio: 16:9
-- Format: High-quality JPG
-- Style: Modern architectural photography
-- Professional quality
-
-BRAND ALIGNMENT:
-- Modern, sophisticated
-- Architectural aesthetic
-- Professional, high-end
-- Clean, minimalist
-```
-
----
-
-### **SECTION BACKGROUNDS - WATER ABSTRACT ART**
-
-#### **Prompt 4: Blue/White Gradient Water Flow Abstract Pattern**
-```
-Create an abstract water flow pattern with blue and white gradients:
-
-VISUAL ELEMENTS:
-- Flowing, abstract water patterns
-- Blue to white gradients
-- Fluid dynamics inspiration (abstract)
-- Clean, minimalist composition
-- Subtle, sophisticated pattern
-- No literal water, abstract representation
-- Modern, contemporary art style
-
-STYLE:
-- Abstract water art
-- Gradient-based composition
-- Minimalist, clean
-- Soft, flowing forms
-- Professional, gallery-quality
-- Modern aesthetic
-
-COLOR PALETTE:
-- Primary: Blue (#007BFF, #0056b3)
-- Secondary: White (#FFFFFF)
-- Gradients: Blue to white, various blue tones
-
-TECHNICAL:
-- Resolution: 1920x1080px or 1200x800px
-- Format: JPG
-- Style: Abstract water flow pattern
-- File size: <100KB
-
-BRAND ALIGNMENT:
-- Water theme (abstract)
-- Modern, sophisticated
-- Clean, minimalist
-```
-
-#### **Prompt 5: Geometric Patterns with Water Themes**
-```
-Create geometric patterns with water themes (hexagons, flowing lines):
-
-VISUAL ELEMENTS:
-- Geometric shapes (hexagons, triangles, flowing lines)
-- Water-themed abstract patterns
-- Blue and white color scheme
-- Clean, modern geometric design
-- Flowing lines suggesting water movement
-- Minimalist, sophisticated composition
-- Abstract geometric water art
-
-STYLE:
-- Geometric abstract art
-- Water theme inspiration
-- Minimalist, clean
-- Modern, contemporary
-- Professional, gallery-quality
-
-COLOR PALETTE:
-- Primary: Blue (#007BFF)
-- Secondary: White (#FFFFFF)
-- Accents: Light blue tones
-
-TECHNICAL:
-- Resolution: 1920x1080px or 1200x800px
-- Format: JPG
-- Style: Geometric water abstract
-- File size: <100KB
-
-BRAND ALIGNMENT:
-- Modern, geometric
-- Water theme
-- Clean, sophisticated
-```
-
-#### **Prompt 6: Minimalist Architectural Elements with Water**
-```
-Create minimalist architectural elements with subtle water integration:
-
-VISUAL ELEMENTS:
-- Clean architectural lines and forms
-- Subtle water elements (reflections, water features)
-- Modern, minimalist composition
-- Natural lighting
-- Sophisticated, high-end aesthetic
-- Professional architectural photography
-
-STYLE:
-- Minimalist architectural photography
-- Clean, modern composition
-- Natural lighting
-- Professional quality
-- Sophisticated aesthetic
-
-COLOR PALETTE:
-- Primary: Neutral tones (grays, whites)
-- Accents: Blue (#007BFF) from water
-- Lighting: Natural, clean
-
-TECHNICAL:
-- Resolution: 1920x1080px or 1200x800px
-- Format: JPG
-- Style: Minimalist architectural
-- File size: <100KB
-
-BRAND ALIGNMENT:
-- Modern, architectural
-- Minimalist, clean
-- Professional, sophisticated
-```
-
----
-
-### **AESTHETIC PHOTOGRAPHY**
-
-#### **Prompt 7: Water Droplets Macro Photography (Artistic)**
-```
-Create an artistic macro photography image of water droplets:
-
-VISUAL ELEMENTS:
-- Extreme close-up of water droplets
-- Artistic composition and framing
-- Natural or studio lighting
-- Clean, minimalist background
-- High-end macro photography quality
-- Artistic, gallery-quality image
-- Focus on texture, light, and form
+- Focus on water clarity and purity
+- Artistic, high-end macro photography
+- Bright, light, airy atmosphere
 
 STYLE:
 - Macro photography
 - Artistic, high-end quality
 - Clean, minimalist composition
-- Professional studio or natural lighting
-- Gallery-quality artistic photography
-- Sophisticated, premium aesthetic
+- Natural or soft lighting
+- Professional, gallery-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, crystal clear
 
 COLOR PALETTE:
-- Primary: Clear water, white, light tones
-- Accents: Blue (#007BFF) reflections or lighting
-- Background: Clean white or subtle gradient
-- Lighting: Natural or studio, dramatic
+- Primary: Crystal clear water (transparent)
+- Secondary: White (#FFFFFF) - glass, light
+- Accents: Soft blue (#007BFF, #00A3E0) from water/light
+- Background: Light, bright, airy (white, light gray)
+- Overall: Fresh, clean, refreshing, bright
+
+TECHNICAL:
+- Resolution: 1920x1080px
+- Aspect ratio: 16:9
+- Format: High-quality JPG
+- Style: Artistic macro photography
+- Mood: Pure, refreshing, clarity, freshness
+
+BRAND ALIGNMENT:
+- Water purity and clarity
+- Fresh, clean aesthetic
+- Health and wellness focus
+- Natural, pure water
+- Bright, light, transparent
+```
+
+#### **Prompt 4: Calm Water Surface with Gentle Ripples**
+```
+Create a serene, natural photography image of calm water surface with gentle ripples:
+
+VISUAL ELEMENTS:
+- Calm water surface (lake, pool, or clean water body)
+- Gentle, natural ripples
+- Crystal clear, pure water
+- Natural lighting (soft, bright)
+- Clean, serene composition
+- Focus on water clarity and natural beauty
+- Peaceful, healthy water appearance
+
+STYLE:
+- Natural water photography
+- Soft, natural lighting
+- Clean, serene composition
+- Professional, high-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, natural
+
+COLOR PALETTE:
+- Primary: Blue (#007BFF, #00A3E0, aqua, turquoise)
+- Secondary: White (#FFFFFF) - light, reflections
+- Accents: Soft green (#28A745) - nature, health
+- Background: Light blue water tones, sky
+- Overall: Fresh, clean, refreshing, serene
+
+TECHNICAL:
+- Resolution: 1920x1080px
+- Aspect ratio: 16:9
+- Format: High-quality JPG
+- Style: Natural water photography
+- Mood: Pure, refreshing, calm, natural
+
+BRAND ALIGNMENT:
+- Water purity and clarity
+- Natural, fresh aesthetic
+- Health and wellness
+- Clean, pure water
+- Bright, light, serene
+```
+
+#### **Prompt 5: Abstract Flowing Water Gradients (Blue to White)**
+```
+Create an abstract art image of flowing water gradients from blue to white:
+
+VISUAL ELEMENTS:
+- Flowing, organic water forms
+- Blue to white gradients
+- Soft, natural water flow patterns
+- Abstract representation of water movement
+- Clean, minimalist composition
+- Focus on water flow and purity
+- Bright, light, airy aesthetic
+
+STYLE:
+- Abstract water art
+- Flowing, organic forms (not geometric/angular)
+- Soft gradients
+- Clean, minimalist composition
+- Professional, gallery-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, natural flow
+
+COLOR PALETTE:
+- Primary: Blue (#007BFF, #00A3E0, aqua, turquoise)
+- Secondary: White (#FFFFFF)
+- Gradients: Blue to white, various blue tones
+- Background: Light, bright, airy
+- Overall: Fresh, clean, refreshing, flowing
+
+TECHNICAL:
+- Resolution: 1920x1080px
+- Aspect ratio: 16:9
+- Format: High-quality JPG
+- Style: Abstract water art
+- Mood: Pure, refreshing, flowing, natural
+
+BRAND ALIGNMENT:
+- Water flow and movement
+- Natural, organic forms
+- Clean, pure aesthetic
+- Fresh, healthy water
+- Bright, light, transparent
+```
+
+---
+
+### **WATER PHOTOGRAPHY**
+
+#### **Prompt 6: Hands Holding Glass of Pure Water with Condensation**
+```
+Create a high-quality lifestyle photography image of hands holding a glass of pure water with condensation:
+
+VISUAL ELEMENTS:
+- Clean, well-groomed hands holding a clear glass
+- Crystal clear, pure water in glass
+- Fresh condensation on glass (cold, refreshing)
+- Natural or soft lighting
+- Clean, minimalist composition
+- Focus on water purity and freshness
+- Bright, light, healthy atmosphere
+
+STYLE:
+- Lifestyle photography
+- High-end product photography quality
+- Natural or soft lighting
+- Clean, minimalist composition
+- Professional, gallery-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, crystal clear
+
+COLOR PALETTE:
+- Primary: Crystal clear water (transparent, blue-tinted)
+- Secondary: White (#FFFFFF) - glass, condensation
+- Accents: Soft blue (#007BFF, #00A3E0) from water
+- Background: Light, bright, airy (white, light gray)
+- Overall: Fresh, clean, refreshing, healthy
+
+TECHNICAL:
+- Resolution: 1200x800px
+- Format: High-quality JPG
+- Style: Lifestyle/product photography
+- Mood: Pure, refreshing, healthy, inviting
+
+BRAND ALIGNMENT:
+- Water purity and freshness
+- Health and wellness
+- Clean, pure water
+- Natural, fresh aesthetic
+- Bright, light, transparent
+```
+
+#### **Prompt 7: Water Flowing from Modern Faucet (Clear, Fresh)**
+```
+Create a high-quality photography image of water flowing from a modern faucet:
+
+VISUAL ELEMENTS:
+- Modern, clean faucet
+- Crystal clear, pure water flowing
+- Dynamic water stream (clear, fresh)
+- Natural or soft lighting
+- Clean, minimalist composition
+- Focus on water clarity and freshness
+- Bright, light, healthy atmosphere
+
+STYLE:
+- Product/lifestyle photography
+- Natural or soft lighting
+- Clean, minimalist composition
+- Professional, high-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, crystal clear
+
+COLOR PALETTE:
+- Primary: Crystal clear water (transparent, blue-tinted)
+- Secondary: White (#FFFFFF) - faucet, light
+- Accents: Soft blue (#007BFF, #00A3E0) from water
+- Background: Light, bright, airy (white, light gray, modern kitchen)
+- Overall: Fresh, clean, refreshing, modern
+
+TECHNICAL:
+- Resolution: 1200x800px
+- Format: High-quality JPG
+- Style: Product/lifestyle photography
+- Mood: Pure, refreshing, fresh, clean
+
+BRAND ALIGNMENT:
+- Water purity and clarity
+- Fresh, clean water
+- Modern, healthy lifestyle
+- Natural, pure aesthetic
+- Bright, light, transparent
+```
+
+#### **Prompt 8: Macro Water Droplets on Leaf (Nature, Purity)**
+```
+Create an artistic macro photography image of water droplets on a leaf:
+
+VISUAL ELEMENTS:
+- Extreme close-up of water droplets on green leaf
+- Crystal clear, pure water droplets
+- Natural lighting
+- Clean, natural composition
+- Focus on water purity and natural beauty
+- Nature, health, wellness theme
+- Bright, light, natural atmosphere
+
+STYLE:
+- Macro photography
+- Artistic, high-end quality
+- Natural lighting
+- Clean, natural composition
+- Professional, gallery-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, natural
+
+COLOR PALETTE:
+- Primary: Crystal clear water (transparent)
+- Secondary: Green (#28A745) - leaf, nature
+- Accents: Soft blue (#007BFF, #00A3E0) from water
+- Background: Natural, light, bright
+- Overall: Fresh, clean, natural, healthy
 
 TECHNICAL:
 - Resolution: 1200x800px or 800x800px
 - Format: High-quality JPG
 - Style: Artistic macro photography
-- File size: <100KB
+- Mood: Pure, refreshing, natural, healthy
 
 BRAND ALIGNMENT:
-- High-end, artistic
-- Clean, sophisticated
-- Premium quality
-- Water theme (artistic)
+- Water purity and clarity
+- Nature and health
+- Clean, pure water
+- Natural, fresh aesthetic
+- Bright, light, natural
 ```
 
-#### **Prompt 8: Water Flow Artistic Photography**
+#### **Prompt 9: Light Streaming Through Water Creating Refraction**
 ```
-Create an artistic photography image of water flowing (macro, dynamic):
+Create an artistic photography image of light streaming through water creating beautiful refraction:
 
 VISUAL ELEMENTS:
-- Water flowing or pouring (artistic capture)
-- Macro or close-up perspective
-- Dynamic motion captured artistically
-- Clean, minimalist composition
-- High-end artistic photography
-- Focus on movement, light, and form
-- Gallery-quality image
+- Light rays streaming through crystal clear water
+- Beautiful light refraction patterns
+- Pure, clear water
+- Natural or dramatic lighting
+- Clean, artistic composition
+- Focus on water clarity and light
+- Bright, light, magical atmosphere
 
 STYLE:
 - Artistic photography
-- Macro or close-up perspective
-- Dynamic motion capture
-- Clean, minimalist
+- Natural or dramatic lighting
+- Clean, artistic composition
 - Professional, gallery-quality
-- Sophisticated, premium aesthetic
+- Fresh, pure, healthy aesthetic
+- Water-focused, crystal clear
 
 COLOR PALETTE:
-- Primary: Clear water, white, light tones
-- Accents: Blue (#007BFF) from water
-- Background: Clean, minimalist
-- Lighting: Natural or studio, dramatic
+- Primary: Crystal clear water (transparent)
+- Secondary: White (#FFFFFF) - light rays
+- Accents: Soft blue (#007BFF, #00A3E0) from water/light
+- Background: Light, bright, airy
+- Overall: Fresh, clean, magical, pure
 
 TECHNICAL:
 - Resolution: 1200x800px or 800x800px
 - Format: High-quality JPG
-- Style: Artistic water photography
-- File size: <100KB
+- Style: Artistic photography
+- Mood: Pure, refreshing, magical, clear
 
 BRAND ALIGNMENT:
-- Artistic, high-end
-- Dynamic, modern
-- Premium quality
-- Water theme
+- Water purity and clarity
+- Natural light and transparency
+- Clean, pure water
+- Fresh, healthy aesthetic
+- Bright, light, transparent
 ```
 
-#### **Prompt 9: Natural Light Through Water (Abstract, Artistic)**
+#### **Prompt 10: Family Drinking Water Together (Health, Lifestyle)**
 ```
-Create an abstract, artistic image of natural light through water:
+Create a warm, healthy lifestyle photography image of a family drinking water together:
 
 VISUAL ELEMENTS:
-- Light refracted through water (abstract representation)
-- Natural lighting effects
-- Abstract, artistic composition
-- Clean, minimalist aesthetic
-- High-end artistic photography
-- Focus on light, color, and form
-- Gallery-quality image
+- Diverse, happy family (2-4 people) drinking water
+- Crystal clear, pure water in glasses
+- Modern, clean environment
+- Natural, bright lighting
+- Clean, warm composition
+- Focus on health, wellness, and water
+- Bright, light, healthy atmosphere
 
 STYLE:
-- Abstract artistic photography
-- Light and water interaction
+- Lifestyle photography
+- Natural, bright lighting
+- Clean, warm composition
+- Professional, high-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, health-focused
+
+COLOR PALETTE:
+- Primary: Crystal clear water (transparent, blue-tinted)
+- Secondary: White (#FFFFFF) - glasses, light
+- Accents: Soft blue (#007BFF, #00A3E0) from water
+- Background: Light, bright, airy (modern home)
+- Overall: Fresh, clean, healthy, warm
+
+TECHNICAL:
+- Resolution: 1200x800px
+- Format: High-quality JPG
+- Style: Lifestyle photography
+- Mood: Pure, refreshing, healthy, family
+
+BRAND ALIGNMENT:
+- Water and health
+- Family wellness
+- Clean, pure water
+- Natural, fresh aesthetic
+- Bright, light, healthy
+```
+
+---
+
+### **WATER ABSTRACT ART**
+
+#### **Prompt 11: Flowing Blue Gradient Waves (Water Theme)**
+```
+Create an abstract art image of flowing blue gradient waves:
+
+VISUAL ELEMENTS:
+- Flowing, organic wave patterns
+- Blue to white gradients
+- Soft, natural water movement
+- Abstract representation of water waves
 - Clean, minimalist composition
-- Natural lighting effects
+- Focus on water flow and movement
+- Bright, light, flowing aesthetic
+
+STYLE:
+- Abstract water art
+- Flowing, organic forms (not geometric/angular)
+- Soft gradients
+- Clean, minimalist composition
 - Professional, gallery-quality
-- Sophisticated, premium aesthetic
+- Fresh, pure, healthy aesthetic
+- Water-focused, natural flow
 
 COLOR PALETTE:
-- Primary: Light tones, white, clear
-- Accents: Blue (#007BFF) from water/light
-- Background: Clean, minimalist
-- Lighting: Natural, dramatic
+- Primary: Blue (#007BFF, #00A3E0, aqua, turquoise)
+- Secondary: White (#FFFFFF)
+- Gradients: Blue to white, various blue tones
+- Background: Light, bright, airy
+- Overall: Fresh, clean, refreshing, flowing
 
 TECHNICAL:
-- Resolution: 1200x800px or 800x800px
+- Resolution: 1920x1080px or 1200x800px
 - Format: High-quality JPG
-- Style: Abstract artistic photography
-- File size: <100KB
+- Style: Abstract water art
+- Mood: Pure, refreshing, flowing, natural
 
 BRAND ALIGNMENT:
-- Abstract, artistic
-- Natural, clean
-- Premium quality
-- Sophisticated aesthetic
+- Water flow and movement
+- Natural, organic forms
+- Clean, pure aesthetic
+- Fresh, healthy water
+- Bright, light, transparent
 ```
 
-#### **Prompt 10: Modern Minimalist Interior with Natural Light**
+#### **Prompt 12: Water Ripple Pattern Abstract**
 ```
-Create a modern minimalist interior photography image with natural light:
+Create an abstract art image of water ripple patterns:
 
 VISUAL ELEMENTS:
-- Contemporary, minimalist interior space
-- Clean architectural lines
-- Natural lighting (large windows, soft light)
-- Modern furniture and design elements
-- Clean, uncluttered composition
-- Sophisticated, high-end aesthetic
-- Professional architectural/interior photography
+- Abstract water ripple patterns
+- Concentric circles or flowing ripples
+- Blue and white color scheme
+- Soft, natural water movement
+- Clean, minimalist composition
+- Focus on water ripples and clarity
+- Bright, light, serene aesthetic
 
 STYLE:
-- Modern interior photography
-- Minimalist, clean composition
-- Natural lighting
-- Professional architectural photography quality
-- Sophisticated, premium aesthetic
-- High-end design magazine style
+- Abstract water art
+- Flowing, organic forms
+- Soft, natural patterns
+- Clean, minimalist composition
+- Professional, gallery-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, natural
 
 COLOR PALETTE:
-- Primary: Neutral tones (whites, grays, light tones)
-- Accents: Subtle color (if any)
-- Lighting: Natural, soft, clean
-- Background: Modern interior elements
+- Primary: Blue (#007BFF, #00A3E0, aqua, turquoise)
+- Secondary: White (#FFFFFF)
+- Accents: Soft blue tones
+- Background: Light, bright, airy
+- Overall: Fresh, clean, refreshing, serene
 
 TECHNICAL:
-- Resolution: 1200x800px
+- Resolution: 1920x1080px or 1200x800px
 - Format: High-quality JPG
-- Style: Modern interior photography
-- File size: <100KB
+- Style: Abstract water art
+- Mood: Pure, refreshing, calm, natural
 
 BRAND ALIGNMENT:
-- Modern, minimalist
-- Clean, sophisticated
-- Professional, high-end
-- Architectural aesthetic
+- Water ripples and movement
+- Natural, organic patterns
+- Clean, pure aesthetic
+- Fresh, healthy water
+- Bright, light, serene
 ```
 
-#### **Prompt 11: Clean Architectural Spaces (Contemporary)**
+#### **Prompt 13: Underwater Light Rays Abstract**
 ```
-Create a clean architectural photography image of contemporary spaces:
+Create an abstract art image of underwater light rays:
 
 VISUAL ELEMENTS:
-- Modern architectural space (home, kitchen, contemporary design)
-- Clean lines and geometric forms
-- Natural lighting
-- Minimalist, uncluttered composition
-- Professional architectural photography
-- Sophisticated, high-end aesthetic
-- Modern design elements
+- Abstract representation of light rays through water
+- Blue and white color scheme
+- Soft, flowing light patterns
+- Clean, minimalist composition
+- Focus on water clarity and light
+- Bright, light, magical aesthetic
 
 STYLE:
-- Architectural photography
-- Modern, minimalist composition
-- Natural lighting
-- Professional quality
-- Sophisticated aesthetic
-- High-end architectural magazine style
+- Abstract water art
+- Flowing, organic light forms
+- Soft, natural patterns
+- Clean, minimalist composition
+- Professional, gallery-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, light-focused
 
 COLOR PALETTE:
-- Primary: Neutral tones (whites, grays, light wood)
-- Accents: Subtle color (if any)
-- Lighting: Natural, clean
-- Background: Modern architectural elements
+- Primary: Blue (#007BFF, #00A3E0, aqua, turquoise)
+- Secondary: White (#FFFFFF) - light rays
+- Accents: Soft blue tones
+- Background: Light, bright, airy
+- Overall: Fresh, clean, magical, pure
 
 TECHNICAL:
-- Resolution: 1200x800px
+- Resolution: 1920x1080px or 1200x800px
 - Format: High-quality JPG
-- Style: Architectural photography
-- File size: <100KB
+- Style: Abstract water art
+- Mood: Pure, refreshing, magical, clear
 
 BRAND ALIGNMENT:
-- Modern, architectural
-- Clean, minimalist
-- Professional, sophisticated
-- Contemporary design
+- Water clarity and light
+- Natural, organic forms
+- Clean, pure aesthetic
+- Fresh, healthy water
+- Bright, light, transparent
+```
+
+#### **Prompt 14: Soft Fluid Forms (Blue/White Water Colors)**
+```
+Create an abstract art image of soft fluid forms in blue and white water colors:
+
+VISUAL ELEMENTS:
+- Soft, flowing fluid forms
+- Blue and white color scheme
+- Organic, natural water shapes
+- Clean, minimalist composition
+- Focus on water flow and purity
+- Bright, light, flowing aesthetic
+
+STYLE:
+- Abstract water art
+- Flowing, organic forms (not geometric/angular)
+- Soft, natural shapes
+- Clean, minimalist composition
+- Professional, gallery-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, natural flow
+
+COLOR PALETTE:
+- Primary: Blue (#007BFF, #00A3E0, aqua, turquoise)
+- Secondary: White (#FFFFFF)
+- Accents: Soft blue tones
+- Background: Light, bright, airy
+- Overall: Fresh, clean, refreshing, flowing
+
+TECHNICAL:
+- Resolution: 1920x1080px or 1200x800px
+- Format: High-quality JPG
+- Style: Abstract water art
+- Mood: Pure, refreshing, flowing, natural
+
+BRAND ALIGNMENT:
+- Water flow and movement
+- Natural, organic forms
+- Clean, pure aesthetic
+- Fresh, healthy water
+- Bright, light, transparent
+```
+
+#### **Prompt 15: Water Splash Frozen in Time (Dynamic, Pure)**
+```
+Create an abstract art image of water splash frozen in time:
+
+VISUAL ELEMENTS:
+- Dynamic water splash captured
+- Crystal clear, pure water
+- Blue and white color scheme
+- Clean, minimalist composition
+- Focus on water movement and purity
+- Bright, light, dynamic aesthetic
+
+STYLE:
+- Abstract water art
+- Dynamic, frozen motion
+- Clean, minimalist composition
+- Professional, gallery-quality
+- Fresh, pure, healthy aesthetic
+- Water-focused, crystal clear
+
+COLOR PALETTE:
+- Primary: Blue (#007BFF, #00A3E0, aqua, turquoise)
+- Secondary: White (#FFFFFF)
+- Accents: Soft blue tones
+- Background: Light, bright, airy
+- Overall: Fresh, clean, dynamic, pure
+
+TECHNICAL:
+- Resolution: 1920x1080px or 1200x800px
+- Format: High-quality JPG
+- Style: Abstract water art
+- Mood: Pure, refreshing, dynamic, fresh
+
+BRAND ALIGNMENT:
+- Water movement and purity
+- Dynamic, fresh aesthetic
+- Clean, pure water
+- Fresh, healthy water
+- Bright, light, transparent
 ```
 
 ---
 
-### **LIFESTYLE IMAGERY - AESTHETIC FOCUS**
+### **WATER-THEMED ICONS**
 
-#### **Prompt 12: Hands Holding Glass of Clear Water (Artistic)**
+#### **Prompt 16: Water Droplet Icon (Simple, Clean)**
 ```
-Create an artistic, high-end photography image of hands holding a glass of clear water:
+Create a simple, minimalist water droplet icon:
 
 VISUAL ELEMENTS:
-- Hands (clean, well-groomed) holding a clear glass
-- Clear, pure water visible in glass
-- Artistic composition and framing
-- Natural or studio lighting
-- Clean, minimalist background
-- High-end product/lifestyle photography
-- Sophisticated, premium aesthetic
-
-STYLE:
-- Artistic lifestyle photography
-- High-end product photography quality
-- Clean, minimalist composition
-- Professional studio or natural lighting
-- Gallery-quality artistic photography
-- Sophisticated, premium aesthetic
-
-COLOR PALETTE:
-- Primary: Neutral tones (skin, glass, water)
-- Accents: Blue (#007BFF) from water or lighting
-- Background: Clean white or subtle gradient
-- Lighting: Natural or studio, clean
-
-TECHNICAL:
-- Resolution: 1200x800px
-- Format: High-quality JPG
-- Style: Artistic lifestyle photography
-- File size: <100KB
-
-BRAND ALIGNMENT:
-- High-end, artistic
-- Clean, sophisticated
-- Premium quality
-- Health and wellness focus
-```
-
-#### **Prompt 13: Modern Kitchen/Home Environment (Architectural Style)**
-```
-Create a modern kitchen or home environment in architectural photography style:
-
-VISUAL ELEMENTS:
-- Contemporary kitchen or home interior
-- Clean, modern design elements
-- Natural lighting
-- Architectural photography composition
-- Minimalist, uncluttered
-- Professional architectural photography quality
-- Sophisticated, high-end aesthetic
-
-STYLE:
-- Architectural photography
-- Modern, minimalist composition
-- Natural lighting
-- Professional quality
-- Sophisticated aesthetic
-- High-end design magazine style
-
-COLOR PALETTE:
-- Primary: Neutral tones (whites, grays, light wood)
-- Accents: Subtle color (if any)
-- Lighting: Natural, clean
-- Background: Modern interior elements
-
-TECHNICAL:
-- Resolution: 1200x800px
-- Format: High-quality JPG
-- Style: Architectural lifestyle photography
-- File size: <100KB
-
-BRAND ALIGNMENT:
-- Modern, architectural
-- Clean, sophisticated
-- Professional, high-end
-- Contemporary lifestyle
-```
-
-#### **Prompt 14: Water Pouring/Flowing (Macro, Artistic, Dynamic)**
-```
-Create an artistic, dynamic macro photography image of water pouring or flowing:
-
-VISUAL ELEMENTS:
-- Water pouring or flowing (artistic capture)
-- Macro or extreme close-up perspective
-- Dynamic motion captured artistically
-- Clean, minimalist composition
-- High-end artistic photography
-- Focus on movement, light, and form
-- Gallery-quality image
-
-STYLE:
-- Artistic macro photography
-- Dynamic motion capture
-- Clean, minimalist composition
-- Professional studio lighting
-- Gallery-quality artistic photography
-- Sophisticated, premium aesthetic
-
-COLOR PALETTE:
-- Primary: Clear water, white, light tones
-- Accents: Blue (#007BFF) from water
-- Background: Clean, minimalist
-- Lighting: Studio, dramatic
-
-TECHNICAL:
-- Resolution: 1200x800px
-- Format: High-quality JPG
-- Style: Artistic macro photography
-- File size: <100KB
-
-BRAND ALIGNMENT:
-- Artistic, high-end
-- Dynamic, modern
-- Premium quality
-- Water theme (artistic)
-```
-
----
-
-### **MINIMALIST ICONS**
-
-#### **Prompt 15: Pure Water Icon (Simple Line Art)**
-```
-Create a simple, minimalist line art icon of a water drop:
-
-VISUAL ELEMENTS:
-- Simple water drop shape
-- Clean, minimalist line art
-- Single line or simple outline
+- Simple water droplet shape
+- Clean, minimalist line art or filled
 - Modern, geometric style
-- No fill, just outline
 - Professional icon design
+- Water-focused symbol
 
 STYLE:
-- Minimalist line art
+- Minimalist icon design
 - Simple, clean design
 - Modern icon style
 - Vector-style (can be rasterized to SVG)
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF) or black (#000000)
-- Monochrome (single color)
-- Optional: White for negative space
+- Primary: Blue (#007BFF, #00A3E0)
+- Optional: White (#FFFFFF) for negative space
+- Monochrome or two-color maximum
 
 TECHNICAL:
 - Resolution: 256x256px viewBox
 - Format: SVG (vector) or PNG with transparency
-- Style: Minimalist line art icon
+- Style: Minimalist water icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Simple, clean
-- Modern, professional
-- Recognizable symbol
+- Water-focused symbol
+- Simple, clean, modern
+- Recognizable water element
 ```
 
-#### **Prompt 16: Cost Savings Icon (Minimalist Checkmark)**
+#### **Prompt 17: Wave/Flow Icon (Dynamic Water Movement)**
 ```
-Create a simple, minimalist checkmark or savings symbol icon:
+Create a simple, minimalist wave or flow icon representing dynamic water movement:
 
 VISUAL ELEMENTS:
-- Simple checkmark or dollar symbol
+- Simple wave or flow lines
 - Clean, minimalist line art
-- Single line or simple outline
 - Modern, geometric style
 - Professional icon design
+- Water movement symbol
 
 STYLE:
-- Minimalist line art
+- Minimalist icon design
 - Simple, clean design
 - Modern icon style
 - Vector-style
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF) or black (#000000)
-- Monochrome (single color)
+- Primary: Blue (#007BFF, #00A3E0)
+- Optional: White (#FFFFFF) for negative space
+- Monochrome or two-color maximum
 
 TECHNICAL:
 - Resolution: 256x256px viewBox
 - Format: SVG or PNG
-- Style: Minimalist icon
+- Style: Minimalist water flow icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Simple, clean
-- Modern, professional
-- Recognizable symbol
+- Water movement symbol
+- Simple, clean, modern
+- Recognizable water element
 ```
 
-#### **Prompt 17: Eco-Friendly Icon (Simple Leaf Line Art)**
+#### **Prompt 18: Checkmark/Shield with Water Theme**
 ```
-Create a simple, minimalist leaf or eco symbol icon:
+Create a simple, minimalist checkmark or shield icon with water theme:
 
 VISUAL ELEMENTS:
-- Simple leaf or recycling symbol
+- Simple checkmark or shield shape
+- Water droplet or water element integrated
 - Clean, minimalist line art
-- Single line or simple outline
 - Modern, geometric style
 - Professional icon design
 
 STYLE:
-- Minimalist line art
+- Minimalist icon design
 - Simple, clean design
 - Modern icon style
 - Vector-style
 
 COLOR PALETTE:
-- Primary: Green (#28A745) or black (#000000)
-- Monochrome (single color)
+- Primary: Blue (#007BFF, #00A3E0) or Green (#28A745)
+- Optional: White (#FFFFFF) for negative space
+- Monochrome or two-color maximum
 
 TECHNICAL:
 - Resolution: 256x256px viewBox
 - Format: SVG or PNG
-- Style: Minimalist icon
+- Style: Minimalist water-themed icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Simple, clean
-- Modern, professional
-- Recognizable symbol
+- Water and quality symbol
+- Simple, clean, modern
+- Recognizable water element
 ```
 
-#### **Prompt 18: Health Icon (Minimalist Heart/Wellness)**
+#### **Prompt 19: Leaf with Water Droplet (Eco, Natural)**
 ```
-Create a simple, minimalist heart or wellness symbol icon:
+Create a simple, minimalist leaf icon with water droplet:
 
 VISUAL ELEMENTS:
-- Simple heart or wellness symbol
+- Simple leaf shape
+- Water droplet on or near leaf
 - Clean, minimalist line art
-- Single line or simple outline
 - Modern, geometric style
 - Professional icon design
+- Eco, natural theme
 
 STYLE:
-- Minimalist line art
+- Minimalist icon design
 - Simple, clean design
 - Modern icon style
 - Vector-style
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF) or black (#000000)
-- Monochrome (single color)
+- Primary: Green (#28A745) for leaf, Blue (#007BFF) for water
+- Optional: White (#FFFFFF) for negative space
+- Two-color maximum
 
 TECHNICAL:
 - Resolution: 256x256px viewBox
 - Format: SVG or PNG
-- Style: Minimalist icon
+- Style: Minimalist eco-water icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Simple, clean
-- Modern, professional
-- Recognizable symbol
+- Water and nature symbol
+- Simple, clean, modern
+- Recognizable eco-water element
 ```
 
-#### **Prompt 19: Installation Icon (Simple Flow Symbol)**
+#### **Prompt 20: Glass/Cup Icon (Water Consumption)**
 ```
-Create a simple, minimalist flow or installation symbol icon:
+Create a simple, minimalist glass or cup icon for water consumption:
 
 VISUAL ELEMENTS:
-- Simple flow lines or installation symbol
+- Simple glass or cup shape
+- Water visible in glass (optional)
 - Clean, minimalist line art
-- Single line or simple outline
 - Modern, geometric style
 - Professional icon design
+- Water consumption symbol
 
 STYLE:
-- Minimalist line art
+- Minimalist icon design
 - Simple, clean design
 - Modern icon style
 - Vector-style
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF) or black (#000000)
-- Monochrome (single color)
+- Primary: Blue (#007BFF, #00A3E0) for water
+- Optional: White (#FFFFFF) for glass/negative space
+- Monochrome or two-color maximum
 
 TECHNICAL:
 - Resolution: 256x256px viewBox
 - Format: SVG or PNG
-- Style: Minimalist icon
+- Style: Minimalist water glass icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Simple, clean
-- Modern, professional
-- Recognizable symbol
-```
-
-#### **Prompt 20: Smart Technology Icon (Geometric Tech Symbol)**
-```
-Create a simple, minimalist geometric technology symbol icon:
-
-VISUAL ELEMENTS:
-- Simple geometric tech symbol (circuit, connection, or innovation symbol)
-- Clean, minimalist line art
-- Single line or simple outline
-- Modern, geometric style
-- Professional icon design
-
-STYLE:
-- Minimalist line art
-- Simple, clean design
-- Modern icon style
-- Vector-style
-
-COLOR PALETTE:
-- Primary: Blue (#007BFF) or black (#000000)
-- Monochrome (single color)
-
-TECHNICAL:
-- Resolution: 256x256px viewBox
-- Format: SVG or PNG
-- Style: Minimalist icon
-- File size: <10KB
-
-BRAND ALIGNMENT:
-- Simple, clean
-- Modern, professional
-- Recognizable symbol
+- Water consumption symbol
+- Simple, clean, modern
+- Recognizable water element
 ```
 
 ---
@@ -938,7 +976,7 @@ Create a modern, professional logo for OMGEN WATER:
 
 VISUAL ELEMENTS:
 - "OMGEN WATER" wordmark (bold, modern typography)
-- Water-themed icon or symbol (atomic structure, water molecule, or water drop)
+- Water-themed icon or symbol (water droplet, wave, or water molecule)
 - Blue (#007BFF) and black (#000000) color scheme
 - Clean, professional design
 - Modern, trustworthy aesthetic
@@ -976,7 +1014,7 @@ BRAND ALIGNMENT:
 Create a standalone icon for OMGEN WATER logo:
 
 VISUAL ELEMENTS:
-- Water-themed icon (atomic structure, water molecule, or stylized water symbol)
+- Water-themed icon (water droplet, wave, or stylized water symbol)
 - Blue (#007BFF) and black (#000000) colors
 - Modern, recognizable symbol
 - Clean, professional design
@@ -1049,32 +1087,32 @@ BRAND ALIGNMENT:
 ```
 images/
 ├── hero/
-│   ├── main-hero.jpg (1920x1080) - Black abstract geometric
-│   ├── water-abstract-hero.jpg (1920x1080) - Water-themed abstract
-│   ├── architectural-hero.jpg (1920x1080) - Architectural with water
-│   ├── water-flow-abstract-1.jpg (1920x1080) - Blue/white gradient flow
-│   ├── water-flow-abstract-2.jpg (1920x1080) - Geometric water patterns
-│   ├── water-flow-abstract-3.jpg (1920x1080) - Architectural with water
+│   ├── water-pouring-glass.jpg (1920x1080) - Crystal clear water pouring
+│   ├── underwater-bubbles.jpg (1920x1080) - Underwater with bubbles
+│   ├── water-droplets-glass.jpg (1920x1080) - Water droplets on glass
+│   ├── water-ripples-surface.jpg (1920x1080) - Calm water surface
+│   ├── water-gradient-flow.jpg (1920x1080) - Abstract water gradients
+│   ├── water-waves-gradient.jpg (1920x1080) - Flowing blue waves
+│   ├── water-ripple-pattern.jpg (1920x1080) - Water ripple pattern
+│   ├── underwater-light-rays.jpg (1920x1080) - Underwater light rays
+│   ├── soft-fluid-forms.jpg (1920x1080) - Soft fluid forms
+│   └── water-splash-frozen.jpg (1920x1080) - Water splash frozen
 │   └── README.md
 │
 ├── lifestyle/
-│   ├── water-droplets-macro.jpg (1200x800) - Macro water droplets
-│   ├── water-flow-artistic.jpg (1200x800) - Artistic water flow
-│   ├── natural-light-water.jpg (1200x800) - Light through water
-│   ├── modern-interior-1.jpg (1200x800) - Minimalist interior
-│   ├── modern-interior-2.jpg (1200x800) - Architectural spaces
 │   ├── hands-water-glass.jpg (1200x800) - Hands with water glass
-│   ├── modern-kitchen-aesthetic.jpg (1200x800) - Modern kitchen
-│   └── water-pour-artistic.jpg (1200x800) - Artistic water pour
+│   ├── water-faucet-flow.jpg (1200x800) - Water from faucet
+│   ├── water-droplets-leaf.jpg (1200x800) - Water droplets on leaf
+│   ├── light-through-water.jpg (1200x800) - Light through water
+│   └── family-drinking-water.jpg (1200x800) - Family drinking water
 │   └── README.md
 │
 ├── icons/
-│   ├── pure-water.svg (256x256) - Water drop line art
-│   ├── cost-savings.svg (256x256) - Checkmark/savings
-│   ├── eco-friendly.svg (256x256) - Leaf/eco symbol
-│   ├── health.svg (256x256) - Heart/wellness
-│   ├── installation.svg (256x256) - Flow/installation
-│   └── smart-tech.svg (256x256) - Geometric tech
+│   ├── water-droplet.svg (256x256) - Water droplet icon
+│   ├── water-wave-flow.svg (256x256) - Wave/flow icon
+│   ├── water-shield-check.svg (256x256) - Checkmark/shield
+│   ├── leaf-water-droplet.svg (256x256) - Leaf with water
+│   └── glass-water.svg (256x256) - Glass/cup icon
 │   └── README.md
 │
 ├── branding/
@@ -1096,15 +1134,16 @@ images/
 - No spaces or special characters
 - Include category prefix when appropriate
 - Be descriptive but concise
+- Use water-themed names
 
 ### **Examples:**
-- ✅ `main-hero.jpg`
-- ✅ `water-flow-abstract-1.jpg`
-- ✅ `water-droplets-macro.jpg`
-- ✅ `pure-water.svg`
-- ❌ `Main Hero.jpg` (uppercase, space)
-- ❌ `water_flow_abstract.jpg` (underscore)
-- ❌ `waterFlowAbstract.jpg` (camelCase)
+- ✅ `water-pouring-glass.jpg`
+- ✅ `underwater-bubbles.jpg`
+- ✅ `water-droplets-glass.jpg`
+- ✅ `water-droplet.svg`
+- ❌ `Water Pouring.jpg` (uppercase, space)
+- ❌ `water_pouring.jpg` (underscore)
+- ❌ `waterPouring.jpg` (camelCase)
 
 ---
 
@@ -1112,14 +1151,13 @@ images/
 
 ### **Compression Requirements:**
 - **Hero images:** <150KB (JPG, quality 80-85%)
-- **Section backgrounds:** <100KB (JPG, quality 80-85%)
-- **Aesthetic photography:** <100KB (JPG, quality 80-85%)
-- **Lifestyle images:** <100KB (JPG, quality 80-85%)
+- **Water photography:** <100KB (JPG, quality 80-85%)
+- **Water abstract art:** <100KB (JPG, quality 80-85%)
 - **Icons:** <10KB (SVG preferred, PNG if needed)
 - **Logos:** <50KB (PNG, quality 90%+)
 
 ### **Format Selection:**
-- **JPG:** Photos, backgrounds, abstract art
+- **JPG:** Photos, backgrounds, water imagery
 - **PNG:** Logos, graphics with transparency
 - **SVG:** Icons, simple graphics (preferred for scalability)
 
@@ -1134,13 +1172,14 @@ images/
 2. Verify dimensions match specifications
 3. Compress using TinyPNG or Squoosh
 4. Verify file size meets requirements
-5. Test image quality (should remain sharp)
+5. Test image quality (should remain sharp and clear)
 6. Save to appropriate directory
 
-### **Special Considerations for Abstract Art:**
-- Ensure patterns tile seamlessly if needed
-- Maintain high quality for geometric precision
-- Preserve color gradients accurately
+### **Special Considerations for Water Images:**
+- Maintain water clarity and transparency in compression
+- Preserve blue color accuracy
+- Keep bright, light aesthetic
+- Ensure water looks pure and fresh
 - Test with overlay text to ensure readability
 
 ---
@@ -1152,16 +1191,16 @@ images/
 - [ ] File names match specifications exactly
 - [ ] Images placed in correct directory structure
 - [ ] File sizes meet requirements
-- [ ] Image quality verified (sharp, professional)
-- [ ] Abstract patterns tested for seamless tiling (if needed)
+- [ ] Image quality verified (sharp, professional, water-focused)
+- [ ] Water clarity and purity maintained
 
 ### **HTML Integration:**
 - [ ] Image paths updated in `index.html`
 - [ ] Image paths updated in `products.html`
-- [ ] Alt text added for all images (descriptive)
+- [ ] Alt text added for all images (descriptive, water-focused)
 - [ ] Lazy loading attributes added (`loading="lazy"`)
 - [ ] Decoding attributes added (`decoding="async"`)
-- [ ] Abstract backgrounds tested with overlay text
+- [ ] Water backgrounds tested with overlay text
 
 ### **CSS Verification:**
 - [ ] Images display correctly at all breakpoints
@@ -1169,7 +1208,7 @@ images/
 - [ ] Lazy loading fade-in animations work
 - [ ] Image hover effects (if applicable) work
 - [ ] Placeholder backgrounds display for missing images
-- [ ] Abstract backgrounds work with text overlays
+- [ ] Water backgrounds work with text overlays
 
 ### **Testing:**
 - [ ] All images load correctly
@@ -1178,15 +1217,16 @@ images/
 - [ ] Performance is maintained (<2s load time)
 - [ ] Accessibility: Alt text is descriptive
 - [ ] Cross-browser compatibility verified
-- [ ] Abstract backgrounds maintain quality at all sizes
+- [ ] Water images maintain clarity and brightness
 
 ### **Final Verification:**
-- [ ] All images match brand guidelines
-- [ ] Color palette is consistent
+- [ ] All images match brand guidelines (water-focused)
+- [ ] Color palette is consistent (blues, whites, light tones)
 - [ ] Image quality is professional
 - [ ] No broken image links
 - [ ] Site performance is optimal
-- [ ] Abstract art aesthetic is consistent
+- [ ] Every image communicates WATER (purity, clarity, health)
+- [ ] Zero dark/geometric/architectural patterns
 
 ---
 
@@ -1195,11 +1235,11 @@ images/
 ### **Visual Quality:**
 - ✅ Sharp, high-resolution images
 - ✅ Professional photography/art quality
-- ✅ Consistent color palette (blue #007BFF, black #000, white #FFF)
-- ✅ Brand-appropriate styling
+- ✅ Consistent color palette (blue #007BFF, white #FFF, light tones)
+- ✅ Brand-appropriate styling (water-focused)
 - ✅ No watermarks or AI artifacts
-- ✅ Abstract art maintains geometric precision
-- ✅ Aesthetic photography is gallery-quality
+- ✅ Water clarity and purity maintained
+- ✅ Bright, light, airy aesthetic (not dark)
 
 ### **Technical Quality:**
 - ✅ Correct dimensions (as specified)
@@ -1207,41 +1247,50 @@ images/
 - ✅ File size within limits
 - ✅ Optimized compression
 - ✅ Proper aspect ratios
-- ✅ Abstract patterns tile seamlessly (if needed)
+- ✅ Water images maintain clarity
 
 ### **Brand Alignment:**
-- ✅ Matches OMGEN WATER brand identity
-- ✅ Modern, sophisticated aesthetic
+- ✅ Matches OMGEN WATER brand identity (WATER-focused)
+- ✅ Every image communicates WATER
 - ✅ Professional, trustworthy appearance
-- ✅ Abstract/artistic interpretation
-- ✅ Consistent with site design
-- ✅ High-end, premium quality
+- ✅ Natural, fresh, healthy aesthetic
+- ✅ Consistent with water filtration industry
+- ✅ Bright, light, transparent (not dark/industrial)
+- ✅ Evokes purity, freshness, health, clarity
+
+### **Water Focus Verification:**
+- ✅ Every image features water as hero element
+- ✅ Color palette dominated by blues and whites
+- ✅ Natural, fresh, healthy aesthetic throughout
+- ✅ Images instantly communicate "clean water company"
+- ✅ Zero dark/geometric/architectural patterns
+- ✅ All imagery evokes: purity, freshness, health, clarity
 
 ### **Accessibility:**
 - ✅ Descriptive alt text for all images
 - ✅ Proper semantic HTML structure
 - ✅ Images don't convey critical information without text
 - ✅ Color contrast meets WCAG standards
-- ✅ Abstract backgrounds work with text overlays
+- ✅ Water backgrounds work with text overlays
 
 ---
 
 ## RECOMMENDED AI TOOLS
 
-### **1. Midjourney** ⭐ **BEST FOR ABSTRACT ART**
-- **Best for:** Abstract art, artistic photography, geometric patterns
-- **Strengths:** Excellent artistic quality, creative control, abstract art generation
-- **Cost:** $10-60/month
-- **URL:** https://www.midjourney.com/ (via Discord)
-
-### **2. DALL-E 3 (via ChatGPT Plus)**
-- **Best for:** Precise control, architectural photography, detailed prompts
-- **Strengths:** High quality, natural results, good prompt understanding
+### **1. DALL-E 3 (via ChatGPT Plus)** ⭐ **BEST FOR WATER PHOTOGRAPHY**
+- **Best for:** Precise control, water photography, clear water imagery
+- **Strengths:** High quality, natural results, good prompt understanding, excellent for water clarity
 - **Cost:** $20/month (ChatGPT Plus)
 - **URL:** https://chat.openai.com/
 
+### **2. Midjourney**
+- **Best for:** Artistic water photography, abstract water art, high-quality imagery
+- **Strengths:** Excellent quality, artistic control, good for water aesthetics
+- **Cost:** $10-60/month
+- **URL:** https://www.midjourney.com/ (via Discord)
+
 ### **3. Leonardo.ai**
-- **Best for:** Artistic photography, abstract patterns, multiple variations
+- **Best for:** Water photography, multiple variations, artistic imagery
 - **Strengths:** Good control, multiple models, free tier available
 - **Cost:** Free tier + paid plans
 - **URL:** https://leonardo.ai/
@@ -1253,8 +1302,8 @@ images/
 - **URL:** Check availability
 
 ### **5. Stable Diffusion (via various platforms)**
-- **Best for:** Custom models, fine-tuned control, abstract art
-- **Strengths:** Open source, customizable, good for abstract patterns
+- **Best for:** Custom models, fine-tuned control, water imagery
+- **Strengths:** Open source, customizable
 - **Cost:** Free (self-hosted) or paid platforms
 - **URL:** Various platforms available
 
@@ -1263,46 +1312,50 @@ images/
 ## PROMPT OPTIMIZATION TIPS
 
 ### **For Best Results:**
-1. **Be Specific:** Include exact dimensions, colors, and style requirements
-2. **Use Style References:** Reference "abstract art," "architectural photography," "minimalist," etc.
-3. **Iterate:** Generate multiple variations and select the best
-4. **Refine Prompts:** Adjust prompts based on initial results
-5. **Combine Elements:** Mention brand colors, style, and technical specs together
+1. **Emphasize WATER:** Always mention "water," "pure water," "crystal clear water"
+2. **Specify Colors:** Include exact blue hex codes (#007BFF, #00A3E0)
+3. **Light & Bright:** Always mention "bright," "light," "airy," "natural lighting"
+4. **Purity Focus:** Include "pure," "clear," "fresh," "clean" in every prompt
+5. **Avoid Dark:** Explicitly state "not dark," "bright," "light tones"
 
 ### **Common Adjustments:**
-- If too literal: Add "abstract," "artistic interpretation," "minimalist"
-- If too cluttered: Add "clean, minimalist composition"
-- If colors off: Specify exact hex codes (#007BFF, #000000)
-- If quality low: Add "high resolution, gallery-quality, professional"
-- If style wrong: Specify "abstract geometric art" or "architectural photography"
+- If too dark: Add "bright, natural lighting," "light tones," "airy"
+- If not water-focused: Add "crystal clear water," "pure water," "water as hero element"
+- If colors off: Specify exact hex codes (#007BFF, #00A3E0, #FFFFFF)
+- If quality low: Add "high resolution, professional quality, gallery-quality"
+- If too industrial: Add "natural," "organic," "flowing," "soft forms"
 
-### **For Abstract Art:**
-- Emphasize "abstract," "geometric," "minimalist"
-- Specify "no literal objects" or "abstract representation"
-- Mention "architectural-inspired" for geometric patterns
-- Use "gallery-quality" or "sophisticated" for premium aesthetic
+### **For Water Photography:**
+- Emphasize "crystal clear," "pure water," "transparent"
+- Specify "natural lighting" or "bright, soft lighting"
+- Mention "fresh," "clean," "healthy"
+- Use "water-focused," "water as hero element"
 
-### **For Aesthetic Photography:**
-- Emphasize "artistic," "high-end," "gallery-quality"
-- Specify "natural lighting" or "studio lighting"
-- Mention "minimalist composition" for clean aesthetic
-- Use "architectural photography style" for interiors
+### **For Water Abstract Art:**
+- Emphasize "flowing," "organic," "natural forms"
+- Specify "blue to white gradients"
+- Mention "soft," "flowing," "not geometric/angular"
+- Use "water-themed," "water flow patterns"
 
 ---
 
 ## TROUBLESHOOTING
 
-### **Issue: Images too literal/not abstract enough**
-- **Solution:** Add "abstract," "artistic interpretation," "minimalist" to prompt
-- **Alternative:** Specify "no recognizable objects" or "abstract representation"
+### **Issue: Images too dark/not bright enough**
+- **Solution:** Add "bright, natural lighting," "light tones," "airy," "not dark" to prompt
+- **Alternative:** Regenerate with emphasis on "bright," "light," "white background"
 
-### **Issue: Abstract patterns don't tile seamlessly**
-- **Solution:** Regenerate with "seamless pattern" or "tileable" in prompt
-- **Alternative:** Use image editor to create seamless tile
+### **Issue: Images not water-focused**
+- **Solution:** Add "crystal clear water," "pure water," "water as hero element" to prompt
+- **Alternative:** Regenerate with stronger water emphasis
+
+### **Issue: Too geometric/angular (not organic)**
+- **Solution:** Add "organic," "flowing," "soft forms," "natural water movement" to prompt
+- **Alternative:** Regenerate with "not geometric," "not angular," "flowing water"
 
 ### **Issue: Images too large**
 - **Solution:** Use TinyPNG or Squoosh to compress
-- **Target:** Reduce quality to 80-85% for JPG
+- **Target:** Reduce quality to 80-85% for JPG while maintaining water clarity
 
 ### **Issue: Wrong dimensions**
 - **Solution:** Use image editor to crop/resize to exact specs
@@ -1310,7 +1363,7 @@ images/
 
 ### **Issue: Colors don't match brand**
 - **Solution:** Adjust in image editor or regenerate with specific color codes
-- **Reference:** Use brand color palette (#007BFF, #000000, #FFFFFF, #28A745)
+- **Reference:** Use brand color palette (#007BFF, #00A3E0, #FFFFFF, #28A745)
 
 ### **Issue: AI artifacts visible**
 - **Solution:** Regenerate with "no artifacts," "clean," "professional quality" in prompt
@@ -1324,16 +1377,35 @@ images/
 
 ## NEXT STEPS
 
-1. **Generate Images:** Use prompts above to create all required images
-2. **Optimize:** Compress and optimize all images
+1. **Generate Images:** Use prompts above to create all required water-focused images
+2. **Optimize:** Compress and optimize all images (maintain water clarity)
 3. **Organize:** Place images in correct directory structure
 4. **Integrate:** Update HTML with image paths
 5. **Test:** Verify all images load and display correctly
 6. **Refine:** Adjust based on visual feedback
+7. **Verify:** Ensure every image communicates WATER (purity, clarity, health)
 
 ---
 
-**Document Version:** 2.0 (Revised for Abstract Art & Aesthetic Photography)  
+## CRITICAL REMINDERS
+
+### **WATER-FOCUSED CHECKLIST:**
+- ✅ Every image must feature WATER as hero element
+- ✅ Color palette: Blues (#007BFF, #00A3E0), whites, light tones
+- ✅ Style: Natural, fresh, clean, healthy, bright, light
+- ✅ Mood: Pure, refreshing, vital, life-giving
+- ✅ Avoid: Dark, geometric, angular, industrial, architectural
+- ✅ Communicate: Clean water company, purity, health, freshness
+
+### **BRAND ALIGNMENT:**
+- OMGEN WATER = Clean, Pure, Healthy Water
+- Visual identity must immediately communicate WATER
+- Every image should evoke: purity, freshness, health, clarity
+- Zero dark, industrial, or non-water related imagery
+
+---
+
+**Document Version:** 3.0 (Revised for Water-Focused Visual Identity)  
 **Last Updated:** January 2025  
 **Maintained By:** Development Team  
 **Questions?** Refer to integration checklist or contact project manager.
