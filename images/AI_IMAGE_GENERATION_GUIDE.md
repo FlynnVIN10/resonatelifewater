@@ -1,9 +1,10 @@
 # AI Image Generation Guide
-## OMGEN WATER Website Assets
+## OMGEN WATER Website Assets - Abstract Art & Aesthetic Photography
 
 **Project:** OMGEN WATER Website Rebranding  
-**Purpose:** Generate professional images for water filtration system website  
+**Purpose:** Generate sophisticated abstract art and aesthetic photography for modern website design  
 **Target Audience:** Project Manager (Grok) for AI image generation  
+**Style Focus:** Abstract geometric patterns, architectural photography, minimalist aesthetic imagery  
 **Last Updated:** January 2025
 
 ---
@@ -26,20 +27,22 @@
 
 ### Step 1: Choose AI Tool
 - **Recommended:** DALL-E 3 (via ChatGPT Plus), Leonardo.ai, or Midjourney
+- **Best for Abstract Art:** Midjourney (artistic quality) or DALL-E 3 (precise control)
 - **Alternative:** Grok (if available with image generation)
 
 ### Step 2: Generate Images by Category
 Follow the prompts in [AI Generation Prompts](#ai-generation-prompts) section below. Generate images in this order:
-1. Branding (logo) - **Priority 1**
-2. Hero images - **Priority 2**
-3. Product images - **Priority 3**
-4. Lifestyle images - **Priority 4**
-5. Icons - **Priority 5**
+1. Hero backgrounds (abstract geometric) - **Priority 1**
+2. Section backgrounds (water abstract art) - **Priority 2**
+3. Aesthetic photography (macro, architectural) - **Priority 3**
+4. Lifestyle imagery (artistic focus) - **Priority 4**
+5. Minimalist icons - **Priority 5**
 
 ### Step 3: Optimize Images
-- Compress to <100KB per image (use TinyPNG, Squoosh, or ImageOptim)
-- Convert to appropriate format (JPG for photos, PNG for logos, SVG for icons)
+- Compress to meet file size requirements (use TinyPNG, Squoosh, or ImageOptim)
+- Convert to appropriate format (JPG for photos/backgrounds, SVG for icons)
 - Verify dimensions match specifications
+- Ensure abstract patterns tile seamlessly if needed
 
 ### Step 4: Place in Directory Structure
 - Follow the [Directory Structure](#directory-structure) section
@@ -50,71 +53,88 @@ Follow the prompts in [AI Generation Prompts](#ai-generation-prompts) section be
 - Test lazy loading
 - Verify responsive behavior
 - Check alt text is descriptive
+- Verify abstract backgrounds work with overlay text
 
 ---
 
 ## IMAGE CATEGORIES & REQUIREMENTS
 
-### **Category 1: Hero Images** (3 images)
-**Purpose:** Full-width background images for main hero sections  
+### **Category 1: Hero Backgrounds - Abstract Geometric** (3 images)
+**Purpose:** Full-width abstract background images for hero sections  
 **Format:** JPG  
 **Dimensions:** 1920x1080px (16:9 aspect ratio)  
 **File Size:** <150KB (compressed)  
-**Style:** Photorealistic, modern, clean, professional
+**Style:** Abstract geometric patterns, architectural-inspired, modern, sophisticated
 
 **Files:**
-- `hero/main-hero.jpg` - Main landing page hero
-- `hero/whole-house-hero.jpg` - Whole House System section hero
-- `hero/under-sink-hero.jpg` - Under-Sink System section hero
+- `hero/main-hero.jpg` - Black abstract geometric pattern (angular, dimensional, architectural)
+- `hero/water-abstract-hero.jpg` - Water-themed abstract art (flowing forms, liquid dynamics)
+- `hero/architectural-hero.jpg` - Modern architectural photography with water elements
 
 ---
 
-### **Category 2: Product Images** (3 images)
-**Purpose:** Standalone product photography for product cards  
+### **Category 2: Section Backgrounds - Water Abstract Art** (3 images)
+**Purpose:** Abstract water-themed backgrounds for section dividers  
 **Format:** JPG  
-**Dimensions:** 800x800px (1:1 aspect ratio)  
-**File Size:** <80KB (compressed)  
-**Style:** Professional product photography, white/light background, clean
+**Dimensions:** 1920x1080px (16:9) or 1200x800px (3:2)  
+**File Size:** <100KB (compressed)  
+**Style:** Abstract water flow patterns, geometric water themes, minimalist
 
 **Files:**
-- `products/whole-house-system.jpg` - Whole House filtration system
-- `products/under-sink-system.jpg` - Under-Sink filtration system
-- `products/filter-components.jpg` - Filter cartridges/components close-up
+- `hero/water-flow-abstract-1.jpg` - Blue/white gradient water flow patterns
+- `hero/water-flow-abstract-2.jpg` - Geometric patterns with water themes (hexagons, flowing lines)
+- `hero/water-flow-abstract-3.jpg` - Minimalist architectural elements with water
 
 ---
 
-### **Category 3: Lifestyle/Context Images** (3 images)
-**Purpose:** Contextual images showing products in use  
+### **Category 3: Aesthetic Photography** (5 images)
+**Purpose:** High-end artistic photography for content sections  
+**Format:** JPG  
+**Dimensions:** 1200x800px (3:2) or 800x800px (1:1)  
+**File Size:** <100KB (compressed)  
+**Style:** Gallery-quality, artistic, minimalist, sophisticated
+
+**Files:**
+- `lifestyle/water-droplets-macro.jpg` - Macro photography of water droplets (artistic, high-end)
+- `lifestyle/water-flow-artistic.jpg` - Water flowing (macro, artistic, dynamic)
+- `lifestyle/natural-light-water.jpg` - Natural light through water (abstract, artistic)
+- `lifestyle/modern-interior-1.jpg` - Modern minimalist interior with natural light
+- `lifestyle/modern-interior-2.jpg` - Clean architectural spaces (contemporary homes, kitchens)
+
+---
+
+### **Category 4: Lifestyle Imagery - Aesthetic Focus** (3 images)
+**Purpose:** Artistic lifestyle photography showing water/wellness themes  
 **Format:** JPG  
 **Dimensions:** 1200x800px (3:2 aspect ratio)  
 **File Size:** <100KB (compressed)  
-**Style:** Lifestyle photography, natural lighting, authentic
+**Style:** High-end photography, artistic composition, natural lighting
 
 **Files:**
-- `lifestyle/family-drinking.jpg` - Family drinking filtered water
-- `lifestyle/kitchen-install.jpg` - Kitchen with under-sink system visible
-- `lifestyle/home-exterior.jpg` - Home exterior showing whole house system connection
+- `lifestyle/hands-water-glass.jpg` - Hands holding glass of clear water (artistic, high-end)
+- `lifestyle/modern-kitchen-aesthetic.jpg` - Modern kitchen/home environment (architectural photography style)
+- `lifestyle/water-pour-artistic.jpg` - Water pouring/flowing (macro, artistic, dynamic)
 
 ---
 
-### **Category 4: Feature/Benefit Icons** (6 icons)
-**Purpose:** SVG icons for value propositions and benefits  
+### **Category 5: Minimalist Icons** (6 icons)
+**Purpose:** Simple, clean line art icons for value propositions  
 **Format:** SVG (vector)  
 **Dimensions:** 256x256px viewBox  
 **File Size:** <10KB each  
-**Style:** Modern, minimalist, line art, monochrome or two-color
+**Style:** Minimalist line art, geometric, modern, clean
 
 **Files:**
-- `icons/pure-water.svg` - Water droplet or clean water symbol
-- `icons/cost-savings.svg` - Dollar sign or savings symbol
-- `icons/eco-friendly.svg` - Leaf or recycling symbol
-- `icons/health.svg` - Heart or wellness symbol
-- `icons/installation.svg` - Tools or installation symbol
-- `icons/smart-tech.svg` - Technology or smart device symbol
+- `icons/pure-water.svg` - Simple water drop line art
+- `icons/cost-savings.svg` - Minimalist checkmark or savings symbol
+- `icons/eco-friendly.svg` - Simple leaf or eco symbol (line art)
+- `icons/health.svg` - Minimalist heart or wellness symbol
+- `icons/installation.svg` - Simple flow or installation symbol
+- `icons/smart-tech.svg` - Geometric tech symbol (minimalist)
 
 ---
 
-### **Category 5: Brand Elements** (3 logo variations)
+### **Category 6: Brand Elements** (3 logo variations)
 **Purpose:** OMGEN WATER brand logo in multiple formats  
 **Format:** PNG (with transparency)  
 **Dimensions:** Various (see specifications)  
@@ -130,563 +150,789 @@ Follow the prompts in [AI Generation Prompts](#ai-generation-prompts) section be
 
 ## AI GENERATION PROMPTS
 
-### **HERO IMAGES**
+### **HERO BACKGROUNDS - ABSTRACT GEOMETRIC**
 
-#### **Prompt 1: Main Hero Background**
+#### **Prompt 1: Black Abstract Geometric Hero Background**
 ```
-Create a photorealistic, professional image of a modern, clean water filtration system installed in a contemporary home setting. The scene should show:
+Create a sophisticated black abstract geometric pattern suitable for a modern website hero background:
 
 VISUAL ELEMENTS:
-- A sleek, modern whole-house water filtration system visible in a well-lit utility room or basement
-- Clean, minimalist home interior with natural lighting
-- Blue and white color palette (water theme)
-- Subtle water droplets or flow indicators
-- Modern architectural elements (clean lines, neutral tones)
-- Professional, trustworthy atmosphere
+- Angular, dimensional geometric shapes (triangles, hexagons, polygonal forms)
+- Deep black (#000000) as primary color
+- Subtle gray gradients and highlights for depth
+- Architectural-inspired angular lines and planes
+- Modern, sophisticated composition
+- Abstract geometric pattern that suggests structure and innovation
+- No literal objects or recognizable shapes
+- Clean, minimalist aesthetic
 
 STYLE:
-- Photorealistic photography style
-- High-end product photography quality
-- Clean, uncluttered composition
-- Soft, natural lighting
-- Depth of field with system in focus
-- Modern, premium aesthetic
+- Abstract geometric art
+- Modern architectural design influence
+- High contrast (black with subtle gray/white accents)
+- Dimensional, 3D-like appearance
+- Professional, gallery-quality
+- Sophisticated, premium aesthetic
+- Similar to high-end tech/architecture websites
 
 COLOR PALETTE:
-- Primary: Deep blue (#007BFF), white (#FFFFFF)
-- Accents: Light blue tones, silver/metallic
-- Background: Neutral whites, light grays
+- Primary: Deep black (#000000)
+- Accents: Subtle grays (#1a1a1a, #2d2d2d, #404040)
+- Highlights: Very subtle white/gray highlights for depth
+- No color (monochrome black/gray/white)
 
 TECHNICAL:
 - Resolution: 1920x1080px
 - Aspect ratio: 16:9
 - Format: High-quality JPG
-- Style: Professional product photography, magazine quality
+- Style: Abstract geometric art, architectural-inspired
+- Seamless or tileable pattern preferred
 
 BRAND ALIGNMENT:
-- Conveys innovation, trust, and premium quality
-- Water filtration industry standard
-- Modern home technology aesthetic
-- Clean, health-focused imagery
+- Modern, sophisticated, premium
+- Architectural and structural aesthetic
+- Professional, high-end appearance
+- Works well with white/colored overlay text
+- Suggests innovation and precision
 ```
 
-#### **Prompt 2: Whole House System Hero**
+#### **Prompt 2: Water-Themed Abstract Art Hero**
 ```
-Create a photorealistic image showcasing a whole-house water filtration system in a residential setting:
+Create an abstract water-themed art piece for a hero background:
 
 VISUAL ELEMENTS:
-- Large, professional whole-house filtration unit (2-stage system visible)
-- Installed in utility room, basement, or garage
-- Clean, organized installation with visible plumbing connections
-- Modern home environment (well-maintained, professional)
-- Subtle indicators of water flow or filtration process
-- Blue accent colors matching water theme
+- Flowing, liquid forms and shapes
+- Water dynamics and movement (abstract representation)
+- Clean, minimalist composition
+- Blue and white color gradients
+- Abstract representation of water flow, waves, or liquid motion
+- No literal water or recognizable objects
+- Sophisticated, artistic interpretation of water
+- Modern, contemporary art style
 
 STYLE:
-- Professional installation photography
-- Clean, organized composition
-- Technical but approachable
-- Natural lighting
-- Focus on the filtration system as hero element
+- Abstract art
+- Fluid dynamics inspiration
+- Minimalist, clean composition
+- Soft gradients and flowing forms
+- Gallery-quality artistic imagery
+- Modern, sophisticated aesthetic
+- High-end, premium appearance
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF), white, silver
-- Accents: Green (#28A745) for eco-friendly elements
-- Background: Neutral, clean whites
+- Primary: Blue (#007BFF, #0056b3)
+- Secondary: White (#FFFFFF)
+- Accents: Light blue tones (#38bdf8, #0ea5e9)
+- Gradients: Blue to white, blue to transparent
 
 TECHNICAL:
 - Resolution: 1920x1080px
 - Aspect ratio: 16:9
-- Format: JPG
-- Style: Product installation photography
+- Format: High-quality JPG
+- Style: Abstract water art, contemporary
+- Works with overlay text
 
 BRAND ALIGNMENT:
-- Professional installation quality
-- Whole-house coverage concept
-- Trustworthy, reliable system
+- Water theme (abstract)
+- Modern, artistic interpretation
+- Clean, sophisticated
+- Premium, high-end aesthetic
 ```
 
-#### **Prompt 3: Under-Sink System Hero**
+#### **Prompt 3: Modern Architectural Photography with Water Elements**
 ```
-Create a photorealistic image of a modern under-sink water filtration system in a contemporary kitchen:
+Create a modern architectural photography image with subtle water elements:
 
 VISUAL ELEMENTS:
-- Sleek under-sink filtration system (5-stage) visible under modern kitchen sink
-- Clean, modern kitchen environment
-- Premium kitchen fixtures and cabinetry
-- Water flowing from filtered water tap
-- Professional installation appearance
-- Blue and white color accents
+- Contemporary architectural space (modern building, clean lines)
+- Subtle water elements (reflection, water feature, or water in frame)
+- Natural lighting, dramatic shadows
+- Clean, minimalist composition
+- Modern architectural photography style
+- Sophisticated, high-end aesthetic
+- Professional architectural photography quality
 
 STYLE:
-- Lifestyle product photography
-- Kitchen interior photography style
-- Clean, modern aesthetic
-- Natural kitchen lighting
-- Focus on the filtration system and filtered water
+- Architectural photography
+- Modern, minimalist composition
+- Natural lighting with dramatic shadows
+- Clean lines and geometric forms
+- Professional, gallery-quality
+- Sophisticated, premium aesthetic
+- High-end architectural magazine style
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF), white, stainless steel
-- Kitchen: Warm whites, light wood tones
-- Accents: Blue for water theme
+- Primary: Neutral tones (grays, whites, blacks)
+- Accents: Blue (#007BFF) from water elements
+- Lighting: Natural, dramatic shadows
+- Background: Modern architectural elements
 
 TECHNICAL:
 - Resolution: 1920x1080px
 - Aspect ratio: 16:9
-- Format: JPG
-- Style: Kitchen lifestyle photography
+- Format: High-quality JPG
+- Style: Modern architectural photography
+- Professional quality
 
 BRAND ALIGNMENT:
-- Convenience and accessibility
-- Premium kitchen upgrade
-- Health and wellness focus
-- Modern home improvement
+- Modern, sophisticated
+- Architectural aesthetic
+- Professional, high-end
+- Clean, minimalist
 ```
 
 ---
 
-### **PRODUCT IMAGES**
+### **SECTION BACKGROUNDS - WATER ABSTRACT ART**
 
-#### **Prompt 4: Whole House System Product Shot**
+#### **Prompt 4: Blue/White Gradient Water Flow Abstract Pattern**
 ```
-Create a professional product photography image of a whole-house water filtration system:
+Create an abstract water flow pattern with blue and white gradients:
 
 VISUAL ELEMENTS:
-- Standalone whole-house filtration system (2-stage)
-- White or light gray background (studio photography style)
-- System shown from front/angled view
-- Visible filter cartridges and housing
-- Clean, modern design
-- Professional product photography lighting
-- Blue accent colors on system
+- Flowing, abstract water patterns
+- Blue to white gradients
+- Fluid dynamics inspiration (abstract)
+- Clean, minimalist composition
+- Subtle, sophisticated pattern
+- No literal water, abstract representation
+- Modern, contemporary art style
 
 STYLE:
-- E-commerce product photography
-- Clean white background
-- Professional studio lighting
-- Product-focused composition
-- High detail and clarity
+- Abstract water art
+- Gradient-based composition
+- Minimalist, clean
+- Soft, flowing forms
+- Professional, gallery-quality
+- Modern aesthetic
 
 COLOR PALETTE:
-- Product: White, blue (#007BFF), silver/metallic
-- Background: Pure white (#FFFFFF) or light gray
-- Accents: Blue for branding
+- Primary: Blue (#007BFF, #0056b3)
+- Secondary: White (#FFFFFF)
+- Gradients: Blue to white, various blue tones
 
 TECHNICAL:
-- Resolution: 800x800px
-- Aspect ratio: 1:1 (square)
+- Resolution: 1920x1080px or 1200x800px
 - Format: JPG
-- Style: E-commerce product photography
+- Style: Abstract water flow pattern
+- File size: <100KB
 
 BRAND ALIGNMENT:
-- Premium product quality
-- Professional appearance
-- Trustworthy and reliable
-- Modern technology
+- Water theme (abstract)
+- Modern, sophisticated
+- Clean, minimalist
 ```
 
-#### **Prompt 5: Under-Sink System Product Shot**
+#### **Prompt 5: Geometric Patterns with Water Themes**
 ```
-Create a professional product photography image of an under-sink water filtration system:
+Create geometric patterns with water themes (hexagons, flowing lines):
 
 VISUAL ELEMENTS:
-- Standalone under-sink filtration system (5-stage)
-- White or light background
-- System shown from front/angled view
-- Visible filter stages and components
-- Compact, modern design
-- Professional product photography
-- Blue accent colors
-
-STYLE:
-- E-commerce product photography
-- Clean background
-- Studio lighting
-- Product-focused
-- High detail
-
-COLOR PALETTE:
-- Product: White, blue (#007BFF), silver
-- Background: White or light gray
-- Accents: Blue branding
-
-TECHNICAL:
-- Resolution: 800x800px
-- Aspect ratio: 1:1
-- Format: JPG
-- Style: Product photography
-
-BRAND ALIGNMENT:
-- Compact and efficient
-- Premium quality
-- Easy installation
-- Modern design
-```
-
-#### **Prompt 6: Filter Components Close-Up**
-```
-Create a professional product photography image of water filter cartridges and components:
-
-VISUAL ELEMENTS:
-- Multiple filter cartridges arranged artistically
-- Close-up view showing filter details
-- Clean, organized composition
-- Visible filter media and housing
-- Professional product photography
+- Geometric shapes (hexagons, triangles, flowing lines)
+- Water-themed abstract patterns
 - Blue and white color scheme
+- Clean, modern geometric design
+- Flowing lines suggesting water movement
+- Minimalist, sophisticated composition
+- Abstract geometric water art
 
 STYLE:
-- Product detail photography
-- Clean background
-- Studio lighting
-- Focus on product quality
-- High detail and clarity
+- Geometric abstract art
+- Water theme inspiration
+- Minimalist, clean
+- Modern, contemporary
+- Professional, gallery-quality
 
 COLOR PALETTE:
-- Filters: White, blue, clear
-- Background: White or light gray
-- Accents: Blue branding
+- Primary: Blue (#007BFF)
+- Secondary: White (#FFFFFF)
+- Accents: Light blue tones
 
 TECHNICAL:
-- Resolution: 800x800px
-- Aspect ratio: 1:1
+- Resolution: 1920x1080px or 1200x800px
 - Format: JPG
-- Style: Product detail photography
+- Style: Geometric water abstract
+- File size: <100KB
 
 BRAND ALIGNMENT:
-- Quality components
-- Replaceable filters
-- Professional grade
+- Modern, geometric
+- Water theme
+- Clean, sophisticated
+```
+
+#### **Prompt 6: Minimalist Architectural Elements with Water**
+```
+Create minimalist architectural elements with subtle water integration:
+
+VISUAL ELEMENTS:
+- Clean architectural lines and forms
+- Subtle water elements (reflections, water features)
+- Modern, minimalist composition
+- Natural lighting
+- Sophisticated, high-end aesthetic
+- Professional architectural photography
+
+STYLE:
+- Minimalist architectural photography
+- Clean, modern composition
+- Natural lighting
+- Professional quality
+- Sophisticated aesthetic
+
+COLOR PALETTE:
+- Primary: Neutral tones (grays, whites)
+- Accents: Blue (#007BFF) from water
+- Lighting: Natural, clean
+
+TECHNICAL:
+- Resolution: 1920x1080px or 1200x800px
+- Format: JPG
+- Style: Minimalist architectural
+- File size: <100KB
+
+BRAND ALIGNMENT:
+- Modern, architectural
+- Minimalist, clean
+- Professional, sophisticated
 ```
 
 ---
 
-### **LIFESTYLE IMAGES**
+### **AESTHETIC PHOTOGRAPHY**
 
-#### **Prompt 7: Family Drinking Filtered Water**
+#### **Prompt 7: Water Droplets Macro Photography (Artistic)**
 ```
-Create a warm, authentic lifestyle photography image:
+Create an artistic macro photography image of water droplets:
 
 VISUAL ELEMENTS:
-- Diverse, happy family (2-4 people) drinking water from glasses
-- Modern, clean kitchen or dining area
-- Natural, authentic expressions
-- Filtered water visible (clear, clean)
-- Under-sink system subtly visible in background
-- Warm, inviting atmosphere
-- Natural lighting
+- Extreme close-up of water droplets
+- Artistic composition and framing
+- Natural or studio lighting
+- Clean, minimalist background
+- High-end macro photography quality
+- Artistic, gallery-quality image
+- Focus on texture, light, and form
 
 STYLE:
-- Lifestyle photography
-- Authentic, natural moments
-- Warm, inviting composition
-- Natural lighting
-- Family-focused, health-focused
+- Macro photography
+- Artistic, high-end quality
+- Clean, minimalist composition
+- Professional studio or natural lighting
+- Gallery-quality artistic photography
+- Sophisticated, premium aesthetic
 
 COLOR PALETTE:
-- Warm whites, light wood tones
-- Blue accents (#007BFF)
-- Natural skin tones
-- Clean, bright environment
+- Primary: Clear water, white, light tones
+- Accents: Blue (#007BFF) reflections or lighting
+- Background: Clean white or subtle gradient
+- Lighting: Natural or studio, dramatic
+
+TECHNICAL:
+- Resolution: 1200x800px or 800x800px
+- Format: High-quality JPG
+- Style: Artistic macro photography
+- File size: <100KB
+
+BRAND ALIGNMENT:
+- High-end, artistic
+- Clean, sophisticated
+- Premium quality
+- Water theme (artistic)
+```
+
+#### **Prompt 8: Water Flow Artistic Photography**
+```
+Create an artistic photography image of water flowing (macro, dynamic):
+
+VISUAL ELEMENTS:
+- Water flowing or pouring (artistic capture)
+- Macro or close-up perspective
+- Dynamic motion captured artistically
+- Clean, minimalist composition
+- High-end artistic photography
+- Focus on movement, light, and form
+- Gallery-quality image
+
+STYLE:
+- Artistic photography
+- Macro or close-up perspective
+- Dynamic motion capture
+- Clean, minimalist
+- Professional, gallery-quality
+- Sophisticated, premium aesthetic
+
+COLOR PALETTE:
+- Primary: Clear water, white, light tones
+- Accents: Blue (#007BFF) from water
+- Background: Clean, minimalist
+- Lighting: Natural or studio, dramatic
+
+TECHNICAL:
+- Resolution: 1200x800px or 800x800px
+- Format: High-quality JPG
+- Style: Artistic water photography
+- File size: <100KB
+
+BRAND ALIGNMENT:
+- Artistic, high-end
+- Dynamic, modern
+- Premium quality
+- Water theme
+```
+
+#### **Prompt 9: Natural Light Through Water (Abstract, Artistic)**
+```
+Create an abstract, artistic image of natural light through water:
+
+VISUAL ELEMENTS:
+- Light refracted through water (abstract representation)
+- Natural lighting effects
+- Abstract, artistic composition
+- Clean, minimalist aesthetic
+- High-end artistic photography
+- Focus on light, color, and form
+- Gallery-quality image
+
+STYLE:
+- Abstract artistic photography
+- Light and water interaction
+- Clean, minimalist composition
+- Natural lighting effects
+- Professional, gallery-quality
+- Sophisticated, premium aesthetic
+
+COLOR PALETTE:
+- Primary: Light tones, white, clear
+- Accents: Blue (#007BFF) from water/light
+- Background: Clean, minimalist
+- Lighting: Natural, dramatic
+
+TECHNICAL:
+- Resolution: 1200x800px or 800x800px
+- Format: High-quality JPG
+- Style: Abstract artistic photography
+- File size: <100KB
+
+BRAND ALIGNMENT:
+- Abstract, artistic
+- Natural, clean
+- Premium quality
+- Sophisticated aesthetic
+```
+
+#### **Prompt 10: Modern Minimalist Interior with Natural Light**
+```
+Create a modern minimalist interior photography image with natural light:
+
+VISUAL ELEMENTS:
+- Contemporary, minimalist interior space
+- Clean architectural lines
+- Natural lighting (large windows, soft light)
+- Modern furniture and design elements
+- Clean, uncluttered composition
+- Sophisticated, high-end aesthetic
+- Professional architectural/interior photography
+
+STYLE:
+- Modern interior photography
+- Minimalist, clean composition
+- Natural lighting
+- Professional architectural photography quality
+- Sophisticated, premium aesthetic
+- High-end design magazine style
+
+COLOR PALETTE:
+- Primary: Neutral tones (whites, grays, light tones)
+- Accents: Subtle color (if any)
+- Lighting: Natural, soft, clean
+- Background: Modern interior elements
 
 TECHNICAL:
 - Resolution: 1200x800px
-- Aspect ratio: 3:2
-- Format: JPG
-- Style: Lifestyle photography
+- Format: High-quality JPG
+- Style: Modern interior photography
+- File size: <100KB
 
 BRAND ALIGNMENT:
-- Family health and wellness
-- Trust and safety
-- Quality of life improvement
-- Accessible, everyday use
+- Modern, minimalist
+- Clean, sophisticated
+- Professional, high-end
+- Architectural aesthetic
 ```
 
-#### **Prompt 8: Kitchen with Under-Sink Installation**
+#### **Prompt 11: Clean Architectural Spaces (Contemporary)**
 ```
-Create a professional lifestyle image showing an under-sink filtration system in a modern kitchen:
+Create a clean architectural photography image of contemporary spaces:
 
 VISUAL ELEMENTS:
-- Modern, clean kitchen interior
-- Under-sink filtration system visible (professional installation)
-- Filtered water tap visible
-- Premium kitchen fixtures
-- Clean, organized kitchen environment
-- Natural kitchen lighting
-- Blue accent colors
+- Modern architectural space (home, kitchen, contemporary design)
+- Clean lines and geometric forms
+- Natural lighting
+- Minimalist, uncluttered composition
+- Professional architectural photography
+- Sophisticated, high-end aesthetic
+- Modern design elements
 
 STYLE:
-- Kitchen interior photography
-- Professional installation appearance
-- Clean, modern aesthetic
+- Architectural photography
+- Modern, minimalist composition
 - Natural lighting
-- Lifestyle product integration
+- Professional quality
+- Sophisticated aesthetic
+- High-end architectural magazine style
 
 COLOR PALETTE:
-- Kitchen: Warm whites, light wood, stainless steel
-- System: Blue (#007BFF), white
-- Accents: Blue for water theme
+- Primary: Neutral tones (whites, grays, light wood)
+- Accents: Subtle color (if any)
+- Lighting: Natural, clean
+- Background: Modern architectural elements
 
 TECHNICAL:
 - Resolution: 1200x800px
-- Aspect ratio: 3:2
-- Format: JPG
-- Style: Kitchen interior photography
+- Format: High-quality JPG
+- Style: Architectural photography
+- File size: <100KB
 
 BRAND ALIGNMENT:
-- Seamless integration
-- Professional installation
-- Kitchen upgrade
-- Modern convenience
-```
-
-#### **Prompt 9: Home Exterior with Whole House System**
-```
-Create a professional image showing a modern home with whole-house water filtration system:
-
-VISUAL ELEMENTS:
-- Modern, well-maintained residential home exterior
-- Subtle indication of whole-house system (utility area visible)
-- Clean, professional appearance
-- Natural outdoor lighting
-- Blue sky, green landscaping
-- Trustworthy, established home
-
-STYLE:
-- Real estate photography style
-- Professional, clean composition
-- Natural lighting
-- Home-focused, system-integrated
-
-COLOR PALETTE:
-- Home: Neutral tones, whites, grays
-- Landscape: Greens, natural tones
-- Sky: Blue (#007BFF range)
-- Accents: Blue for water theme
-
-TECHNICAL:
-- Resolution: 1200x800px
-- Aspect ratio: 3:2
-- Format: JPG
-- Style: Home exterior photography
-
-BRAND ALIGNMENT:
-- Whole-house coverage
-- Home value improvement
-- Professional installation
-- Trustworthy service
+- Modern, architectural
+- Clean, minimalist
+- Professional, sophisticated
+- Contemporary design
 ```
 
 ---
 
-### **FEATURE/BENEFIT ICONS**
+### **LIFESTYLE IMAGERY - AESTHETIC FOCUS**
 
-#### **Prompt 10: Pure Water Icon**
+#### **Prompt 12: Hands Holding Glass of Clear Water (Artistic)**
 ```
-Create a modern, minimalist SVG-style icon representing pure, clean water:
+Create an artistic, high-end photography image of hands holding a glass of clear water:
 
 VISUAL ELEMENTS:
-- Water droplet shape (stylized, modern)
-- Clean, flowing lines
-- Minimalist design
-- Blue color (#007BFF) or monochrome
-- Professional, clean aesthetic
+- Hands (clean, well-groomed) holding a clear glass
+- Clear, pure water visible in glass
+- Artistic composition and framing
+- Natural or studio lighting
+- Clean, minimalist background
+- High-end product/lifestyle photography
+- Sophisticated, premium aesthetic
 
 STYLE:
-- Modern line art
-- Minimalist icon design
-- Clean, simple composition
+- Artistic lifestyle photography
+- High-end product photography quality
+- Clean, minimalist composition
+- Professional studio or natural lighting
+- Gallery-quality artistic photography
+- Sophisticated, premium aesthetic
+
+COLOR PALETTE:
+- Primary: Neutral tones (skin, glass, water)
+- Accents: Blue (#007BFF) from water or lighting
+- Background: Clean white or subtle gradient
+- Lighting: Natural or studio, clean
+
+TECHNICAL:
+- Resolution: 1200x800px
+- Format: High-quality JPG
+- Style: Artistic lifestyle photography
+- File size: <100KB
+
+BRAND ALIGNMENT:
+- High-end, artistic
+- Clean, sophisticated
+- Premium quality
+- Health and wellness focus
+```
+
+#### **Prompt 13: Modern Kitchen/Home Environment (Architectural Style)**
+```
+Create a modern kitchen or home environment in architectural photography style:
+
+VISUAL ELEMENTS:
+- Contemporary kitchen or home interior
+- Clean, modern design elements
+- Natural lighting
+- Architectural photography composition
+- Minimalist, uncluttered
+- Professional architectural photography quality
+- Sophisticated, high-end aesthetic
+
+STYLE:
+- Architectural photography
+- Modern, minimalist composition
+- Natural lighting
+- Professional quality
+- Sophisticated aesthetic
+- High-end design magazine style
+
+COLOR PALETTE:
+- Primary: Neutral tones (whites, grays, light wood)
+- Accents: Subtle color (if any)
+- Lighting: Natural, clean
+- Background: Modern interior elements
+
+TECHNICAL:
+- Resolution: 1200x800px
+- Format: High-quality JPG
+- Style: Architectural lifestyle photography
+- File size: <100KB
+
+BRAND ALIGNMENT:
+- Modern, architectural
+- Clean, sophisticated
+- Professional, high-end
+- Contemporary lifestyle
+```
+
+#### **Prompt 14: Water Pouring/Flowing (Macro, Artistic, Dynamic)**
+```
+Create an artistic, dynamic macro photography image of water pouring or flowing:
+
+VISUAL ELEMENTS:
+- Water pouring or flowing (artistic capture)
+- Macro or extreme close-up perspective
+- Dynamic motion captured artistically
+- Clean, minimalist composition
+- High-end artistic photography
+- Focus on movement, light, and form
+- Gallery-quality image
+
+STYLE:
+- Artistic macro photography
+- Dynamic motion capture
+- Clean, minimalist composition
+- Professional studio lighting
+- Gallery-quality artistic photography
+- Sophisticated, premium aesthetic
+
+COLOR PALETTE:
+- Primary: Clear water, white, light tones
+- Accents: Blue (#007BFF) from water
+- Background: Clean, minimalist
+- Lighting: Studio, dramatic
+
+TECHNICAL:
+- Resolution: 1200x800px
+- Format: High-quality JPG
+- Style: Artistic macro photography
+- File size: <100KB
+
+BRAND ALIGNMENT:
+- Artistic, high-end
+- Dynamic, modern
+- Premium quality
+- Water theme (artistic)
+```
+
+---
+
+### **MINIMALIST ICONS**
+
+#### **Prompt 15: Pure Water Icon (Simple Line Art)**
+```
+Create a simple, minimalist line art icon of a water drop:
+
+VISUAL ELEMENTS:
+- Simple water drop shape
+- Clean, minimalist line art
+- Single line or simple outline
+- Modern, geometric style
+- No fill, just outline
+- Professional icon design
+
+STYLE:
+- Minimalist line art
+- Simple, clean design
+- Modern icon style
 - Vector-style (can be rasterized to SVG)
 
 COLOR PALETTE:
 - Primary: Blue (#007BFF) or black (#000000)
+- Monochrome (single color)
 - Optional: White for negative space
-- Monochrome or two-color maximum
 
 TECHNICAL:
 - Resolution: 256x256px viewBox
 - Format: SVG (vector) or PNG with transparency
-- Style: Modern icon design
+- Style: Minimalist line art icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Clean, pure water concept
+- Simple, clean
 - Modern, professional
-- Simple, recognizable
-```
-
-#### **Prompt 11: Cost Savings Icon**
-```
-Create a modern icon representing cost savings and value:
-
-VISUAL ELEMENTS:
-- Dollar sign or money symbol (stylized)
-- Downward arrow or savings indicator
-- Modern, clean design
-- Blue or green color (#007BFF or #28A745)
-- Professional icon style
-
-STYLE:
-- Modern icon design
-- Minimalist, clean
 - Recognizable symbol
-- Professional appearance
-
-COLOR PALETTE:
-- Primary: Blue (#007BFF) or Green (#28A745)
-- Monochrome option available
-
-TECHNICAL:
-- Resolution: 256x256px
-- Format: SVG or PNG
-- Style: Icon design
-- File size: <10KB
-
-BRAND ALIGNMENT:
-- Value proposition
-- Cost-effective solution
-- Savings benefit
 ```
 
-#### **Prompt 12: Eco-Friendly Icon**
+#### **Prompt 16: Cost Savings Icon (Minimalist Checkmark)**
 ```
-Create a modern icon representing environmental sustainability:
+Create a simple, minimalist checkmark or savings symbol icon:
 
 VISUAL ELEMENTS:
-- Leaf or recycling symbol
-- Green color (#28A745)
-- Modern, clean design
-- Environmental theme
-- Professional icon style
+- Simple checkmark or dollar symbol
+- Clean, minimalist line art
+- Single line or simple outline
+- Modern, geometric style
+- Professional icon design
 
 STYLE:
-- Modern icon design
-- Minimalist
-- Recognizable environmental symbol
-- Clean composition
+- Minimalist line art
+- Simple, clean design
+- Modern icon style
+- Vector-style
 
 COLOR PALETTE:
-- Primary: Green (#28A745)
-- Optional: Blue (#007BFF) for water connection
+- Primary: Blue (#007BFF) or black (#000000)
+- Monochrome (single color)
 
 TECHNICAL:
-- Resolution: 256x256px
+- Resolution: 256x256px viewBox
 - Format: SVG or PNG
-- Style: Icon design
+- Style: Minimalist icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Environmental responsibility
-- Sustainability
-- Eco-friendly benefits
+- Simple, clean
+- Modern, professional
+- Recognizable symbol
 ```
 
-#### **Prompt 13: Health Benefits Icon**
+#### **Prompt 17: Eco-Friendly Icon (Simple Leaf Line Art)**
 ```
-Create a modern icon representing health and wellness:
+Create a simple, minimalist leaf or eco symbol icon:
 
 VISUAL ELEMENTS:
-- Heart or wellness symbol
-- Health-focused design
-- Blue or red accent (#007BFF or health red)
-- Modern, clean icon
-- Professional appearance
+- Simple leaf or recycling symbol
+- Clean, minimalist line art
+- Single line or simple outline
+- Modern, geometric style
+- Professional icon design
 
 STYLE:
-- Modern icon design
-- Minimalist
-- Health-focused symbol
-- Clean composition
+- Minimalist line art
+- Simple, clean design
+- Modern icon style
+- Vector-style
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF) or health red
-- Monochrome option
+- Primary: Green (#28A745) or black (#000000)
+- Monochrome (single color)
 
 TECHNICAL:
-- Resolution: 256x256px
+- Resolution: 256x256px viewBox
 - Format: SVG or PNG
-- Style: Icon design
+- Style: Minimalist icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Health and wellness
-- Quality of life
-- Safety and purity
+- Simple, clean
+- Modern, professional
+- Recognizable symbol
 ```
 
-#### **Prompt 14: Easy Installation Icon**
+#### **Prompt 18: Health Icon (Minimalist Heart/Wellness)**
 ```
-Create a modern icon representing easy installation:
+Create a simple, minimalist heart or wellness symbol icon:
 
 VISUAL ELEMENTS:
-- Tools or installation symbol (wrench, screwdriver, or installation graphic)
-- Modern, clean design
-- Blue color (#007BFF)
-- Professional icon style
-- Simple, recognizable
+- Simple heart or wellness symbol
+- Clean, minimalist line art
+- Single line or simple outline
+- Modern, geometric style
+- Professional icon design
 
 STYLE:
-- Modern icon design
-- Minimalist
-- Installation/convenience theme
-- Clean composition
+- Minimalist line art
+- Simple, clean design
+- Modern icon style
+- Vector-style
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF)
-- Monochrome option
+- Primary: Blue (#007BFF) or black (#000000)
+- Monochrome (single color)
 
 TECHNICAL:
-- Resolution: 256x256px
+- Resolution: 256x256px viewBox
 - Format: SVG or PNG
-- Style: Icon design
+- Style: Minimalist icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Easy installation
-- Convenience
-- Professional service
+- Simple, clean
+- Modern, professional
+- Recognizable symbol
 ```
 
-#### **Prompt 15: Smart Technology Icon**
+#### **Prompt 19: Installation Icon (Simple Flow Symbol)**
 ```
-Create a modern icon representing smart technology and innovation:
+Create a simple, minimalist flow or installation symbol icon:
 
 VISUAL ELEMENTS:
-- Technology symbol (circuit, smart device, or innovation graphic)
-- Modern, tech-focused design
-- Blue color (#007BFF)
-- Professional, innovative appearance
-- Clean, futuristic aesthetic
+- Simple flow lines or installation symbol
+- Clean, minimalist line art
+- Single line or simple outline
+- Modern, geometric style
+- Professional icon design
 
 STYLE:
-- Modern icon design
-- Tech-focused
-- Innovation theme
-- Clean composition
+- Minimalist line art
+- Simple, clean design
+- Modern icon style
+- Vector-style
 
 COLOR PALETTE:
-- Primary: Blue (#007BFF)
-- Accent: Silver/metallic
-- Monochrome option
+- Primary: Blue (#007BFF) or black (#000000)
+- Monochrome (single color)
 
 TECHNICAL:
-- Resolution: 256x256px
+- Resolution: 256x256px viewBox
 - Format: SVG or PNG
-- Style: Icon design
+- Style: Minimalist icon
 - File size: <10KB
 
 BRAND ALIGNMENT:
-- Innovation
-- Modern technology
-- Smart features
-- Advanced filtration
+- Simple, clean
+- Modern, professional
+- Recognizable symbol
+```
+
+#### **Prompt 20: Smart Technology Icon (Geometric Tech Symbol)**
+```
+Create a simple, minimalist geometric technology symbol icon:
+
+VISUAL ELEMENTS:
+- Simple geometric tech symbol (circuit, connection, or innovation symbol)
+- Clean, minimalist line art
+- Single line or simple outline
+- Modern, geometric style
+- Professional icon design
+
+STYLE:
+- Minimalist line art
+- Simple, clean design
+- Modern icon style
+- Vector-style
+
+COLOR PALETTE:
+- Primary: Blue (#007BFF) or black (#000000)
+- Monochrome (single color)
+
+TECHNICAL:
+- Resolution: 256x256px viewBox
+- Format: SVG or PNG
+- Style: Minimalist icon
+- File size: <10KB
+
+BRAND ALIGNMENT:
+- Simple, clean
+- Modern, professional
+- Recognizable symbol
 ```
 
 ---
 
 ### **BRAND ELEMENTS**
 
-#### **Prompt 16: OMGEN WATER Logo (Full)**
+#### **Prompt 21: OMGEN WATER Logo (Full)**
 ```
 Create a modern, professional logo for OMGEN WATER:
 
@@ -725,7 +971,7 @@ BRAND ALIGNMENT:
 - "Restoring Tomorrow, Today Water" brand message
 ```
 
-#### **Prompt 17: OMGEN WATER Logo (Icon Only)**
+#### **Prompt 22: OMGEN WATER Logo (Icon Only)**
 ```
 Create a standalone icon for OMGEN WATER logo:
 
@@ -760,7 +1006,7 @@ BRAND ALIGNMENT:
 - Modern, professional
 ```
 
-#### **Prompt 18: OMGEN WATER Logo (Horizontal)**
+#### **Prompt 23: OMGEN WATER Logo (Horizontal)**
 ```
 Create a horizontal layout logo for OMGEN WATER:
 
@@ -803,37 +1049,39 @@ BRAND ALIGNMENT:
 ```
 images/
 ├── hero/
-│   ├── main-hero.jpg (1920x1080)
-│   ├── whole-house-hero.jpg (1920x1080)
-│   └── under-sink-hero.jpg (1920x1080)
-│   └── README.md (category documentation)
-│
-├── products/
-│   ├── whole-house-system.jpg (800x800)
-│   ├── under-sink-system.jpg (800x800)
-│   └── filter-components.jpg (800x800)
-│   └── README.md (category documentation)
+│   ├── main-hero.jpg (1920x1080) - Black abstract geometric
+│   ├── water-abstract-hero.jpg (1920x1080) - Water-themed abstract
+│   ├── architectural-hero.jpg (1920x1080) - Architectural with water
+│   ├── water-flow-abstract-1.jpg (1920x1080) - Blue/white gradient flow
+│   ├── water-flow-abstract-2.jpg (1920x1080) - Geometric water patterns
+│   ├── water-flow-abstract-3.jpg (1920x1080) - Architectural with water
+│   └── README.md
 │
 ├── lifestyle/
-│   ├── family-drinking.jpg (1200x800)
-│   ├── kitchen-install.jpg (1200x800)
-│   └── home-exterior.jpg (1200x800)
-│   └── README.md (category documentation)
+│   ├── water-droplets-macro.jpg (1200x800) - Macro water droplets
+│   ├── water-flow-artistic.jpg (1200x800) - Artistic water flow
+│   ├── natural-light-water.jpg (1200x800) - Light through water
+│   ├── modern-interior-1.jpg (1200x800) - Minimalist interior
+│   ├── modern-interior-2.jpg (1200x800) - Architectural spaces
+│   ├── hands-water-glass.jpg (1200x800) - Hands with water glass
+│   ├── modern-kitchen-aesthetic.jpg (1200x800) - Modern kitchen
+│   └── water-pour-artistic.jpg (1200x800) - Artistic water pour
+│   └── README.md
 │
 ├── icons/
-│   ├── pure-water.svg (256x256)
-│   ├── cost-savings.svg (256x256)
-│   ├── eco-friendly.svg (256x256)
-│   ├── health.svg (256x256)
-│   ├── installation.svg (256x256)
-│   └── smart-tech.svg (256x256)
-│   └── README.md (category documentation)
+│   ├── pure-water.svg (256x256) - Water drop line art
+│   ├── cost-savings.svg (256x256) - Checkmark/savings
+│   ├── eco-friendly.svg (256x256) - Leaf/eco symbol
+│   ├── health.svg (256x256) - Heart/wellness
+│   ├── installation.svg (256x256) - Flow/installation
+│   └── smart-tech.svg (256x256) - Geometric tech
+│   └── README.md
 │
 ├── branding/
 │   ├── logo-full.png (512x512)
 │   ├── logo-icon.png (256x256)
 │   └── logo-horizontal.png (1024x256)
-│   └── README.md (category documentation)
+│   └── README.md
 │
 └── AI_IMAGE_GENERATION_GUIDE.md (this file)
 ```
@@ -851,12 +1099,12 @@ images/
 
 ### **Examples:**
 - ✅ `main-hero.jpg`
-- ✅ `whole-house-system.jpg`
-- ✅ `family-drinking.jpg`
+- ✅ `water-flow-abstract-1.jpg`
+- ✅ `water-droplets-macro.jpg`
 - ✅ `pure-water.svg`
 - ❌ `Main Hero.jpg` (uppercase, space)
-- ❌ `whole_house_system.jpg` (underscore)
-- ❌ `familyDrinking.jpg` (camelCase)
+- ❌ `water_flow_abstract.jpg` (underscore)
+- ❌ `waterFlowAbstract.jpg` (camelCase)
 
 ---
 
@@ -864,13 +1112,14 @@ images/
 
 ### **Compression Requirements:**
 - **Hero images:** <150KB (JPG, quality 80-85%)
-- **Product images:** <80KB (JPG, quality 80-85%)
+- **Section backgrounds:** <100KB (JPG, quality 80-85%)
+- **Aesthetic photography:** <100KB (JPG, quality 80-85%)
 - **Lifestyle images:** <100KB (JPG, quality 80-85%)
 - **Icons:** <10KB (SVG preferred, PNG if needed)
 - **Logos:** <50KB (PNG, quality 90%+)
 
 ### **Format Selection:**
-- **JPG:** Photos, complex images (hero, product, lifestyle)
+- **JPG:** Photos, backgrounds, abstract art
 - **PNG:** Logos, graphics with transparency
 - **SVG:** Icons, simple graphics (preferred for scalability)
 
@@ -888,6 +1137,12 @@ images/
 5. Test image quality (should remain sharp)
 6. Save to appropriate directory
 
+### **Special Considerations for Abstract Art:**
+- Ensure patterns tile seamlessly if needed
+- Maintain high quality for geometric precision
+- Preserve color gradients accurately
+- Test with overlay text to ensure readability
+
 ---
 
 ## INTEGRATION CHECKLIST
@@ -898,6 +1153,7 @@ images/
 - [ ] Images placed in correct directory structure
 - [ ] File sizes meet requirements
 - [ ] Image quality verified (sharp, professional)
+- [ ] Abstract patterns tested for seamless tiling (if needed)
 
 ### **HTML Integration:**
 - [ ] Image paths updated in `index.html`
@@ -905,6 +1161,7 @@ images/
 - [ ] Alt text added for all images (descriptive)
 - [ ] Lazy loading attributes added (`loading="lazy"`)
 - [ ] Decoding attributes added (`decoding="async"`)
+- [ ] Abstract backgrounds tested with overlay text
 
 ### **CSS Verification:**
 - [ ] Images display correctly at all breakpoints
@@ -912,6 +1169,7 @@ images/
 - [ ] Lazy loading fade-in animations work
 - [ ] Image hover effects (if applicable) work
 - [ ] Placeholder backgrounds display for missing images
+- [ ] Abstract backgrounds work with text overlays
 
 ### **Testing:**
 - [ ] All images load correctly
@@ -920,6 +1178,7 @@ images/
 - [ ] Performance is maintained (<2s load time)
 - [ ] Accessibility: Alt text is descriptive
 - [ ] Cross-browser compatibility verified
+- [ ] Abstract backgrounds maintain quality at all sizes
 
 ### **Final Verification:**
 - [ ] All images match brand guidelines
@@ -927,6 +1186,7 @@ images/
 - [ ] Image quality is professional
 - [ ] No broken image links
 - [ ] Site performance is optimal
+- [ ] Abstract art aesthetic is consistent
 
 ---
 
@@ -934,10 +1194,12 @@ images/
 
 ### **Visual Quality:**
 - ✅ Sharp, high-resolution images
-- ✅ Professional photography/design quality
+- ✅ Professional photography/art quality
 - ✅ Consistent color palette (blue #007BFF, black #000, white #FFF)
 - ✅ Brand-appropriate styling
 - ✅ No watermarks or AI artifacts
+- ✅ Abstract art maintains geometric precision
+- ✅ Aesthetic photography is gallery-quality
 
 ### **Technical Quality:**
 - ✅ Correct dimensions (as specified)
@@ -945,41 +1207,44 @@ images/
 - ✅ File size within limits
 - ✅ Optimized compression
 - ✅ Proper aspect ratios
+- ✅ Abstract patterns tile seamlessly (if needed)
 
 ### **Brand Alignment:**
 - ✅ Matches OMGEN WATER brand identity
-- ✅ Water filtration industry appropriate
+- ✅ Modern, sophisticated aesthetic
 - ✅ Professional, trustworthy appearance
-- ✅ Modern, innovative aesthetic
+- ✅ Abstract/artistic interpretation
 - ✅ Consistent with site design
+- ✅ High-end, premium quality
 
 ### **Accessibility:**
 - ✅ Descriptive alt text for all images
 - ✅ Proper semantic HTML structure
 - ✅ Images don't convey critical information without text
 - ✅ Color contrast meets WCAG standards
+- ✅ Abstract backgrounds work with text overlays
 
 ---
 
 ## RECOMMENDED AI TOOLS
 
-### **1. DALL-E 3 (via ChatGPT Plus)**
-- **Best for:** Photorealistic images, product photography
+### **1. Midjourney** ⭐ **BEST FOR ABSTRACT ART**
+- **Best for:** Abstract art, artistic photography, geometric patterns
+- **Strengths:** Excellent artistic quality, creative control, abstract art generation
+- **Cost:** $10-60/month
+- **URL:** https://www.midjourney.com/ (via Discord)
+
+### **2. DALL-E 3 (via ChatGPT Plus)**
+- **Best for:** Precise control, architectural photography, detailed prompts
 - **Strengths:** High quality, natural results, good prompt understanding
 - **Cost:** $20/month (ChatGPT Plus)
 - **URL:** https://chat.openai.com/
 
-### **2. Leonardo.ai**
-- **Best for:** Product images, lifestyle photography
+### **3. Leonardo.ai**
+- **Best for:** Artistic photography, abstract patterns, multiple variations
 - **Strengths:** Good control, multiple models, free tier available
 - **Cost:** Free tier + paid plans
 - **URL:** https://leonardo.ai/
-
-### **3. Midjourney**
-- **Best for:** Artistic, high-quality images
-- **Strengths:** Excellent quality, artistic control
-- **Cost:** $10-60/month
-- **URL:** https://www.midjourney.com/ (via Discord)
 
 ### **4. Grok (if available)**
 - **Best for:** Quick generation, integrated workflow
@@ -988,8 +1253,8 @@ images/
 - **URL:** Check availability
 
 ### **5. Stable Diffusion (via various platforms)**
-- **Best for:** Custom models, fine-tuned control
-- **Strengths:** Open source, customizable
+- **Best for:** Custom models, fine-tuned control, abstract art
+- **Strengths:** Open source, customizable, good for abstract patterns
 - **Cost:** Free (self-hosted) or paid platforms
 - **URL:** Various platforms available
 
@@ -999,21 +1264,41 @@ images/
 
 ### **For Best Results:**
 1. **Be Specific:** Include exact dimensions, colors, and style requirements
-2. **Use Style References:** Reference "photorealistic," "professional photography," etc.
+2. **Use Style References:** Reference "abstract art," "architectural photography," "minimalist," etc.
 3. **Iterate:** Generate multiple variations and select the best
 4. **Refine Prompts:** Adjust prompts based on initial results
 5. **Combine Elements:** Mention brand colors, style, and technical specs together
 
 ### **Common Adjustments:**
-- If too dark: Add "bright, natural lighting"
+- If too literal: Add "abstract," "artistic interpretation," "minimalist"
 - If too cluttered: Add "clean, minimalist composition"
 - If colors off: Specify exact hex codes (#007BFF, #000000)
-- If quality low: Add "high resolution, professional quality"
-- If style wrong: Specify "photorealistic" or "modern icon design"
+- If quality low: Add "high resolution, gallery-quality, professional"
+- If style wrong: Specify "abstract geometric art" or "architectural photography"
+
+### **For Abstract Art:**
+- Emphasize "abstract," "geometric," "minimalist"
+- Specify "no literal objects" or "abstract representation"
+- Mention "architectural-inspired" for geometric patterns
+- Use "gallery-quality" or "sophisticated" for premium aesthetic
+
+### **For Aesthetic Photography:**
+- Emphasize "artistic," "high-end," "gallery-quality"
+- Specify "natural lighting" or "studio lighting"
+- Mention "minimalist composition" for clean aesthetic
+- Use "architectural photography style" for interiors
 
 ---
 
 ## TROUBLESHOOTING
+
+### **Issue: Images too literal/not abstract enough**
+- **Solution:** Add "abstract," "artistic interpretation," "minimalist" to prompt
+- **Alternative:** Specify "no recognizable objects" or "abstract representation"
+
+### **Issue: Abstract patterns don't tile seamlessly**
+- **Solution:** Regenerate with "seamless pattern" or "tileable" in prompt
+- **Alternative:** Use image editor to create seamless tile
 
 ### **Issue: Images too large**
 - **Solution:** Use TinyPNG or Squoosh to compress
@@ -1028,7 +1313,7 @@ images/
 - **Reference:** Use brand color palette (#007BFF, #000000, #FFFFFF, #28A745)
 
 ### **Issue: AI artifacts visible**
-- **Solution:** Regenerate with "photorealistic, no artifacts" in prompt
+- **Solution:** Regenerate with "no artifacts," "clean," "professional quality" in prompt
 - **Alternative:** Use image editor to remove artifacts
 
 ### **Issue: Images not loading**
@@ -1048,8 +1333,7 @@ images/
 
 ---
 
-**Document Version:** 1.0  
+**Document Version:** 2.0 (Revised for Abstract Art & Aesthetic Photography)  
 **Last Updated:** January 2025  
 **Maintained By:** Development Team  
 **Questions?** Refer to integration checklist or contact project manager.
-
