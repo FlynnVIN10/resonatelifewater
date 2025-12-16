@@ -147,8 +147,7 @@ textarea:focus-visible {
 
 /* Header */
 .site-header {
-  position: sticky;
-  position: -webkit-sticky; /* Safari support */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -396,6 +395,7 @@ textarea:focus-visible {
 
 /* Main */
 .site-main {
+  padding-top: 80px; /* Account for fixed header */
   padding-bottom: var(--space-6);
 }
 
