@@ -393,7 +393,7 @@ textarea:focus-visible {
   color: #ffffff;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/hero/hero-waterfall-nature.jpg");
+    url("../images/hero-background-main.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1421,6 +1421,7 @@ img {
     min-height: 500px;
     background-size: cover;
     background-position: center;
+    background-attachment: scroll; /* Fixed bg can cause issues on mobile */
   }
 
   .media__img {
