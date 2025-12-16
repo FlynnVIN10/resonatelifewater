@@ -5,7 +5,7 @@
     reveal: true,
     parallax: true,
     typing: true,
-    leadPopup: true,
+    leadPopup: false,
     exitIntent: true,
     pageTransition: true
   };
