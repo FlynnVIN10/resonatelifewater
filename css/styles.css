@@ -60,9 +60,14 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -143,7 +148,11 @@ textarea:focus-visible {
 /* Header */
 .site-header {
   position: sticky;
+  position: -webkit-sticky; /* Safari support */
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
