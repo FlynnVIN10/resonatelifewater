@@ -154,7 +154,7 @@
           }
         }
       },
-      { threshold: 0.16 }
+      { threshold: 0.05, rootMargin: "50px" }
     );
 
     for (var j = 0; j < els.length; j += 1) obs.observe(els[j]);
