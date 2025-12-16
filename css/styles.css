@@ -391,12 +391,8 @@ textarea:focus-visible {
 
 .hero {
   color: #ffffff;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/hero-background-main.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  
+  
   min-height: 700px;
   display: flex;
   align-items: center;
