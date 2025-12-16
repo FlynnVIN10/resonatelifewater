@@ -394,7 +394,7 @@ textarea:focus-visible {
   color: #ffffff;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/hero-background-main.jpg");
+    url("../images/hero-river-stream.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1446,7 +1446,7 @@ img {
     background-attachment: scroll; /* Fixed bg can cause issues on mobile */
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../images/hero-background-main.jpg");
+      url("../images/hero-river-stream.jpg");
   }
 
   .media__img {
