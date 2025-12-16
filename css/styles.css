@@ -1452,6 +1452,10 @@ img {
 
 /* Image optimization and responsive rules */
 @media (max-width: 767px) {
+  .site-main {
+    padding-top: 70px; /* Slightly less padding on mobile */
+  }
+
   .hero {
     min-height: 500px;
     background-size: cover;
