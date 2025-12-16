@@ -7,7 +7,7 @@
 ⏳ Awaiting Shopify store configuration
 
 ## Overview
-The EcoDigest Pro website is now prepared for Shopify e-commerce integration. The infrastructure is in place but disabled by default, allowing the site to continue functioning normally with contact-based lead generation until the Shopify store is configured.
+The Resonate Life Water website is now prepared for Shopify e-commerce integration. The infrastructure is in place but disabled by default, allowing the site to continue functioning normally with contact-based lead generation until the Shopify store is configured.
 
 ## When Shopify Store is Ready
 
@@ -28,31 +28,22 @@ The EcoDigest Pro website is now prepared for Shopify e-commerce integration. Th
 
 Create these products in your Shopify store:
 
-#### 1. Commercial Starter Package
-- **Title:** Commercial Starter Package
-- **Description:** Perfect for Growing Operations (1-5 Acres). 30-day microbial supply treating up to 50,000 gallons.
-- **Price:** Set your pricing
-- **SKU:** ECO-COMMERCIAL-001
-- **Product Type:** Liquid Microbial Solution
-- **Vendor:** EcoDigest Pro
+#### 1. Discovery Journey
+- **Title:** Discovery Journey
+- **Description:** 4-month supply - Begin your wellness journey. Get started with Resonate Life Water! This 30-day supply includes 8 bottles (32 oz each) and is designed to easily fit into your daily routine. Experience the potential benefits for your overall well-being.
+- **Price:** Starting at $750 (Early Adopter Pricing)
+- **SKU:** RLW-DISCOVERY-001
+- **Product Type:** Probiotic Structured Water
+- **Vendor:** Resonate Life Water
 
-#### 2. Enterprise Solution
-- **Title:** Enterprise Solution
-- **Description:** Industrial-Scale Deployment (5+ Acres). 90-day microbial supply treating up to 200,000+ gallons.
-- **Price:** Set your pricing (or use custom pricing)
-- **SKU:** ECO-ENTERPRISE-001
-- **Product Type:** Liquid Microbial Solution
-- **Vendor:** EcoDigest Pro
-
-#### 3. Custom Solutions (Optional)
-- **Title:** Custom Solutions
-- **Description:** Tailored for Your Unique Operation
-- **Price:** Contact for pricing (or set custom pricing)
-- **SKU:** ECO-CUSTOM-001
-- **Product Type:** Liquid Microbial Solution
-- **Vendor:** EcoDigest Pro
-
-**Note:** Custom Solutions can remain contact-only if preferred.
+#### 2. Transformation Path
+- **Title:** Transformation Path
+- **Description:** 8-month supply - Complete transformation protocol. The Transformative Path package includes a full 120-day supply of Resonate Life Water. This is designed to provide you with the complete regimen for the duration of the study or your wellness journey.
+- **Price:** $3,000 (Save 20% - Complete Protocol)
+- **SKU:** RLW-TRANSFORM-001
+- **Product Type:** Probiotic Structured Water
+- **Vendor:** Resonate Life Water
+- **Note:** Mark as "BEST VALUE" in product tags
 
 ### Step 3: Get Product IDs
 
@@ -73,15 +64,14 @@ Open `js/shopify-integration.js` and update:
 
 ```javascript
 const SHOPIFY_CONFIG = {
-    domain: 'ecodigestpro.myshopify.com', // Your actual Shopify domain
+    domain: 'resonatelifewater.myshopify.com', // Your actual Shopify domain
     storefrontAccessToken: 'your_actual_storefront_token_here', // Your actual token
     enabled: true // Set to true to activate Shopify integration
 };
 
 const PRODUCT_IDS = {
-    commercialStarter: 'gid://shopify/Product/1234567890', // Actual Commercial Starter ID
-    enterpriseSolution: 'gid://shopify/Product/0987654321', // Actual Enterprise Solution ID
-    customSolution: 'gid://shopify/Product/1122334455' // Actual Custom Solutions ID (if using)
+    discoveryJourney: 'gid://shopify/Product/1234567890', // Actual Discovery Journey ID
+    transformationPath: 'gid://shopify/Product/0987654321' // Actual Transformation Path ID
 };
 ```
 
@@ -113,7 +103,7 @@ Once tested successfully:
    ```
 
 2. Verify on live site:
-   - Visit https://flynnvin10.github.io/EcoDigestPro/
+   - Visit https://flynnvin10.github.io/resonatelifewater/
    - Test buy buttons on live site
    - Verify checkout flow works
 
@@ -182,16 +172,12 @@ Once tested successfully:
    - Token doesn't have required permissions
    - Regenerate token
 
-## Hybrid Approach
+## Product Configuration Notes
 
-You can run a hybrid setup where:
-- Some products use Shopify buy buttons
-- Others remain contact-only
-
-**To implement:**
-- Only enable Shopify for specific product IDs
-- Leave `SHOPIFY_CONFIG.enabled = false` for contact-only products
-- Use `toggleShopify(true)` selectively per product
+- **Discovery Journey:** 4-month supply package (30-day supply, 8 bottles)
+- **Transformation Path:** 8-month supply package (120-day supply) - Best Value option
+- Both products are probiotic structured water delivered in 32 oz bottles
+- Products align with Resonate Life Water wellness protocol
 
 ## Security Notes
 
@@ -219,7 +205,8 @@ You can run a hybrid setup where:
 
 ---
 
-**Last Updated:** Phase 2 Implementation  
+**Last Updated:** December 2025  
 **Status:** Ready for Shopify Store Configuration  
+**Project:** Resonate Life Water  
 **Contact:** Update this document as configuration progresses
 
