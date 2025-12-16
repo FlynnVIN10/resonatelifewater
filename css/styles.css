@@ -392,9 +392,7 @@ textarea:focus-visible {
 
 .hero {
   color: #ffffff;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/hero-river-stream.jpg");
+  background-image: url("../images/hero-river-stream.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -409,26 +407,27 @@ textarea:focus-visible {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
-  z-index: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)); /* Dark overlay for text readability */
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero__content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-.hero::before {
+.hero::after {
   content: "";
   position: absolute;
   inset: -40%;
   background:
-    radial-gradient(closest-side at 30% 40%, rgba(56, 189, 248, 0.35), transparent 60%),
-    radial-gradient(closest-side at 70% 60%, rgba(45, 212, 191, 0.30), transparent 60%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.10));
+    radial-gradient(closest-side at 30% 40%, rgba(56, 189, 248, 0.1), transparent 60%),
+    radial-gradient(closest-side at 70% 60%, rgba(45, 212, 191, 0.08), transparent 60%);
   mix-blend-mode: soft-light;
   animation: heroGlow 10s ease-in-out infinite alternate;
   pointer-events: none;
+  z-index: 1;
 }
 
 /* Removed animated hero ticker/wave per client request */
@@ -1444,9 +1443,7 @@ img {
     background-size: cover;
     background-position: center;
     background-attachment: scroll; /* Fixed bg can cause issues on mobile */
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../images/hero-river-stream.jpg");
+    background-image: url("../images/hero-river-stream.jpg");
   }
 
   .media__img {
