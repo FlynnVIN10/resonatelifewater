@@ -802,9 +802,11 @@ section[id] {
 .product__badge--best {
   left: auto;
   right: 14px;
+  top: 14px;
   background: rgba(245, 158, 11, 0.18);
   border-color: rgba(245, 158, 11, 0.30);
   color: #7c2d12;
+  z-index: 10;
 }
 
 .product__badge--assist {
@@ -950,6 +952,16 @@ section[id] {
 
 .product__media {
   margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product__media .media__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .product__actions {
