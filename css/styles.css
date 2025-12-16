@@ -392,8 +392,12 @@ textarea:focus-visible {
 
 .hero {
   color: #ffffff;
-  
-  
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/hero-background-main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   min-height: 700px;
   display: flex;
   align-items: center;
@@ -806,7 +810,8 @@ section[id] {
   background: rgba(245, 158, 11, 0.18);
   border-color: rgba(245, 158, 11, 0.30);
   color: #7c2d12;
-  z-index: 10;
+  z-index: 20;
+  pointer-events: none;
 }
 
 .product__badge--assist {
@@ -954,6 +959,7 @@ section[id] {
   margin-bottom: 12px;
   position: relative;
   overflow: hidden;
+  isolation: isolate; /* Create new stacking context */
 }
 
 .product__media .media__img {
@@ -962,6 +968,8 @@ section[id] {
   display: block;
   object-fit: cover;
   object-position: center;
+  position: relative;
+  z-index: 1;
 }
 
 .product__actions {
@@ -1436,6 +1444,9 @@ img {
     background-size: cover;
     background-position: center;
     background-attachment: scroll; /* Fixed bg can cause issues on mobile */
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/hero-background-main.jpg");
   }
 
   .media__img {
